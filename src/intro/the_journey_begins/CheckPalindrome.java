@@ -9,7 +9,7 @@ public class CheckPalindrome {
 Given the string, check if it is a palindrome
  */
 
-    boolean checkPalindrome(String inputString) {
+    public boolean checkPalindrome(String inputString) {
         int sLen = inputString.length() - 1;
         for (int i = 0; i < (sLen + 1) / 2; i++) {
             if (inputString.charAt(i) != (inputString.charAt(sLen - i))) {
