@@ -9,7 +9,6 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MakeArrayConsecutive2Test {
-
     @Test
     void test1() {
         int[] testCase=new int[]{6, 2, 3, 8};
@@ -59,4 +58,4 @@ class MakeArrayConsecutive2Test {
         assertEquals(new MakeArrayConsecutive2().
                 makeArrayConsecutive2(testCase),0);
     }//void test5() {
-}
+}//class MakeArrayConsecutive2Test {

@@ -9,7 +9,6 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ShapeAreaTest {
-
     @Test
     void test1() {
         assertTimeout(Duration.ofSeconds(3),()->

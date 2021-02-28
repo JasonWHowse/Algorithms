@@ -16,8 +16,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test1() {
 
     @Test
@@ -26,8 +26,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test2() {
 
     @Test
@@ -36,8 +36,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test3() {
 
     @Test
@@ -46,8 +46,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test4() {
 
     @Test
@@ -56,8 +56,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test5() {
 
     @Test
@@ -66,8 +66,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test6() {
 
     @Test
@@ -76,8 +76,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test7() {
 
     @Test
@@ -86,8 +86,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test8() {
 
     @Test
@@ -96,8 +96,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test9() {
 
     @Test
@@ -106,8 +106,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test10() {
 
     @Test
@@ -116,8 +116,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test11() {
 
     @Test
@@ -126,8 +126,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test12() {
 
     @Test
@@ -136,8 +136,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test13() {
 
     @Test
@@ -146,8 +146,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test14() {
 
     @Test
@@ -156,8 +156,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),false);
+        assertFalse(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test15() {
 
     @Test
@@ -166,8 +166,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test16() {
 
     @Test
@@ -176,8 +176,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test17() {
 
     @Test
@@ -186,8 +186,8 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test18() {
 
     @Test
@@ -196,8 +196,7 @@ class AlmostIncreasingSequenceTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
                 testCase));
-        assertEquals(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase),true);
+        assertTrue(new AlmostIncreasingSequence().
+                almostIncreasingSequence(testCase));
     }//void test19() {
-
-}
+}//class AlmostIncreasingSequenceTest {

@@ -5,9 +5,7 @@
 package intro.the_journey_begins;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CheckPalindromeTest {
@@ -15,79 +13,79 @@ class CheckPalindromeTest {
     void test1() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("aabaa"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("aabaa"), true);
+        assertTrue((new CheckPalindrome()).
+                checkPalindrome("aabaa"));
     }//void test1() {
 
     @Test
     void test2() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("abac"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("abac"), false);
+        assertFalse((new CheckPalindrome()).
+                checkPalindrome("abac"));
     }//void test2() {
 
     @Test
     void test3() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("a"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("a"), true);
+        assertTrue((new CheckPalindrome()).
+                checkPalindrome("a"));
     }//void test() {
 
     @Test
     void test4() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("az"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("az"), false);
+        assertFalse((new CheckPalindrome()).
+                checkPalindrome("az"));
     }//void test4() {
 
     @Test
     void test5() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("abacaba"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("abacaba"), true);
+        assertTrue((new CheckPalindrome()).
+                checkPalindrome("abacaba"));
     }//void test5() {
 
     @Test
     void test6() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("z"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("z"), true);
+        assertTrue((new CheckPalindrome()).
+                checkPalindrome("z"));
     }//void test6() {
 
     @Test
     void test7() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("aaabaaaa"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("aaabaaaa"), false);
+        assertFalse((new CheckPalindrome()).
+                checkPalindrome("aaabaaaa"));
     }//void test7() {
 
     @Test
     void test8() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("zzzazzazz"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("zzzazzazz"), false);
+        assertFalse((new CheckPalindrome()).
+                checkPalindrome("zzzazzazz"));
     }//void test8() {
 
     @Test
     void test9() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("hlbeeykoqqqqokyeeblh"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("hlbeeykoqqqqokyeeblh"), true);
+        assertTrue((new CheckPalindrome()).
+                checkPalindrome("hlbeeykoqqqqokyeeblh"));
     }//void test9() {
 
     @Test
     void test10() {
         assertTimeout(Duration.ofSeconds(3),()->
                 (new CheckPalindrome()).checkPalindrome("aabhlbeeykoqqqokyeeblhaa"));
-        assertEquals((new CheckPalindrome()).
-                checkPalindrome("hlbeeykoqqqokyeeblh"), true);
+        assertTrue((new CheckPalindrome()).
+                checkPalindrome("hlbeeykoqqqokyeeblh"));
     }//void test10() {
 }//class CheckPalindromeTest {

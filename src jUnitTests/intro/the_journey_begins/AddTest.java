@@ -9,7 +9,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AddTest extends Add{
+class AddTest{
     @Test
     void test1() {
         assertTimeout(Duration.ofSeconds(3),()->
@@ -51,4 +51,4 @@ class AddTest extends Add{
                 (new Add()).add(-1000,-1000));
         assertEquals((new Add()).add(-1000,-1000),-2000);
     }//void test6() {
-}//class AddTest extends Add{
+}//class AddTest{

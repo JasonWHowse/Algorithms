@@ -9,7 +9,6 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MatrixElementsSumTest {
-
     @Test
     void test1() {
         int[][] testCase=new int[][]{   {0,1,1,2},
@@ -125,4 +124,4 @@ class MatrixElementsSumTest {
         assertEquals(new MatrixElementsSum().
                 matrixElementsSum(testCase),1);
     }//void test10() {
-}
+}//class MatrixElementsSumTest {

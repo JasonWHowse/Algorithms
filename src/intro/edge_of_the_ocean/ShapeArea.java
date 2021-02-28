@@ -39,4 +39,4 @@ Guaranteed constraints:
 The area of the n-interesting polygon.
  */
 
-}
+}//public class ShapeArea {

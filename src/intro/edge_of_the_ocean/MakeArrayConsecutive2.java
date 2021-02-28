@@ -5,6 +5,7 @@
 package intro.edge_of_the_ocean;
 
 public class MakeArrayConsecutive2 {
+
 /*
 Ratiorg got statues of different sizes as a
 present from CodeMaster for his birthday, each

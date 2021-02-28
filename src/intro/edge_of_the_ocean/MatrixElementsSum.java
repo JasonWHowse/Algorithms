@@ -5,6 +5,7 @@
 package intro.edge_of_the_ocean;
 
 public class MatrixElementsSum {
+
 /*
 After becoming famous, the CodeBots decided
 to move into a new building together. Each of
@@ -25,9 +26,9 @@ all the values that don't appear below a 0)
     int matrixElementsSum(int[][] matrix) {
         int out=0;
         for(int y=0;y<matrix[0].length;y++){
-            for(int x=0;x<matrix.length;x++){
-                out += matrix[x][y];
-                if(matrix[x][y]==0){
+            for (int[] arr : matrix) {
+                out += arr[y];
+                if (arr[y] == 0) {
                     break;
                 }//if(matrix[x][y]==0){
             }//for(int x=0;x<matrix.length;x++){
@@ -49,4 +50,5 @@ Guaranteed constraints:
 1 ≤ matrix[i].length ≤ 5,
 0 ≤ matrix[i][j] ≤ 10.
  */
-}
+
+}//public class MatrixElementsSum {
