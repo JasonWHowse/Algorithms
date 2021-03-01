@@ -12,8 +12,6 @@ import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
-
-
 import static org.hamcrest.CoreMatchers.*;
 
 class SortByHeightTest {
@@ -24,7 +22,7 @@ class SortByHeightTest {
         int[] solution = new int[]{-1, 150, 160, 170, -1, -1, 180, 190};
         assertTimeout(Duration.ofSeconds(3),()->
                 (new SortByHeight().sortByHeight(testCase)));
-        MatcherAssert.assertThat(testCase,is(solution));
+        MatcherAssert.assertThat(new SortByHeight().sortByHeight(testCase),is(solution));
     }//void Test1() {
 
     @Test
@@ -33,7 +31,7 @@ class SortByHeightTest {
         int[] solution = new int[]{-1, -1, -1, -1, -1};
         assertTimeout(Duration.ofSeconds(3),()->
                 (new SortByHeight().sortByHeight(testCase)));
-        MatcherAssert.assertThat(testCase,is(solution));
+        MatcherAssert.assertThat(new SortByHeight().sortByHeight(testCase),is(solution));
     }//void Test2() {
 
     @Test
@@ -42,7 +40,7 @@ class SortByHeightTest {
         int[] solution = new int[]{-1};
         assertTimeout(Duration.ofSeconds(3),()->
                 (new SortByHeight().sortByHeight(testCase)));
-        MatcherAssert.assertThat(testCase,is(solution));
+        MatcherAssert.assertThat(new SortByHeight().sortByHeight(testCase),is(solution));
     }//void Test3() {
 
     @Test
@@ -51,7 +49,7 @@ class SortByHeightTest {
         int[] solution = new int[]{2, 2, 4, 9, 11, 16};
         assertTimeout(Duration.ofSeconds(3),()->
                 (new SortByHeight().sortByHeight(testCase)));
-        MatcherAssert.assertThat(testCase,is(solution));
+        MatcherAssert.assertThat(new SortByHeight().sortByHeight(testCase),is(solution));
     }//void Test4() {
 
     @Test
@@ -60,7 +58,7 @@ class SortByHeightTest {
         int[] solution = new int[]{1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2};
         assertTimeout(Duration.ofSeconds(3),()->
                 (new SortByHeight().sortByHeight(testCase)));
-        MatcherAssert.assertThat(testCase,is(solution));
+        MatcherAssert.assertThat(new SortByHeight().sortByHeight(testCase),is(solution));
     }//void Test5() {
 
     @Test
@@ -69,6 +67,6 @@ class SortByHeightTest {
         int[] solution = new int[]{1, 3, -1, 23, 43, -1, -1, 54, -1, -1, -1, 77};
         assertTimeout(Duration.ofSeconds(3),()->
                 (new SortByHeight().sortByHeight(testCase)));
-        MatcherAssert.assertThat(testCase,is(solution));
+        MatcherAssert.assertThat(new SortByHeight().sortByHeight(testCase),is(solution));
     }//void Test6() {
 }//class SortByHeightTest {
