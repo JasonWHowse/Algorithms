@@ -15,9 +15,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 3, 2, 1};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test1() {
 
     @Test
@@ -25,9 +25,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 3, 2};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test2() {
 
     @Test
@@ -35,9 +35,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 2, 1, 2};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test3() {
 
     @Test
@@ -45,9 +45,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{3, 6, 5, 8, 10, 20, 15};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test4() {
 
     @Test
@@ -55,9 +55,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 1, 2, 3, 4, 4};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test5() {
 
     @Test
@@ -65,9 +65,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 4, 10, 4, 2};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test6() {
 
     @Test
@@ -75,9 +75,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{10, 1, 2, 3, 4, 5};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test7() {
 
     @Test
@@ -85,9 +85,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 1, 1, 2, 3};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test8() {
 
     @Test
@@ -95,9 +95,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{0, -2, 5, 6};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test9() {
 
     @Test
@@ -105,9 +105,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 2, 3, 4, 5, 3, 5, 6};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test10() {
 
     @Test
@@ -115,9 +115,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{40, 50, 60, 10, 20, 30};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test11() {
 
     @Test
@@ -125,9 +125,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 1};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test12() {
 
     @Test
@@ -135,9 +135,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 2, 5, 3, 5};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test13() {
 
     @Test
@@ -145,9 +145,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 2, 5, 5, 5};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test14() {
 
     @Test
@@ -155,9 +155,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{10, 1, 2, 3, 4, 5, 6, 1};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertFalse(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test15() {
 
     @Test
@@ -165,9 +165,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 2, 3, 4, 3, 6};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test16() {
 
     @Test
@@ -175,9 +175,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{1, 2, 3, 4, 99, 5, 6};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test17() {
 
     @Test
@@ -185,9 +185,9 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{123, -17, -5, 1, 2, 3, 12, 43, 45};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test18() {
 
     @Test
@@ -195,8 +195,8 @@ class AlmostIncreasingSequenceTest {
         int[] testCase=new int[]{3, 5, 67, 98, 3};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AlmostIncreasingSequence().almostIncreasingSequence(
-                testCase));
+                testCase.clone()));
         assertTrue(new AlmostIncreasingSequence().
-                almostIncreasingSequence(testCase));
+                almostIncreasingSequence(testCase.clone()));
     }//void test19() {
 }//class AlmostIncreasingSequenceTest {

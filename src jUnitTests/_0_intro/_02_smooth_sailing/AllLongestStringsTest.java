@@ -12,7 +12,6 @@ import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
-
 import static org.hamcrest.CoreMatchers.*;
 
 class AllLongestStringsTest {
@@ -30,9 +29,9 @@ class AllLongestStringsTest {
                 "aba"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test1() {
 
     @Test
@@ -41,9 +40,9 @@ class AllLongestStringsTest {
         String[] solution=new String[]{"aa"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test2() {
 
     @Test
@@ -56,9 +55,9 @@ class AllLongestStringsTest {
                 "abcd"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test3() {
 
     @Test
@@ -76,9 +75,9 @@ class AllLongestStringsTest {
                 "aaaaaa"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test4() {
 
     @Test
@@ -90,9 +89,9 @@ class AllLongestStringsTest {
         String[] solution=new String[]{"varennyky"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test5() {
 
     @Test
@@ -104,9 +103,9 @@ class AllLongestStringsTest {
         String[] solution=new String[]{"abacaba"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test6() {
 
     @Test
@@ -125,9 +124,9 @@ class AllLongestStringsTest {
                 "watermelon"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test7() {
 
     @Test
@@ -138,9 +137,9 @@ class AllLongestStringsTest {
         String[] solution=new String[]{"aokbcwthc"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test8() {
 
     @Test
@@ -149,9 +148,9 @@ class AllLongestStringsTest {
         String[] solution=new String[]{"lbgwyqkry"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test9() {
 
     @Test
@@ -160,8 +159,8 @@ class AllLongestStringsTest {
         String[] solution=new String[]{"i"};
         assertTimeout(Duration.ofSeconds(3),()->
                 new AllLongestStrings().allLongestStrings(
-                        testCase));
-        MatcherAssert.assertThat(solution,is(new AllLongestStrings().
-                allLongestStrings(testCase)));
+                        testCase.clone()));
+        MatcherAssert.assertThat(new AllLongestStrings().
+                allLongestStrings(testCase.clone()),is(solution.clone()));
     }//void test10() {
 }//class AllLongestStringsTest {

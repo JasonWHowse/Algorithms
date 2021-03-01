@@ -14,9 +14,9 @@ class MakeArrayConsecutive2Test {
         int[] testCase=new int[]{6, 2, 3, 8};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MakeArrayConsecutive2().makeArrayConsecutive2(
-                testCase));
+                testCase.clone()));
         assertEquals(new MakeArrayConsecutive2().
-                makeArrayConsecutive2(testCase),3);
+                makeArrayConsecutive2(testCase.clone()),3);
     }//void test1() {
 
     @Test
@@ -24,9 +24,9 @@ class MakeArrayConsecutive2Test {
         int[] testCase=new int[]{0, 3};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MakeArrayConsecutive2().makeArrayConsecutive2(
-                testCase));
+                testCase.clone()));
         assertEquals(new MakeArrayConsecutive2().
-                makeArrayConsecutive2(testCase),2);
+                makeArrayConsecutive2(testCase.clone()),2);
     }//void test2() {
 
     @Test
@@ -34,9 +34,9 @@ class MakeArrayConsecutive2Test {
         int[] testCase=new int[]{5, 4, 6};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MakeArrayConsecutive2().makeArrayConsecutive2(
-                testCase));
+                testCase.clone()));
         assertEquals(new MakeArrayConsecutive2().
-                makeArrayConsecutive2(testCase),0);
+                makeArrayConsecutive2(testCase.clone()),0);
     }//void test3() {
 
     @Test
@@ -44,9 +44,9 @@ class MakeArrayConsecutive2Test {
         int[] testCase=new int[]{6, 3};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MakeArrayConsecutive2().makeArrayConsecutive2(
-                testCase));
+                testCase.clone()));
         assertEquals(new MakeArrayConsecutive2().
-                makeArrayConsecutive2(testCase),2);
+                makeArrayConsecutive2(testCase.clone()),2);
     }//void test4() {
 
     @Test
@@ -54,8 +54,8 @@ class MakeArrayConsecutive2Test {
         int[] testCase=new int[]{1};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MakeArrayConsecutive2().makeArrayConsecutive2(
-                testCase));
+                testCase.clone()));
         assertEquals(new MakeArrayConsecutive2().
-                makeArrayConsecutive2(testCase),0);
+                makeArrayConsecutive2(testCase.clone()),0);
     }//void test5() {
 }//class MakeArrayConsecutive2Test {

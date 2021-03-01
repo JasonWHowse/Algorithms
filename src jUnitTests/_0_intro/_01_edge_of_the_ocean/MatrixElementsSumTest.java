@@ -4,6 +4,7 @@
 
 package _0_intro._01_edge_of_the_ocean;
 
+import helper_functions.Helpers;
 import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,9 +17,9 @@ class MatrixElementsSumTest {
                                         {2,0,3,3}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        Helpers.deepCopy(testCase)));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),9);
+                matrixElementsSum(testCase.clone()),9);
     }//void test1() {
 
     @Test
@@ -28,9 +29,9 @@ class MatrixElementsSumTest {
                                         {2,1,3,10}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),9);
+                matrixElementsSum(testCase.clone()),9);
     }//void test2() {
 
     @Test
@@ -40,9 +41,9 @@ class MatrixElementsSumTest {
                                         {3,3,3}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),18);
+                matrixElementsSum(testCase.clone()),18);
     }//void test3() {
 
     @Test
@@ -50,9 +51,9 @@ class MatrixElementsSumTest {
         int[][] testCase=new int[][]{{0}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),0);
+                matrixElementsSum(testCase.clone()),0);
     }//void test4() {
 
     @Test
@@ -62,9 +63,9 @@ class MatrixElementsSumTest {
                                         {1,2,0}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),5);
+                matrixElementsSum(testCase.clone()),5);
     }//void test5() {
 
     @Test
@@ -75,9 +76,9 @@ class MatrixElementsSumTest {
                                         {2}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),6);
+                matrixElementsSum(testCase.clone()),6);
     }//void test6() {
 
     @Test
@@ -85,9 +86,9 @@ class MatrixElementsSumTest {
         int[][] testCase=new int[][]{   {1,2,3,4,5}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),15);
+                matrixElementsSum(testCase.clone()),15);
     }//void test7() {
 
     @Test
@@ -97,9 +98,9 @@ class MatrixElementsSumTest {
                                         {10}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),17);
+                matrixElementsSum(testCase.clone()),17);
     }//void test8() {
 
     @Test
@@ -110,9 +111,9 @@ class MatrixElementsSumTest {
                                         {9,1,2}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),15);
+                matrixElementsSum(testCase.clone()),15);
     }//void test9() {
 
     @Test
@@ -120,8 +121,8 @@ class MatrixElementsSumTest {
         int[][] testCase=new int[][]{{1}};
         assertTimeout(Duration.ofSeconds(3),()->
                 new MatrixElementsSum().matrixElementsSum(
-                        testCase));
+                        testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase),1);
+                matrixElementsSum(testCase.clone()),1);
     }//void test10() {
 }//class MatrixElementsSumTest {
