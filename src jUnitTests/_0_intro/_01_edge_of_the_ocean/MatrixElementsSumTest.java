@@ -19,7 +19,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         Helpers.deepCopy(testCase)));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),9);
+                matrixElementsSum(Helpers.deepCopy(testCase)),9);
     }//void test1() {
 
     @Test
@@ -31,7 +31,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),9);
+                matrixElementsSum(Helpers.deepCopy(testCase)),9);
     }//void test2() {
 
     @Test
@@ -43,7 +43,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),18);
+                matrixElementsSum(Helpers.deepCopy(testCase)),18);
     }//void test3() {
 
     @Test
@@ -53,7 +53,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),0);
+                matrixElementsSum(Helpers.deepCopy(testCase)),0);
     }//void test4() {
 
     @Test
@@ -65,7 +65,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),5);
+                matrixElementsSum(Helpers.deepCopy(testCase)),5);
     }//void test5() {
 
     @Test
@@ -78,7 +78,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),6);
+                matrixElementsSum(Helpers.deepCopy(testCase)),6);
     }//void test6() {
 
     @Test
@@ -88,7 +88,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),15);
+                matrixElementsSum(Helpers.deepCopy(testCase)),15);
     }//void test7() {
 
     @Test
@@ -100,7 +100,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),17);
+                matrixElementsSum(Helpers.deepCopy(testCase)),17);
     }//void test8() {
 
     @Test
@@ -113,7 +113,7 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),15);
+                matrixElementsSum(Helpers.deepCopy(testCase)),15);
     }//void test9() {
 
     @Test
@@ -123,6 +123,6 @@ class MatrixElementsSumTest {
                 new MatrixElementsSum().matrixElementsSum(
                         testCase.clone()));
         assertEquals(new MatrixElementsSum().
-                matrixElementsSum(testCase.clone()),1);
+                matrixElementsSum(Helpers.deepCopy(testCase)),1);
     }//void test10() {
 }//class MatrixElementsSumTest {
