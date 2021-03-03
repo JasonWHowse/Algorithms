@@ -6,9 +6,7 @@ package _0_intro._03_exploring_the_waters;
 
 import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.CoreMatchers.*;
 

@@ -31,4 +31,12 @@ public class Helpers{
         }
         return copy;
     }
+
+    public static boolean[][] deepCopy (boolean[][] original){
+        boolean[][] copy= original.clone();
+        for(int i=0;i<original.length;i++){
+            copy[i]=original[i].clone();
+        }
+        return copy;
+    }
 }
