@@ -2,7 +2,7 @@
  * Authored by: Jason Wesley Howse
  */
 
-package _0_intro._07_through_the_fog;
+package _0_intro._06_through_the_fog;
 
 import org.junit.jupiter.api.Test;
 import java.time.Duration;

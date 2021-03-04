@@ -2,7 +2,7 @@
  * Authored by: Jason Wesley Howse
  */
 
-package _0_intro._06_diving_deeper;
+package _0_intro._07_diving_deeper;
 import static java.lang.Character.isDigit;
 
 public class FirstDigit {

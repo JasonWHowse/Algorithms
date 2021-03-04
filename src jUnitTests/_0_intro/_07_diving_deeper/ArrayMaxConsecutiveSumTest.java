@@ -2,11 +2,10 @@
  * Authored by: Jason Wesley Howse
  */
 
-package _0_intro._06_diving_deeper;
+package _0_intro._07_diving_deeper;
 
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
