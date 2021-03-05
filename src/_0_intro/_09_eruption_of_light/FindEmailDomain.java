@@ -20,7 +20,6 @@ examples of correct and incorrect email addresses.
 Given a valid email address, find its domain part.
  */
 
-    //todo: finish class
     String findEmailDomain(String address) {
         return address.split("@")[address.split("@").length-1];
     }//String findEmailDomain(String address) {
