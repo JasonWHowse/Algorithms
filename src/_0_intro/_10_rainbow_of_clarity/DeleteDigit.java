@@ -16,7 +16,7 @@ digit of the given number.
         int max=0;
         for(int i=1;i<n;i*=10){
             max=Math.max(max,(n%(i))+((n/(i*10))*i));
-        }
+        }//for(int i=1;i<n;i*=10){
         return max;
     }//int deleteDigit(int n) {
 
