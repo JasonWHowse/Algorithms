@@ -4,11 +4,9 @@
 
 package _0_intro._11_land_of_logic;
 
-import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.hamcrest.CoreMatchers.*;
 
 class MessageFromBinaryCodeTest {
 

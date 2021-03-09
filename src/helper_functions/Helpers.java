@@ -53,4 +53,8 @@ public class Helpers{
 //        }//
 //        return copy;
 //    }//
+//    public static Collection<?> deepCopy1(Collection<?> original){
+//        Collection<?> copy=;
+//        return copy;
+//    }
 }//public class Helpers{
