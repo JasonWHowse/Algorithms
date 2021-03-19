@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Algorithms.src._0_intro._00_the_journey_begins;
 
 namespace Algorithms._0_intro._00_the_journey_begins{
     [TestClass()]

@@ -17,14 +17,8 @@ public class CheckPalindrome {
 Given the string, check if it is a palindrome
  */
 
-    public boolean checkPalindrome(String inputString) {
-        int sLen = inputString.length() - 1;
-        for (int i = 0; i < (sLen + 1) / 2; i++) {
-            if (inputString.charAt(i) != (inputString.charAt(sLen - i))) {
-                return false;
-            }//if (inputString.charAt(i) != (inputString.charAt((sLen - 1) - i))) {
-        }//for (int i = 0; i < sLen / 2; i++) {
-        return true;
+    boolean checkPalindrome(String inputString) {
+        return inputString.equals(new StringBuilder(inputString).reverse().toString());
     }//boolean checkPalindrome(String inputString) {
 
 /*
