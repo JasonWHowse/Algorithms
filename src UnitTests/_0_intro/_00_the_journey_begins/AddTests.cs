@@ -1,10 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Algorithms.src._0_intro._00_the_journey_begins;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Algorithms.src._0_intro._00_the_journey_begins.Tests {
+namespace Algorithms._0_intro._00_the_journey_begins{
     [TestClass()]
     public class AddTests {
 
@@ -62,8 +58,8 @@ namespace Algorithms.src._0_intro._00_the_journey_begins.Tests {
             test(testCase1, testCase2, solution);
         }//public void test6() {
 
-        private void test(int testCase1,int testCase2,int solution) {
-            Assert.AreEqual(solution,new Add().add(testCase1,testCase2));
+        private void test(int testCase1, int testCase2, int solution) {
+            Assert.AreEqual(solution, new Add().add(testCase1, testCase2));
         }//private void test(int testCase1,int testCase2,int solution) {
     }//public class AddTests {
 }//namespace Algorithms.src._0_intro._00_the_journey_begins.Tests {
