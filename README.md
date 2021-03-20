@@ -8,6 +8,9 @@ The algorithms are practice from the https://app.codesignal.com/ website uploade
 
 using nuget packages for the c# testing
 coverlet.collector (3.0.3)
+
 Microsoft.NET.Test.Sdk (16.9.1)
+
 MSTest.TestAdapter (2.2.3)
+
 MSTest.TestFramework (2.2.3)
