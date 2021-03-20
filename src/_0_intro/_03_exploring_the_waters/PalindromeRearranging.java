@@ -16,26 +16,16 @@ be rearranged to form a palindrome.
     boolean palindromeRearranging(String inputString) {
         char oddChar='0';
         for(int i=0;i<inputString.length();i++){
-            if(charCounter(inputString,inputString.charAt(i))%2!=0){
+            if((inputString.length()-inputString.replace(inputString.charAt(i)+"","").length())%2==1){
                 if(oddChar=='0'){
                     oddChar=inputString.charAt(i);
                 }else if(oddChar!=inputString.charAt(i)){//if(oddChar=='0'){
                     return false;
                 }//else if(oddChar!=inputString.charAt(i)){
-            }//if(charCounter(inputString,inputString.charAt(i))%2!=0){
+            }//if((inputString.length()-inputString.replace(inputString.charAt(i)+"","").length())%2==1){
         }//for(int i=0;i<inputString.length();i++){
         return true;
     }//boolean palindromeRearranging(String inputString) {
-
-    private int charCounter(String iS,char iC){
-        int count=0;
-        for(int i=0;i<iS.length();i++){
-            if(iC==iS.charAt(i)){
-                count++;
-            }//if(iC==iS.charAt(i)){
-        }//for(int i=0;i<iS.length();i++){
-        return count;
-    }//private int charCounter(String iS,char iC){
 
 /*
 Input/Output
