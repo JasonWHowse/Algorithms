@@ -1,38 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Algorithms._0_intro._00_the_journey_begins {
+﻿namespace Algorithms.src._0_intro._00_the_journey_begins {
     public class Add {
 
         /*
-         Write a function that returns the sum of two numbers.
 
-    Example
+Write a function that returns the sum of two numbers.
 
-    For param1 = 1 and param2 = 2, the output should be
-    add(param1, param2) = 3.
+Example
 
-        Input/Output
+For param1 = 1 and param2 = 2, the output should be
+add(param1, param2) = 3.
 
-    [execution time limit] 3 seconds (cs)
+Input/Output
 
-    [input] integer param1
+[execution time limit] 3 seconds (cs)
 
-    Guaranteed constraints:
-    -1000 ≤ param1 ≤ 1000.
+[input] integer param1
 
-    [input] integer param2
+Guaranteed constraints:
+-1000 ≤ param1 ≤ 1000.
 
-    Guaranteed constraints:
-    -1000 ≤ param2 ≤ 1000.
+[input] integer param2
 
-    [output] integer
+Guaranteed constraints:
+-1000 ≤ param2 ≤ 1000.
 
-    The sum of the two inputs.
+[output] integer
+
+The sum of the two inputs.
+
          */
 
-        public int add(int param1, int param2) {
+        public
+        int add(int param1, int param2) {
             return param1 + param2;
         }//public int add(int param1, int param2) {
     }//public class Add {

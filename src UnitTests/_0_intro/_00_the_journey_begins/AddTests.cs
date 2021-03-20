@@ -1,12 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Algorithms.src._0_intro._00_the_journey_begins;
+﻿using Algorithms.src._0_intro._00_the_journey_begins;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Algorithms._0_intro._00_the_journey_begins{
+namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
     [TestClass()]
     public class AddTests {
 
+        private const int timeout = 3000;
 
-        [TestMethod(), Timeout(3000)]
+        [TestMethod(), Timeout(timeout)]
         public void test1() {
             int testCase1 = 1;
             int testCase2 = 2;
@@ -15,7 +16,7 @@ namespace Algorithms._0_intro._00_the_journey_begins{
         }//public void test1() {
 
 
-        [TestMethod(), Timeout(3000)]
+        [TestMethod(), Timeout(timeout)]
         public void test2() {
             int testCase1 = 0;
             int testCase2 = 1000;
@@ -24,7 +25,7 @@ namespace Algorithms._0_intro._00_the_journey_begins{
         }//public void test2() {
 
 
-        [TestMethod(), Timeout(3000)]
+        [TestMethod(), Timeout(timeout)]
         public void test3() {
             int testCase1 = 2;
             int testCase2 = -39;
@@ -33,7 +34,7 @@ namespace Algorithms._0_intro._00_the_journey_begins{
         }//public void test3() {
 
 
-        [TestMethod(), Timeout(3000)]
+        [TestMethod(), Timeout(timeout)]
         public void test4() {
             int testCase1 = 99;
             int testCase2 = 100;
@@ -42,7 +43,7 @@ namespace Algorithms._0_intro._00_the_journey_begins{
         }//public void test4() {
 
 
-        [TestMethod(), Timeout(3000)]
+        [TestMethod(), Timeout(timeout)]
         public void test5() {
             int testCase1 = -100;
             int testCase2 = 100;
@@ -51,7 +52,7 @@ namespace Algorithms._0_intro._00_the_journey_begins{
         }//public void test5() {
 
 
-        [TestMethod(), Timeout(3000)]
+        [TestMethod(), Timeout(timeout)]
         public void test6() {
             int testCase1 = -1000;
             int testCase2 = -1000;
@@ -63,4 +64,4 @@ namespace Algorithms._0_intro._00_the_journey_begins{
             Assert.AreEqual(solution, new Add().add(testCase1, testCase2));
         }//private void test(int testCase1,int testCase2,int solution) {
     }//public class AddTests {
-}//namespace Algorithms.src._0_intro._00_the_journey_begins.Tests {
+}//namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
