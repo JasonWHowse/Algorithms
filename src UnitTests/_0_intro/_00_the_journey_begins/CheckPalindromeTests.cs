@@ -8,81 +8,81 @@ namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
         private const int timeout = 3000;
 
         [TestMethod(), Timeout(timeout)]
-        public void test1() {
+        public void Test1() {
             var testCase = "aabaa";
             var solution = true;
-            test(testCase, solution);
-        }//public void test1() {
+            Test(testCase, solution);
+        }//public void Test1() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test2() {
+        public void Test2() {
             var testCase = "abac";
             var solution = false;
-            test(testCase, solution);
-        }//public void test2() {
+            Test(testCase, solution);
+        }//public void Test2() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test3() {
+        public void Test3() {
             var testCase = "a";
             var solution = true;
-            test(testCase, solution);
-        }//public void test3() {
+            Test(testCase, solution);
+        }//public void Test3() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test4() {
+        public void Test4() {
             var testCase = "az";
             var solution = false;
-            test(testCase, solution);
-        }//public void test4() {
+            Test(testCase, solution);
+        }//public void Test4() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test5() {
+        public void Test5() {
             var testCase = "abacaba";
             var solution = true;
-            test(testCase, solution);
-        }//public void test5() {
+            Test(testCase, solution);
+        }//public void Test5() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test6() {
+        public void Test6() {
             var testCase = "z";
             var solution = true;
-            test(testCase, solution);
-        }//public void test6() {
+            Test(testCase, solution);
+        }//public void Test6() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test7() {
+        public void Test7() {
             var testCase = "aaabaaaa";
             var solution = false;
-            test(testCase, solution);
-        }//public void test7() {
+            Test(testCase, solution);
+        }//public void Test7() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test8() {
+        public void Test8() {
             var testCase = "zzzazzazz";
             var solution = false;
-            test(testCase, solution);
-        }//public void test8() {
+            Test(testCase, solution);
+        }//public void Test8() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test9() {
+        public void Test9() {
             var testCase = "hlbeeykoqqqqokyeeblh";
             var solution = true;
-            test(testCase, solution);
-        }//public void test9() {
+            Test(testCase, solution);
+        }//public void Test9() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test10() {
+        public void Test10() {
             var testCase = "hlbeeykoqqqokyeeblh";
             var solution = true;
-            test(testCase, solution);
-        }//public void test10() {
+            Test(testCase, solution);
+        }//public void Test10() {
 
-        private void test(string testCase,bool solution) {
+        private void Test(string testCase,bool solution) {
             if (solution) {
                 Assert.IsTrue(new CheckPalindrome().checkPalindrome(testCase));
             } else {//if (solution) {
                 Assert.IsFalse(new CheckPalindrome().checkPalindrome(testCase));
             }//else {
-        }//private void test(String testCase,bool solution) {
+        }//private void Test(String testCase,bool solution) {
     }//public class CheckPalindromeTests {
 }//namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {

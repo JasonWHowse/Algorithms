@@ -8,78 +8,78 @@ namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
         private const int timeout = 3000;
 
         [TestMethod(), Timeout(timeout)]
-        public void test1() {
+        public void Test1() {
             int testCase = 1905;
             int solution = 20;
-            test(testCase, solution);
-        }//public void test1() {
+            Test(testCase, solution);
+        }//public void Test1() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test2() {
+        public void Test2() {
             int testCase = 1700;
             int solution = 17;
-            test(testCase, solution);
-        }//public void test2() {
+            Test(testCase, solution);
+        }//public void Test2() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test3() {
+        public void Test3() {
             int testCase = 1988;
             int solution = 20;
-            test(testCase, solution);
-        }//public void test3() {
+            Test(testCase, solution);
+        }//public void Test3() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test4() {
+        public void Test4() {
             int testCase = 2000;
             int solution = 20;
-            test(testCase, solution);
-        }//public void test4() {
+            Test(testCase, solution);
+        }//public void Test4() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test5() {
+        public void Test5() {
             int testCase = 2001;
             int solution = 21;
-            test(testCase, solution);
-        }//public void test5() {
+            Test(testCase, solution);
+        }//public void Test5() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test6() {
+        public void Test6() {
             int testCase = 200;
             int solution = 2;
-            test(testCase, solution);
-        }//public void test6() {
+            Test(testCase, solution);
+        }//public void Test6() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test7() {
+        public void Test7() {
             int testCase = 374;
             int solution = 4;
-            test(testCase, solution);
-        }//public void test7() {
+            Test(testCase, solution);
+        }//public void Test7() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test8() {
+        public void Test8() {
             int testCase = 45;
             int solution = 1;
-            test(testCase, solution);
-        }//public void test8() {
+            Test(testCase, solution);
+        }//public void Test8() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test9() {
+        public void Test9() {
             int testCase = 8;
             int solution = 1;
-            test(testCase, solution);
-        }//public void test9() {
+            Test(testCase, solution);
+        }//public void Test9() {
 
-        private void test(int testCase, int solution) {
+        private void Test(int testCase, int solution) {
             Assert.AreEqual(solution, new CenturyFromYear().centuryFromYear(testCase));
-        }//private void test(int testCase, int solution) {
+        }//private void Test(int testCase, int solution) {
     }//public class CenturyFromYearTests {
 }//namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {

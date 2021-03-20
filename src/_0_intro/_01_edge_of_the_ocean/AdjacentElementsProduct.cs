@@ -34,7 +34,7 @@ The largest product of adjacent elements.
             int max = inputArray[0] * inputArray[1];
             for(int i = 2; i < inputArray.Length; i++) {
                 max = System.Math.Max(max, inputArray[i - 1] * inputArray[i]);
-            }
+            }//for(int i = 2; i < inputArray.Length; i++) {
             return max;
         }//int adjacentElementsProduct(int[] inputArray) {
     }//public class AdjacentElementsProduct {

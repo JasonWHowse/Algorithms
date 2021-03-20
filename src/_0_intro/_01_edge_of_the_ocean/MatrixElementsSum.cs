@@ -56,7 +56,7 @@ The total price of all the rooms that are suitable for the CodeBots to live in.
             int output= 0;
             for(int y = 0; y < matrix[0].Length; y++) {
                 for(int x = 0; x < matrix.Length; x++) {
-                    output= output+matrix[x][y];
+                    output+= matrix[x][y];
                     if (matrix[x][y] == 0) {
                         break;
                     }//if (matrix[x][y] == 0) {

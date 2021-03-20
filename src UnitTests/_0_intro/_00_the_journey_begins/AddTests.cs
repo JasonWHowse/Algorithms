@@ -8,60 +8,60 @@ namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
         private const int timeout = 3000;
 
         [TestMethod(), Timeout(timeout)]
-        public void test1() {
+        public void Test1() {
             int testCase1 = 1;
             int testCase2 = 2;
             int solution = 3;
-            test(testCase1, testCase2, solution);
-        }//public void test1() {
+            Test(testCase1, testCase2, solution);
+        }//public void Test1() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test2() {
+        public void Test2() {
             int testCase1 = 0;
             int testCase2 = 1000;
             int solution = 1000;
-            test(testCase1, testCase2, solution);
-        }//public void test2() {
+            Test(testCase1, testCase2, solution);
+        }//public void Test2() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test3() {
+        public void Test3() {
             int testCase1 = 2;
             int testCase2 = -39;
             int solution = -37;
-            test(testCase1, testCase2, solution);
-        }//public void test3() {
+            Test(testCase1, testCase2, solution);
+        }//public void Test3() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test4() {
+        public void Test4() {
             int testCase1 = 99;
             int testCase2 = 100;
             int solution = 199;
-            test(testCase1, testCase2, solution);
-        }//public void test4() {
+            Test(testCase1, testCase2, solution);
+        }//public void Test4() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test5() {
+        public void Test5() {
             int testCase1 = -100;
             int testCase2 = 100;
             int solution = 0;
-            test(testCase1, testCase2, solution);
-        }//public void test5() {
+            Test(testCase1, testCase2, solution);
+        }//public void Test5() {
 
 
         [TestMethod(), Timeout(timeout)]
-        public void test6() {
+        public void Test6() {
             int testCase1 = -1000;
             int testCase2 = -1000;
             int solution = -2000;
-            test(testCase1, testCase2, solution);
-        }//public void test6() {
+            Test(testCase1, testCase2, solution);
+        }//public void Test6() {
 
-        private void test(int testCase1, int testCase2, int solution) {
+        private void Test(int testCase1, int testCase2, int solution) {
             Assert.AreEqual(solution, new Add().add(testCase1, testCase2));
-        }//private void test(int testCase1,int testCase2,int solution) {
+        }//private void Test(int testCase1,int testCase2,int solution) {
     }//public class AddTests {
 }//namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {

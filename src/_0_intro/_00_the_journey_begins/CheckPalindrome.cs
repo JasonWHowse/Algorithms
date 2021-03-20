@@ -1,4 +1,6 @@
-﻿namespace Algorithms.src._0_intro._00_the_journey_begins {
+﻿using System.Linq;
+
+namespace Algorithms.src._0_intro._00_the_journey_begins {
     public class CheckPalindrome {
 
         /*
@@ -32,12 +34,7 @@ true if inputString is a palindrome, false otherwise.
 
         public
         bool checkPalindrome(string g) {
-            for (int i = 0; i < g.Length / 2; i++) {
-                if (g[i] != g[(g.Length - 1) - i]) {
-                    return false;
-                }//if(g[i]!=g[(g.Length-1)-i]){
-            }//for (int i = 0; i < g.Length; i++) {
-            return true;
+            return g.Equals(new string(g.ToCharArray().Reverse().ToArray()));
         }//public bool checkPalindrome(string g) {
     }//public class CheckPalindrome {
 }//namespace Algorithms.src._0_intro._00_the_journey_begins {

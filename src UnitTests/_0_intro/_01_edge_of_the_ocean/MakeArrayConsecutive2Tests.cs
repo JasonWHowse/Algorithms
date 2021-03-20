@@ -8,42 +8,42 @@ namespace Algorithms.src_UnitTests._0_intro._01_edge_of_the_ocean {
         private const int timeout = 3000;
 
         [TestMethod(), Timeout(timeout)]
-        public void test1() {
+        public void Test1() {
             int[] testCase = {6, 2, 3, 8};
             var solution = 3;
-            test(testCase, solution);
-        }//public void test1() {
+            Test(testCase, solution);
+        }//public void Test1() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test2() {
+        public void Test2() {
             int[] testCase = {0, 3};
             var solution = 2;
-            test(testCase, solution);
-        }//public void test2() {
+            Test(testCase, solution);
+        }//public void Test2() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test3() {
+        public void Test3() {
             int[] testCase = {5, 4, 6};
             var solution = 0;
-            test(testCase, solution);
-        }//public void test3() {
+            Test(testCase, solution);
+        }//public void Test3() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test4() {
+        public void Test4() {
             int[] testCase = {6, 3};
             var solution = 2;
-            test(testCase, solution);
-        }//public void test4() {
+            Test(testCase, solution);
+        }//public void Test4() {
 
         [TestMethod(), Timeout(timeout)]
-        public void test5() {
+        public void Test5() {
             int[] testCase = {1};
             var solution = 0;
-            test(testCase, solution);
-        }//public void test5() {
+            Test(testCase, solution);
+        }//public void Test5() {
 
-        private void test(int[] testCase,int solution) {
+        private void Test(int[] testCase,int solution) {
             Assert.AreEqual(solution,new MakeArrayConsecutive2().makeArrayConsecutive2(testCase));
-        }//private void test(int[] testCase,int solution) {
+        }//private void Test(int[] testCase,int solution) {
     }//public class MakeArrayConsecutive2Tests {
 }//namespace Algorithms.src_UnitTests._0_intro._01_edge_of_the_ocean {
