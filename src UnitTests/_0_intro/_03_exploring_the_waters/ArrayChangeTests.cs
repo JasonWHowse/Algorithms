@@ -66,8 +66,8 @@ namespace Algorithms.src_UnitTests._0_intro._03_exploring_the_waters {
         [TestMethod(), Timeout(timeout)]
         public void Test9() {
             int[] testCase = { -24875, -6401, 58256, 44456, 2244, -25333, -42389, -5975, 7650, -46343, -62011, -55366, 7802, -37699, 15461, 13309, -58664, 54557, 56324, -34397, -33024, -21934, -18861, -23196, 56542, -63986, 59833, -45610, -16948, 399, -7405, 54701, -57348, -32627, 65534, 615 };
-            var solution = 0000;
-            Test(testCase, 2199614);
+            var solution = 2199614;
+            Test(testCase, solution);
         }//public void Test9() {
 
         [TestMethod(), Timeout(timeout)]
