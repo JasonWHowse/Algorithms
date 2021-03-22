@@ -30,7 +30,7 @@ Guaranteed constraints:
         public
         string buildPalindrome(string st) {
             for (int i = -1; i < st.Length; i++) {
-                if (st.Substring(i + 1).Equals(new string(st.ToCharArray().Reverse().ToArray()).Substring(0, st.Length - i - 1))) {
+                if (st[(i + 1)..].Equals(new string(st.ToCharArray().Reverse().ToArray()).Substring(0, st.Length - i - 1))) {
                     return st + new string(st.ToCharArray().Reverse().ToArray())[(st.Length - i - 1)..];
                 }//if (st.Substring(i + 1).Equals(new string(st.ToCharArray().Reverse().ToArray()).Substring(0, st.Length - i - 1))) {
             }//for (int i = -1; i < st.Length; i++) {

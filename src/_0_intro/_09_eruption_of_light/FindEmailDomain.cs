@@ -30,7 +30,7 @@ Guaranteed constraints:
 
         public
         string findEmailDomain(string address) {
-            return (address.Split('@'))[(address.Split('@')).Length - 1];
+            return address.Split('@')[^1];
         }//string findEmailDomain(string address) {
     }//public class FindEmailDomain {
 }//namespace Algorithms.src._0_intro._09_eruption_of_light {
