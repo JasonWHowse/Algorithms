@@ -89,6 +89,6 @@ namespace Algorithms.src_UnitTests._0_intro._07_diving_deeper {
 
         private void Test(int[] testCase1, int testCase2, int solution) {
             Assert.AreEqual(solution, new ArrayMaxConsecutiveSum().arrayMaxConsecutiveSum(testCase1, testCase2));
-        }//TODO:fix
+        }//private void Test(int[] testCase1, int testCase2, int solution) {
     }//public class ArrayMaxConsecutiveSumTests {
 }//namespace Algorithms.src_UnitTests._0_intro._07_diving_deeper {

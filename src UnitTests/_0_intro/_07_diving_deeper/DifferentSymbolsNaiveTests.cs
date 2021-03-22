@@ -44,6 +44,6 @@ namespace Algorithms.src_UnitTests._0_intro._07_diving_deeper {
 
         private void Test(string testCase, int solution) {
             Assert.AreEqual(solution, new DifferentSymbolsNaive().differentSymbolsNaive(testCase));
-        }//TODO:fix
+        }//private void Test(string testCase, int solution) {
     }//public class DifferentSymbolsNaiveTests {
 }//namespace Algorithms.src_UnitTests._0_intro._07_diving_deeper {
