@@ -69,6 +69,6 @@ namespace Algorithms.src_UnitTests._1_the_core._00_intro_gates {
 
         private void Test(int testCase1, int testCase2, int testCase3, int testCase4, int solution) {
             Assert.AreEqual(solution, new PhoneCall().phoneCall(testCase1, testCase2, testCase3, testCase4));
-        }//TODO:fix
+        }//private void Test(int testCase1, int testCase2, int testCase3, int testCase4, int solution) {
     }//public class PhoneCallTests {
 }//namespace Algorithms.src_UnitTests._1_the_core._00_intro_gates {

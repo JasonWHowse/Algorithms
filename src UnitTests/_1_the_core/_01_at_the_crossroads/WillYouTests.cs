@@ -49,6 +49,6 @@ namespace Algorithms.src_UnitTests._1_the_core._01_at_the_crossroads {
             } else {//if (solution) {
                 Assert.IsFalse(new WillYou().willYou(testCase1, testCase2, testCase3));
             }//else {
-        }//TODO:fix
+        }//private void Test(bool testCase1, bool testCase2, bool testCase3, bool solution) {
     }//public class WillYouTests {
 }//namespace Algorithms.src_UnitTests._1_the_core._01_at_the_crossroads {

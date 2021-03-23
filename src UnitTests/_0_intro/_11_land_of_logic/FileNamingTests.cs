@@ -51,6 +51,6 @@ namespace Algorithms.src_UnitTests._0_intro._11_land_of_logic {
 
         private void Test(string[] testCase, string[] solution) {
             CollectionAssert.AreEqual(solution, new FileNaming().fileNaming(testCase));
-        }//TODO:fix
+        }//private void Test(string[] testCase, string[] solution) {
     }//public class FileNamingTests {
 }//namespace Algorithms.src_UnitTests._0_intro._11_land_of_logic {
