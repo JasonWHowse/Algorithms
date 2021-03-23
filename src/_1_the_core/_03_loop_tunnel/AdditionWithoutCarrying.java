@@ -28,7 +28,7 @@ with column addition.
             m*=10;
             param1/=10;
             param2/=10;
-        }
+        }//while(param1!=0||param2!=0){
         return out;
     }//int additionWithoutCarrying(int param1, int param2) {
 
