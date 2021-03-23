@@ -15,7 +15,7 @@ For time = "02:76", the output should be
 validTime(time) = false.
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] string time
 

@@ -14,7 +14,7 @@ We can rearrange "aabb" to make "abba", which is a palindrome.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] string inputString
 

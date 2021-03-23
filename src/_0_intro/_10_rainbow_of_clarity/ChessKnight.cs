@@ -23,7 +23,7 @@ chessKnight(cell) = 6.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] string cell
 

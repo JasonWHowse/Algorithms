@@ -14,7 +14,7 @@ alternatingSums(a) = [180, 105].
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] array.integer a
 

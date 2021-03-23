@@ -18,7 +18,7 @@ All possible sums of 2 consecutive elements are:
 Thus, the answer is 8.
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] array.integer inputArray
 

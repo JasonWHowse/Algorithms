@@ -27,7 +27,7 @@ The plant first reaches a height of 910 on day 10.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer upSpeed
 

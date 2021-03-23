@@ -17,7 +17,7 @@ For address = "fully-qualified-domain@codesignal.com", the output should be
 findEmailDomain(address) = "codesignal.com".
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] string address
 

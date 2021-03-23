@@ -17,7 +17,7 @@ lineEncoding(s) = "2a3bc".
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] string s
 

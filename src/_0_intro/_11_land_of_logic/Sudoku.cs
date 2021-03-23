@@ -44,7 +44,7 @@ These examples are represented on the image below.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] array.array.integer grid
 

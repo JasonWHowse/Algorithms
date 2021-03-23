@@ -12,7 +12,7 @@ arrayReplace(inputArray, elemToReplace, substitutionElem) = [3, 2, 3].
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] array.integer inputArray
 

@@ -13,7 +13,7 @@ For n = 1001, the output should be
 deleteDigit(n) = 101.
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer n
 

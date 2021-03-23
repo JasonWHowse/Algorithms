@@ -14,7 +14,7 @@ longestDigitsPrefix(inputString) = "123".
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] string inputString
 

@@ -17,7 +17,7 @@ For name = "2w2", the output should be
 variableName(name) = false.
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] string name
 

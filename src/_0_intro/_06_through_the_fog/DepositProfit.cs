@@ -20,7 +20,7 @@ Thus, it will take 3 years for your balance to pass the threshold, so the answer
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer deposit
 

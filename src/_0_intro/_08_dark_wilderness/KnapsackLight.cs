@@ -26,7 +26,7 @@ You can't take both items, but you can take any of them.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer value1
 

@@ -14,7 +14,7 @@ spiralNumbers(n) = [[1, 2, 3],
                     [7, 6, 5]]
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer n
 

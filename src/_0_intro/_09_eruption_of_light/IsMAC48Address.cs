@@ -21,7 +21,7 @@ For inputString = "not a MAC-48 address", the output should be
 isMAC48Address(inputString) = false.
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] string inputString
 

@@ -19,7 +19,7 @@ digitDegree(n) = 2.
 9 + 1 = 10 -> 1 + 0 = 1.
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer n
 
