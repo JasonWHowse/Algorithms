@@ -72,6 +72,6 @@ namespace Algorithms.src_UnitTests._1_the_core._03_loop_tunnel {
 
         private void Test(int testCase, int solution) {
             Assert.AreEqual(solution, new AppleBoxes().appleBoxes(testCase));
-        }//TODO:fix
+        }//private void Test(int testCase, int solution) {
     }//public class AppleBoxesTests {
 }//namespace Algorithms.src_UnitTests._1_the_core._03_loop_tunnel {
