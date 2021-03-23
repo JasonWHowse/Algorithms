@@ -14,7 +14,7 @@ Each child will eat 3 pieces. So the answer is 9.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer n
 

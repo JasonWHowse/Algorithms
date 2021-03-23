@@ -25,7 +25,7 @@ Mary doesn't believe that not beautiful people can be loved.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] boolean young
 

@@ -14,7 +14,7 @@ Given a = 2 and b = 7 the array is: [2, 3, 4, 5, 6, 7]. Converting the numbers t
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer a
 

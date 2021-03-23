@@ -19,7 +19,7 @@ The largest integer divisible by 3 and not larger than 10 is 9.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer divisor
 

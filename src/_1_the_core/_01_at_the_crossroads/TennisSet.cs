@@ -26,7 +26,7 @@ This set will continue until one of these players wins their 7th game, so this c
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer score1
 

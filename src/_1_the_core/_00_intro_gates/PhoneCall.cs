@@ -24,7 +24,7 @@ Thus, the longest call you can make is 1 + 9 + 4 = 14 minutes long.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer min1
 

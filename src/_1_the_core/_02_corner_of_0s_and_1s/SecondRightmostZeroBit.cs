@@ -18,7 +18,7 @@ Thus, the answer is 23 = 8.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer n
 

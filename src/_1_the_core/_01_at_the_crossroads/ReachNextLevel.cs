@@ -15,7 +15,7 @@ For experience = 10, threshold = 15, and reward = 4, the output should be
 reachNextLevel(experience, threshold, reward) = false.
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer experience
 

@@ -27,7 +27,7 @@ So the answer is 24 = 16.
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer n
 

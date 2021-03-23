@@ -14,7 +14,7 @@ The two equal numbers are a and c. The third number (b) equals 7, which is the a
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer a
 

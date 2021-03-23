@@ -19,7 +19,7 @@ Here is what the theater looks like:
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] integer nCols
 

@@ -23,7 +23,7 @@ After packing these into one number we get 00000000 01010101 00011000 (spaces ar
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] array.integer a
 
