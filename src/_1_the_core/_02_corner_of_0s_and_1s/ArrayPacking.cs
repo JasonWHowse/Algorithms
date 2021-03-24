@@ -38,9 +38,9 @@ Guaranteed constraints:
         public
         int arrayPacking(int[] a) {
             for (int i = a.Length - 2; i >= 0; i--) {
-                a[a.Length - 1] = (a[a.Length - 1] << 8) + a[i];
+                a[^1] = (a[^1] << 8) + a[i];
             }//for(int i=a.Length-2;i>=0;i--) {
-            return a[a.Length - 1];
+            return a[^1];
         }//int arrayPacking(int[] a) {
     }//public class ArrayPacking {
 }//namespace Algorithms.src._1_the_core._02_corner_of_0s_and_1s {

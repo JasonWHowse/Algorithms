@@ -37,7 +37,7 @@ a ≤ b ≤ 10.
                 int c = a;
                 while (c != 0) {
                     output+= c != (c >> 1) << 1 ? 1 : 0;
-                    c = c >> 1;
+                    c >>= 1;
                 }//while(c!=0){
             }//for(;a<=b;a++){
             return output;

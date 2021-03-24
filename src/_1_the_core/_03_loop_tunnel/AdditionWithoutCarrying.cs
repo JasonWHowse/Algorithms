@@ -53,7 +53,7 @@ The result that the little boy will get by using column addition without carryin
             int m = 1;
             int output = 0;
             while (param1 != 0 || param2 != 0) {
-                output = output + ((param1 % 10 + param2 % 10) % 10) * m;
+                output += ((param1 % 10 + param2 % 10) % 10) * m;
                 m *= 10;
                 param1 /= 10;
                 param2 /= 10;

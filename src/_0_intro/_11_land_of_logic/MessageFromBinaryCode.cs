@@ -39,7 +39,7 @@ The decrypted message.
             string output = "";
             while (code.Length > 0) {
                 output += (char)Convert.ToInt32(code.Substring(0, 8),2);
-                code = code.Substring(8);
+                code = code[8..];
             }//while (code.Length > 0) {
             return output;
         }//string messageFromBinaryCode(string code) {

@@ -53,9 +53,9 @@ The number of black cells.
         int countBlackCells(int n, int m) {
             int output = 0;
             if (n > m) {
-                n = n ^ m;
+                n ^= m;
                 m = n ^ m;
-                n = n ^ m;
+                n ^= m;
             }
             int lastTrueIndex = 1;
             float slope = (float)n / (float)m;

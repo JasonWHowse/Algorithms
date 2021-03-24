@@ -33,7 +33,7 @@ Guaranteed constraints:
             }//if(product<2){
             for (int i = 9; i > 1; i--) {
                 if (product % i == 0) {
-                    output = output + i * degree;
+                    output += i * degree;
                     degree *= 10;
                     product /= i;
                     i++;

@@ -31,8 +31,7 @@ Guaranteed constraints:
         int sumUpNumbers(string inputString) {
             int output = 0;
             foreach(string s in new Regex("\\D").Split(inputString)) {
-                int number = 0;
-                int.TryParse(s, out number);
+                int.TryParse(s, out int number);
                 output += number;
             }//foreach(string s in new Regex("\\D").Split(inputString)) {
             return output;
