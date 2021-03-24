@@ -30,7 +30,7 @@ resulting array as the answer.
     int[] replaceMiddle(int[] arr) {
         if(arr.length%2==1){
             return arr;
-        }
+        }//if(arr.length%2==1){
         int[] c= Arrays.copyOf(arr,arr.length-1);
         c[(arr.length/2)-1]=arr[arr.length/2]+arr[(arr.length/2)-1];
         System.arraycopy(arr,(arr.length/2)+1,c,arr.length/2,(arr.length/2)-1);
