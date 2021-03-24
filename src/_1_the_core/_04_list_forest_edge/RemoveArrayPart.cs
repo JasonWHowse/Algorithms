@@ -14,7 +14,7 @@ removeArrayPart(inputArray, l, r) = [2, 3, 5].
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] array.integer inputArray
 

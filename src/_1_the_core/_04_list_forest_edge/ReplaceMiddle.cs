@@ -25,7 +25,7 @@ The middle is defined as a single element -5, so the initial array with no chang
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] array.integer arr
 

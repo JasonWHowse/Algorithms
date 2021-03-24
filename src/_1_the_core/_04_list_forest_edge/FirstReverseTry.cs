@@ -14,7 +14,7 @@ firstReverseTry(arr) = [5, 2, 3, 4, 1].
 
 Input/Output
 
-[execution time limit] 3 seconds (java)
+[execution time limit] 3 seconds (cs)
 
 [input] array.integer arr
 
