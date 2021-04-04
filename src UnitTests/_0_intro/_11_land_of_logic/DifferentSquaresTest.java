@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 
-import static helper_functions.Helpers.deepCopy;
+import static helper_functions.Helpers.deepClone;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
@@ -23,8 +23,8 @@ class DifferentSquaresTest {
                 {2,2,1}};
         int solution=6;
         assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSquares().differentSquares(deepCopy(testCase)));
-        assertEquals(new DifferentSquares().differentSquares(deepCopy(testCase)),solution);
+                new DifferentSquares().differentSquares(deepClone(testCase)));
+        assertEquals(new DifferentSquares().differentSquares(deepClone(testCase)),solution);
     }//void test1() {
 
     @Test
@@ -37,8 +37,8 @@ class DifferentSquaresTest {
                 {9,9,9,9,9}};
         int solution=1;
         assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSquares().differentSquares(deepCopy(testCase)));
-        assertEquals(new DifferentSquares().differentSquares(deepCopy(testCase)),solution);
+                new DifferentSquares().differentSquares(deepClone(testCase)));
+        assertEquals(new DifferentSquares().differentSquares(deepClone(testCase)),solution);
     }//void test2() {
 
     @Test
@@ -46,8 +46,8 @@ class DifferentSquaresTest {
         int[][] testCase={{3}};
         int solution=0;
         assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSquares().differentSquares(deepCopy(testCase)));
-        assertEquals(new DifferentSquares().differentSquares(deepCopy(testCase)),solution);
+                new DifferentSquares().differentSquares(deepClone(testCase)));
+        assertEquals(new DifferentSquares().differentSquares(deepClone(testCase)),solution);
     }//void test3() {
 
     @Test
@@ -55,8 +55,8 @@ class DifferentSquaresTest {
         int[][] testCase={{3,4,5,6,7,8,9}};
         int solution=0;
         assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSquares().differentSquares(deepCopy(testCase)));
-        assertEquals(new DifferentSquares().differentSquares(deepCopy(testCase)),solution);
+                new DifferentSquares().differentSquares(deepClone(testCase)));
+        assertEquals(new DifferentSquares().differentSquares(deepClone(testCase)),solution);
     }//void test4() {
 
     @Test
@@ -68,8 +68,8 @@ class DifferentSquaresTest {
                 {7}};
         int solution=0;
         assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSquares().differentSquares(deepCopy(testCase)));
-        assertEquals(new DifferentSquares().differentSquares(deepCopy(testCase)),solution);
+                new DifferentSquares().differentSquares(deepClone(testCase)));
+        assertEquals(new DifferentSquares().differentSquares(deepClone(testCase)),solution);
     }//void test5() {
 
     @Test
@@ -85,8 +85,8 @@ class DifferentSquaresTest {
                 {5,4,4,3,5,4,4,4}};
         int solution=54;
         assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSquares().differentSquares(deepCopy(testCase)));
-        assertEquals(new DifferentSquares().differentSquares(deepCopy(testCase)),solution);
+                new DifferentSquares().differentSquares(deepClone(testCase)));
+        assertEquals(new DifferentSquares().differentSquares(deepClone(testCase)),solution);
     }//void test6() {
 
     @Test
@@ -94,7 +94,7 @@ class DifferentSquaresTest {
         int[][] testCase={{1,1,1,1,1,1,2,2,2,3,3,3,9,9,9,2,3,9}};
         int solution=0;
         assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSquares().differentSquares(deepCopy(testCase)));
-        assertEquals(new DifferentSquares().differentSquares(deepCopy(testCase)),solution);
+                new DifferentSquares().differentSquares(deepClone(testCase)));
+        assertEquals(new DifferentSquares().differentSquares(deepClone(testCase)),solution);
     }//void test7() {
-}
+}//class DifferentSquaresTest {

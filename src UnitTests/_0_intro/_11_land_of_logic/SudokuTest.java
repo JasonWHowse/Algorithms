@@ -5,10 +5,8 @@
 package _0_intro._11_land_of_logic;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
-import static helper_functions.Helpers.deepCopy;
+import static helper_functions.Helpers.deepClone;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SudokuTest {
@@ -25,8 +23,8 @@ class SudokuTest {
                 {2,4,3,6,5,7,1,9,8},
                 {8,1,9,3,2,4,7,6,5}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertTrue(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertTrue(new Sudoku().sudoku(deepClone(testCase)));
     }//void test1() {
 
     @Test
@@ -41,8 +39,8 @@ class SudokuTest {
                 {2,4,3,6,5,7,1,9,8},
                 {8,1,9,3,2,4,7,6,5}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test2() {
 
     @Test
@@ -57,8 +55,8 @@ class SudokuTest {
                 {1,2,3,4,5,6,7,8,9},
                 {1,2,3,4,5,6,7,8,9}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test3() {
 
     @Test
@@ -73,8 +71,8 @@ class SudokuTest {
                 {2,4,5,6,3,7,1,9,8},
                 {8,1,9,3,2,4,7,6,5}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test4() {
 
     @Test
@@ -89,8 +87,8 @@ class SudokuTest {
                 {2,7,3,6,5,7,1,9,8},
                 {8,1,9,3,2,4,7,6,5}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test5() {
 
     @Test
@@ -105,8 +103,8 @@ class SudokuTest {
                 {4,6,5,8,7,9,3,2,1},
                 {7,9,8,2,1,3,6,5,4}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test6() {
 
     @Test
@@ -121,8 +119,8 @@ class SudokuTest {
                 {2,8,7,4,1,9,6,3,5},
                 {3,4,5,2,8,6,1,7,9}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test7() {
 
     @Test
@@ -137,8 +135,8 @@ class SudokuTest {
                 {5,5,5,5,5,5,5,5,5},
                 {5,5,5,5,5,5,5,5,5}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test8() {
 
     @Test
@@ -153,8 +151,8 @@ class SudokuTest {
                 {2,8,7,4,1,9,6,3,5},
                 {3,4,5,2,8,6,1,7,9}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test9() {
 
     @Test
@@ -169,8 +167,8 @@ class SudokuTest {
                 {2,5,7,4,1,9,6,3,5},
                 {3,4,5,2,8,6,1,7,9}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test10() {
 
     @Test
@@ -185,7 +183,7 @@ class SudokuTest {
                 {8,9,1,2,3,4,5,6,7},
                 {9,1,2,3,4,5,6,7,8}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Sudoku().sudoku(deepCopy(testCase)));
-        assertFalse(new Sudoku().sudoku(deepCopy(testCase)));
+                new Sudoku().sudoku(deepClone(testCase)));
+        assertFalse(new Sudoku().sudoku(deepClone(testCase)));
     }//void test11() {
-}
+}//class SudokuTest {

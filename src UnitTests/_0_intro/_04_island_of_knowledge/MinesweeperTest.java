@@ -6,10 +6,8 @@ package _0_intro._04_island_of_knowledge;
 
 import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
-import static helper_functions.Helpers.deepCopy;
+import static helper_functions.Helpers.deepClone;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
@@ -24,8 +22,8 @@ class MinesweeperTest {
                 {2,1,1},
                 {1,1,1}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Minesweeper().minesweeper(deepCopy(testCase)));
-        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepCopy(testCase)),is(solution));
+                new Minesweeper().minesweeper(deepClone(testCase)));
+        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepClone(testCase)),is(solution));
     }//void test1() {
 
     @Test
@@ -35,8 +33,8 @@ class MinesweeperTest {
         int[][] solution = {{0,0,0},
                 {0,0,0}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Minesweeper().minesweeper(deepCopy(testCase)));
-        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepCopy(testCase)),is(solution));
+                new Minesweeper().minesweeper(deepClone(testCase)));
+        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepClone(testCase)),is(solution));
     }//void test2() {
 
     @Test
@@ -48,8 +46,8 @@ class MinesweeperTest {
                 {3,4,3,3},
                 {1,2,3,1}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Minesweeper().minesweeper(deepCopy(testCase)));
-        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepCopy(testCase)),is(solution));
+                new Minesweeper().minesweeper(deepClone(testCase)));
+        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepClone(testCase)),is(solution));
     }//void test3() {
 
     @Test
@@ -61,8 +59,8 @@ class MinesweeperTest {
                 {5,8,5},
                 {3,5,3}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Minesweeper().minesweeper(deepCopy(testCase)));
-        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepCopy(testCase)),is(solution));
+                new Minesweeper().minesweeper(deepClone(testCase)));
+        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepClone(testCase)),is(solution));
     }//void test4() {
 
     @Test
@@ -74,8 +72,8 @@ class MinesweeperTest {
                 {2,4,5,2},
                 {2,3,2,2}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Minesweeper().minesweeper(deepCopy(testCase)));
-        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepCopy(testCase)),is(solution));
+                new Minesweeper().minesweeper(deepClone(testCase)));
+        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepClone(testCase)),is(solution));
     }//void test5() {
 
     @Test
@@ -91,7 +89,7 @@ class MinesweeperTest {
                 {1,1},
                 {0,0}};
         assertTimeout(Duration.ofSeconds(3),()->
-                new Minesweeper().minesweeper(deepCopy(testCase)));
-        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepCopy(testCase)),is(solution));
+                new Minesweeper().minesweeper(deepClone(testCase)));
+        MatcherAssert.assertThat(new Minesweeper().minesweeper(deepClone(testCase)),is(solution));
     }//void test6() {
-}
+}//class MinesweeperTest {

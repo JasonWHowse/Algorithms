@@ -6,10 +6,8 @@ package _0_intro._04_island_of_knowledge;
 
 import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
-import static helper_functions.Helpers.deepCopy;
+import static helper_functions.Helpers.deepClone;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
@@ -22,8 +20,8 @@ class BoxBlurTest {
                 {1,1,1}};
         int[][] solution= {{1}} ;
         assertTimeout(Duration.ofSeconds(3),()->
-                new BoxBlur().boxBlur(deepCopy(testCase)));
-        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepCopy(testCase)),is(solution));
+                new BoxBlur().boxBlur(deepClone(testCase)));
+        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepClone(testCase)),is(solution));
     }//void test1() {
 
     @Test
@@ -33,8 +31,8 @@ class BoxBlurTest {
                 {81,63,45}} ;
         int[][] solution= {{28}} ;
         assertTimeout(Duration.ofSeconds(3),()->
-                new BoxBlur().boxBlur(deepCopy(testCase)));
-        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepCopy(testCase)),is(solution));
+                new BoxBlur().boxBlur(deepClone(testCase)));
+        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepClone(testCase)),is(solution));
     }//void test2() {
 
     @Test
@@ -44,8 +42,8 @@ class BoxBlurTest {
                 {81,63,72,45}} ;
         int[][] solution= {{40,30}} ;
         assertTimeout(Duration.ofSeconds(3),()->
-                new BoxBlur().boxBlur(deepCopy(testCase)));
-        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepCopy(testCase)),is(solution));
+                new BoxBlur().boxBlur(deepClone(testCase)));
+        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepClone(testCase)),is(solution));
     }//void test3() {
 
     @Test
@@ -57,8 +55,8 @@ class BoxBlurTest {
         int[][] solution= {{5,4},
                 {4,4}} ;
         assertTimeout(Duration.ofSeconds(3),()->
-                new BoxBlur().boxBlur(deepCopy(testCase)));
-        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepCopy(testCase)),is(solution));
+                new BoxBlur().boxBlur(deepClone(testCase)));
+        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepClone(testCase)),is(solution));
     }//void test4() {
 
     @Test
@@ -76,8 +74,8 @@ class BoxBlurTest {
                 {22,24,31,39,45},
                 {37,34,36,47,59}} ;
         assertTimeout(Duration.ofSeconds(3),()->
-                new BoxBlur().boxBlur(deepCopy(testCase)));
-        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepCopy(testCase)),is(solution));
+                new BoxBlur().boxBlur(deepClone(testCase)));
+        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepClone(testCase)),is(solution));
     }//void test5() {
 
     @Test
@@ -95,7 +93,7 @@ class BoxBlurTest {
                 {44,96,103,89,45},
                 {59,113,137,126,80}} ;
         assertTimeout(Duration.ofSeconds(3),()->
-                new BoxBlur().boxBlur(deepCopy(testCase)));
-        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepCopy(testCase)),is(solution));
+                new BoxBlur().boxBlur(deepClone(testCase)));
+        MatcherAssert.assertThat(new BoxBlur().boxBlur(deepClone(testCase)),is(solution));
     }//void test6() {
 }//class BoxBlurTest {
