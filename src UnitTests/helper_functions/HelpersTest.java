@@ -5,9 +5,11 @@
 package helper_functions;
 
 import org.hamcrest.MatcherAssert;
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import static helper_functions.Helpers.deepClone;
 import static org.hamcrest.CoreMatchers.*;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 class HelpersTest {
 
@@ -19,7 +21,7 @@ class HelpersTest {
         int[][] solution=new int[][]{   {0,1,1,2},
                 {0,5,0,0},
                 {2,0,3,3}};
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void test1() {
@@ -32,7 +34,7 @@ class HelpersTest {
         Integer[][] solution=new Integer[][]{   {0,1,1,2},
                 {0,5,0,0},
                 {2,0,3,3}};
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void test2() {
@@ -45,7 +47,7 @@ class HelpersTest {
         String[][] solution=new String[][]{   {"asdf","sdf","sde","s"},
                 {"0","5","0","0"},
                 {"2","0","3","3"}};
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void test3() {
@@ -62,7 +64,7 @@ class HelpersTest {
                 {"2","0","3","3"}},{   {"0","1","2","3"},
                 {"0","5","0","0"},
                 {"2","0","3","3"}}};
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase[0]));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void test4() {
@@ -75,7 +77,7 @@ class HelpersTest {
         Integer[][] solution=new Integer[][]{   {0,1,1,2},
                 {0,5,0,0},
                 {2,0,3,3}};
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void test5() {
@@ -88,7 +90,7 @@ class HelpersTest {
         Integer[][] solution=new Integer[][]{   {0,1,1,2},
                 {0,5,0,0},
                 {2,0,3,3}};
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void test6() {
@@ -101,7 +103,7 @@ class HelpersTest {
         String[][] solution=new String[][]{   {"asdf","sdf","sde","s"},
                 {"0","5","0","0"},
                 {"2","0","3","3"}};
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void tes7() {
@@ -118,7 +120,7 @@ class HelpersTest {
                 {"2","0","3","3"}},{   {"0","1","2","3"},
                 {"0","5","0","0"},
                 {"2","0","3","3"}}};
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void test8() {
@@ -145,7 +147,7 @@ class HelpersTest {
                 }//for(int z=0;z<testCase[x][y].length;z++){
             }//for(int y=0;y<solution[x].length;y++){
         }//for(int x=0;x<testCase.length;x++){
-        mutator(Helpers.deepClone(testCase));
+        mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
     }//void test9() {
