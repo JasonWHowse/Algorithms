@@ -131,20 +131,20 @@ class HelpersTest {
                 for(int z=0;z<testCase[x][y].length;z++){
                     for(int i=0;i<testCase[x][y][z].length;i++){
                         testCase[x][y][z][i]=x*y+x*z+y*z+x*i+y*i+z*i;
-                    }
-                }
-            }
-        }
+                    }//for(int i=0;i<solution[x][y][z].length;i++){
+                }//for(int z=0;z<testCase[x][y].length;z++){
+            }//for(int y=0;y<solution[x].length;y++){
+        }//for(int x=0;x<testCase.length;x++){
         Integer[][][][] solution =new Integer[5][5][5][5];
         for(int x=0;x<solution.length;x++){
             for(int y=0;y<solution[x].length;y++){
                 for(int z=0;z<solution[x][y].length;z++){
                     for(int i=0;i<solution[x][y][z].length;i++){
                         solution[x][y][z][i]=x*y+x*z+y*z+x*i+y*i+z*i;
-                    }
-                }
-            }
-        }
+                    }//for(int i=0;i<solution[x][y][z].length;i++){
+                }//for(int z=0;z<testCase[x][y].length;z++){
+            }//for(int y=0;y<solution[x].length;y++){
+        }//for(int x=0;x<testCase.length;x++){
         mutator(Helpers.deepCopy(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
