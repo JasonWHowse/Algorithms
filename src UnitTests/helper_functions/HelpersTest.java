@@ -181,10 +181,10 @@ class HelpersTest {
             for (int j=0;j<toMutate[i].length;j++){
                 for(int k=0;k<toMutate[i][j].length;k++) {
                     toMutate[i][j][k] = toMutate[i][j][k] + "1";
-                }
+                }//for(int k=0;k<toMutate[i][j].length;k++) {
             }//for (int i=0;i<toMutate.length;i++){
         }//for (int i=0;i<toMutate.length;i++){
-    }//private void mutator(String[][] toMutate){
+    }//private void mutator(String[][][] toMutate){
 
     private void mutator(Integer[][][][] toMutate){
         for (int i=0;i<toMutate.length;i++){
@@ -192,9 +192,9 @@ class HelpersTest {
                 for(int k=0;k<toMutate[i][j].length;k++) {
                     for(int l=0;l<toMutate[i][j][k].length;l++) {
                         toMutate[i][j][k][l] = toMutate[i][j][k][l] + (Integer) 1;
-                    }
-                }
-            }//for (int i=0;i<toMutate.length;i++){
+                    }//for(int l=0;l<toMutate[i][j][k].length;l++) {
+                }//for(int k=0;k<toMutate[i][j].length;k++) {
+            }//for (int j=0;j<toMutate[i].length;j++){
         }//for (int i=0;i<toMutate.length;i++){
-    }//private void mutator(String[][] toMutate){
-}
+    }//private void mutator(Integer[][][][] toMutate){
+}//class HelpersTest {
