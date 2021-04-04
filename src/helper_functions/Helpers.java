@@ -29,10 +29,7 @@ public class Helpers{
                 copy[i] = deepCopy(decon[i]);
             }//for(int i=0;i<decon.length;i++){
         }//if(decon[0].getClass().isArray()){
-        else {
-            copy = decon.clone();
-        }//else{
         E recon = (E) copy;
         return recon;
-    }//public static <E> E deepCopyTest (E original){
+    }//public static <E> E deepCopy (E original){
 }//public class Helpers{
