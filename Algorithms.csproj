@@ -14,4 +14,13 @@
     <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="src UnitTests\interview_practice\_1_Sorting_and_Searching\" />
+    <Folder Include="src UnitTests\interview_practice\_2_Dynamic_Programming\" />
+    <Folder Include="src UnitTests\interview_practice\_3_Special_Topics\" />
+    <Folder Include="src\interview_practice\_3_Special_Topics\" />
+    <Folder Include="src\interview_practice\_2_Dynamic_Programming\" />
+    <Folder Include="src\interview_practice\_1_Sorting_and_Searching\" />
+  </ItemGroup>
+
 </Project>
