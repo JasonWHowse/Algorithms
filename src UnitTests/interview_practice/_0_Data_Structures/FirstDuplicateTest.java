@@ -99,7 +99,5 @@ class FirstDuplicateTest {
         assertTimeout(Duration.ofSeconds(3),()->
                 new FirstDuplicate().firstDuplicate(testCase.clone()));
         assertEquals(new FirstDuplicate().firstDuplicate(testCase),solution);
-
-    }
-
+    }//void test(int []testCase,int solution){
 }//class FirstDuplicateTest {
