@@ -2,7 +2,11 @@
  * Authored by: Jason Wesley Howse
  */
 
-package interview_practice._0_Data_Structures;
+/*
+ * Authored by: Jason Wesley Howse
+ */
+
+package interview_practice._0_Data_Structures._0_Arrays;
 import java.util.HashSet;
 
 public class FirstDuplicate {

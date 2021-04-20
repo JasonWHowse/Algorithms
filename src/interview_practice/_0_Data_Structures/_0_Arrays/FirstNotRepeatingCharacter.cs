@@ -1,4 +1,4 @@
-﻿namespace Algorithms.src.interview_practice._0_Data_Structures {
+﻿namespace Algorithms.src.interview_practice._0_Data_Structures._0_Arrays {
     public class FirstNotRepeatingCharacter {
 
         /*
@@ -51,4 +51,4 @@ The first non-repeating character in s, or '_' if there are no characters that d
             return b;
         }//char firstNotRepeatingCharacter(string s) {
     }//public class FirstNotRepeatingCharacter {
-}//namespace Algorithms.src.interview_practice._0_Data_Structures {
+}//namespace Algorithms.src.interview_practice._0_Data_Structures._0_Arrays {

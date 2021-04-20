@@ -1,7 +1,7 @@
-﻿using Algorithms.src.interview_practice._0_Data_Structures;
+﻿using Algorithms.src.interview_practice._0_Data_Structures._0_Arrays;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures {
+namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arrays {
     [TestClass()]
     public class FirstDuplicateTests {
 
@@ -95,4 +95,4 @@ namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures {
             Assert.AreEqual(solution, new FirstDuplicate().firstDuplicate(testCase));
         }//private void Test(int[] testCase,int solution) {
     }//public class FirstDuplicateTests {
-}//namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures {
+}//namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arrays {

@@ -1,7 +1,7 @@
-﻿using Algorithms.src.interview_practice._0_Data_Structures;
+﻿using Algorithms.src.interview_practice._0_Data_Structures._0_Arrays;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures {
+namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arrays {
     [TestClass()]
     public class FirstNotRepeatingCharacterTests {
 
@@ -81,4 +81,4 @@ namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures {
             Assert.AreEqual(solution, new FirstNotRepeatingCharacter().firstNotRepeatingCharacter(testCase));
         }//private void Test(string testCase,char solution) {
     }//public class FirstNotRepeatingCharacterTests {
-}//namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures {
+}//namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arrays {
