@@ -5,11 +5,10 @@
 package interview_practice._0_Data_Structures._1_Linked_Lists;
 
 import helper_functions.ListNode;
-
-import static helper_functions.ListNodeBuilder.CollectionToListNode;
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.time.Duration;
+import static helper_functions.ListNodeBuilder.CollectionToListNode;
+import static org.junit.jupiter.api.Assertions.*;
 
 class RemoveKFromListTest {
     @Test
