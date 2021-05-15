@@ -40,45 +40,6 @@ Return true if l is a palindrome, otherwise return false.
 
         */
 
-/*        public
-        //TODO: Finish the class
-        bool isListPalindrome(ListNode<int> l) {
-            if (l == null || l.next == null) {
-                return true;
-            }
-            ListNode<int> speedHead = l;
-            ListNodeBackFore FL = new ListNodeBackFore();
-            ListNodeBackFore FLHead = FL;
-            FL.back = null;
-            while (speedHead !=null && speedHead.next != null) {
-                FL.value = l.value;
-                FL.next = new ListNodeBackFore();
-                FL.next.back = FL;
-                FL = FL.next;
-                l = l.next;
-                speedHead = speedHead.next.next;
-                if (speedHead != null && speedHead.next == null) { 
-                    l = l.next;
-                }
-            }
-            FL = FL.back;
-            while (FL!=null && l != null) {
-                if (FL.value != l.value) {
-                    return false;
-                }
-                l = l.next;
-                FL = FL.back;
-            }
-            return FL == null && l == null;
-            //return backHalf.Equals(frontHalf);
-
-        }//bool isListPalindrome(ListNode<int> l) {
-
-        private class ListNodeBackFore : ListNode<int> {
-            public ListNodeBackFore back { get; set; }
-            public new ListNodeBackFore next { get; set; }
-        }*/
-
         public
         bool isListPalindrome(ListNode<int> l) {
             List<int> FrontHalf = new List<int>();
