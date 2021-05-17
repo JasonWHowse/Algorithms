@@ -62,9 +62,8 @@ class RemoveKFromListTest {
     }//void test5(){
 
     private void test(ListNode<Integer> testCase1,int testCase2, ListNode<Integer> solution){
-        ListNode<Integer> testCase1Head=testCase1;
         assertTimeout(Duration.ofSeconds(3), ()->
-                new RemoveKFromList().removeKFromList(testCase1Head,testCase2));
+                new RemoveKFromList().removeKFromList(testCase1,testCase2));
         ListNode<Integer> Actual = new RemoveKFromList().removeKFromList(testCase1,testCase2);
         while(solution!=null && Actual!=null ){
             assertEquals(solution.value,Actual.value);
