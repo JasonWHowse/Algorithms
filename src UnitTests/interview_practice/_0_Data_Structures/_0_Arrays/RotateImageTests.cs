@@ -44,6 +44,7 @@ namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arra
 
         private void Test(int[][] testCase, int[][] solution) {
             int[][] actual = new RotateImage().rotateImage(testCase);
+            Assert.AreEqual(solution.Length, actual.Length);
             for (int i = 0; i < actual.Length; i++) {
                 CollectionAssert.AreEqual(solution[i], actual[i]);
             }//for (int i = 0; i < actual.Length; i++) {
