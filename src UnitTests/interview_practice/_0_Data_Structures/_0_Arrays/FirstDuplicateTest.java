@@ -8,7 +8,6 @@
 
 package interview_practice._0_Data_Structures._0_Arrays;
 
-import interview_practice._0_Data_Structures._0_Arrays.FirstDuplicate;
 import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.assertEquals;
