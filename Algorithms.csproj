@@ -19,12 +19,10 @@
     <Folder Include="src UnitTests\interview_practice\_1_Sorting_and_Searching\_1_Backtracking\" />
     <Folder Include="src UnitTests\interview_practice\_1_Sorting_and_Searching\_0_Depth-First_Search_+_Breadth-First_Search\" />
     <Folder Include="src UnitTests\interview_practice\_2_Dynamic_Programming\_0_Dynamic_Programming_Basic\" />
-    <Folder Include="src UnitTests\interview_practice\_3_Special_Topics\_0_Common_Techniques_Basic\" />
     <Folder Include="src\interview_practice\_0_Data_Structures\_3_Trees_Basic\" />
     <Folder Include="src\interview_practice\_1_Sorting_and_Searching\_1_Backtracking\" />
     <Folder Include="src\interview_practice\_1_Sorting_and_Searching\_0_Depth-First_Search_+_Breadth-First_Search\" />
     <Folder Include="src\interview_practice\_2_Dynamic_Programming\_0_Dynamic_Programming_Basic\" />
-    <Folder Include="src\interview_practice\_3_Special_Topics\_0_Common_Techniques_Basic\" />
   </ItemGroup>
 
 </Project>

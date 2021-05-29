@@ -11,3 +11,7 @@ coverlet.collector (3.0.3)<br>
 Microsoft.NET.Test.Sdk (16.9.1)<br>
 MSTest.TestAdapter (2.2.3)<br>
 MSTest.TestFramework (2.2.3)
+
+<br><br>
+using maven library for java testing<br>
+com.googlecode.json-simple (1.1.1)
