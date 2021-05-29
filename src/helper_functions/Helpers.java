@@ -4,6 +4,15 @@
 
 package helper_functions;
 
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Paths;
+
 public class Helpers{
     public static byte[][] deepClone(byte[][] original) {
         byte[][] copy = original.clone();
@@ -80,4 +89,18 @@ public class Helpers{
         E recon = (E) copy;
         return recon;
     }//public static <E> E deepClone (E original){
+
+    public static JSONObject getJsonObject(String fileName, String path) {
+        JSONObject object = null;
+        try {
+            object = (JSONObject) new JSONParser().parse(new FileReader(Paths.get(path + fileName).normalize().toAbsolutePath().toString()));
+        } catch (ParseException | FileNotFoundException e) {//try {
+            System.err.println(e);
+        } catch (IOException e) {//} catch (ParseException | FileNotFoundException e) {
+            System.err.println("IOException\r\n" + e);
+        } catch (Exception e) {//catch (IOException e) {
+            System.err.println("Exception\r\n" + e);
+        }//catch (Exception e) {
+        return object;
+    }//public static JSONObject getJsonObject(String fileName, String path) {
 }//public class Helpers{
