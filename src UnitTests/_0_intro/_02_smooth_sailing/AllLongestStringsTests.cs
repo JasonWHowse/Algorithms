@@ -77,6 +77,76 @@ namespace Algorithms.src_UnitTests._0_intro._02_smooth_sailing {
             Test(testCase, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            string[] testCase = { "khtalawph", "sbm", "gcyksgxay", "nsfllbkf", "v", "dgi", "comuoube", "fywmfrxgk", "empg" };
+            string[] solution = { "khtalawph", "gcyksgxay", "fywmfrxgk" };
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            string[] testCase = { "rfty" };
+            string[] solution = { "rfty" };
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            string[] testCase = { "zcecgkpyb", "tdacd", "m", "wauqkcu", "vpblr", "arykm", "bzogu", "me", "lt" };
+            string[] solution = { "zcecgkpyb" };
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            string[] testCase = { "ikbxvrug", "hiccycgk", "kyuus" };
+            string[] solution = { "ikbxvrug", "hiccycgk" };
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            string[] testCase = { "xqa", "hhnyfayyj", "oxuqxqrx", "bbibat", "matafgnmrq", "mswvjnqusu" };
+            string[] solution = { "matafgnmrq", "mswvjnqusu" };
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            string[] testCase = { "hxumgl", "udyuekcfn", "zrmiiqwvg", "xmkkgt", "hkz" };
+            string[] solution = { "udyuekcfn", "zrmiiqwvg" };
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            string[] testCase = { "guux", "i", "uoopjf", "yhwmg", "qmc", "lixdzs", "t", "duzh" };
+            string[] solution = { "uoopjf", "lixdzs" };
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            string[] testCase = { "pjwipkwr", "cbjjkuos", "vao", "kpyutrrxa", "cmt", "ubg" };
+            string[] solution = { "kpyutrrxa" };
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            string[] testCase = { "ae", "uljczhlv", "t", "qrxie" };
+            string[] solution = { "uljczhlv" };
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            string[] testCase = { "y", "dumcwfqfu" };
+            string[] solution = { "dumcwfqfu" };
+            Test(testCase, solution);
+        }//public void Test20() {
+
         private void Test(string[] testCase, string[] solution) {
             CollectionAssert.AreEqual(solution, new AllLongestStrings().allLongestStrings(testCase));
         }//private void Test(var testCase,var solution) {
