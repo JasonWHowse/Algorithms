@@ -1,11 +1,16 @@
 ﻿using Algorithms.src._0_intro._03_exploring_the_waters;
+using Algorithms.src.helper_functions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests._0_intro._03_exploring_the_waters {
     [TestClass()]
     public class ArrayChangeTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\_0_intro\\_03_exploring_the_waters\\ArrayChange\\";
+        private int[] internedTestCase = new int[0];
+        private int internedSolution = 0;
 
         [TestMethod(), Timeout(timeout)]
         public void Test1() {
@@ -70,15 +75,95 @@ namespace Algorithms.src_UnitTests._0_intro._03_exploring_the_waters {
             Test(testCase, solution);
         }//public void Test9() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test10() {
-            int[] testCase = { 22121, 42080, -51776, -28528, 39895, -50842, 25463, 46187, -29518, 42293, -25615, -47412, 24945, -2630, -12717, -23773, -47824, -7768, -23620, -30270, -51644, 42829, 27609, -40734, 2142, 20285, 29665, -36557, -24074, -11996, 30511, 17104, 4360, -41163, 6814, 959, 26613, -15121, -17355, 28424, -11305, 33175, -8585, 23649, -18428, 16770, 14095, 38766, -22425, -45139, -5836, -28668, -15123, -35450, 41353, 11103, -29233, -51990, -14958, 45944, 20841, -34149, 34720, -51760, 23519, -46257, 40985, -32615, -43378, 14243, -24731, 1311, -4236, -24885, 41713, -45195, -14683, 47765, 26904, -51741, 38051, 13429, 38189, -45812, -52474, 14936, 6582, -26313, 4692, 12313, -37502, -40673, 5799, 23264, 33617, -50938, 26268, -25548, -22353, -15175, -21568, 18656, 19208, 20674, 41228, -42538, -45085, -32356, -39901, -39585, -50690, 2859, -4079, 29823, 28849, -2142, -16613, 23378, 36363, 31780, -40379, 7489, -13324, -22377, 35661, -27141, -42727, 10122, -40385, -19765, 33913, -10504, -4715, -18190, 41430, -19134, 32646, 25839, 783, 32941, -25142 };
-            var solution = 7097995;
-            Test(testCase, solution);
+            SetTestCaseInfo("test-10.json");
+            DoTest();
         }//public void Test10() {
+
+        [TestMethod]
+        public void Test11() {
+            SetTestCaseInfo("test-11.json");
+            DoTest();
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            int[] testCase = { 20710, -4566, 28514, -27877, 10082, -22496, -22994, 5089, 11296, -24822, -16624, -17015, 12477, 29805, 31185, 16492, 564, -413, -28417, 1992, -28897, 31399, 19780, 9900, -17980 };
+            var solution = 711669;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod]
+        public void Test13() {
+            SetTestCaseInfo("test-13.json");
+            DoTest();
+        }//public void Test13() {
+
+        [TestMethod]
+        public void Test14() {
+            SetTestCaseInfo("test-14.json");
+            DoTest();
+        }//public void Test14() {
+
+        [TestMethod]
+        public void Test15() {
+            SetTestCaseInfo("test-15.json");
+            DoTest();
+        }//public void Test15() {
+
+        [TestMethod]
+        public void Test16() {
+            SetTestCaseInfo("test-16.json");
+            DoTest();
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            int[] testCase = { 1976, 4676, 4653, 1782, 180, -4162, -5308, 968, -2405, 4100, 4435, 1326, 3731, -4483, 1419, 1311, 4747, 5211, -312, 5322, -5724, -994, 5914, -4059, -1169, -5361, -1519, -2298, 5118, -283, -2905 };
+            var solution = 140735;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod]
+        public void Test18() {
+            SetTestCaseInfo("test-18.json");
+            DoTest();
+        }//public void Test18() {
+
+        [TestMethod]
+        public void Test19() {
+            SetTestCaseInfo("test-19.json");
+            DoTest();
+        }//public void Test19() {
+
+        [TestMethod]
+        public void Test20() {
+            SetTestCaseInfo("test-20.json");
+            DoTest();
+        }//public void Test20() {
 
         private void Test(int[] testCase, int solution) {
             Assert.AreEqual(solution, new ArrayChange().arrayChange(testCase));
         }//private void Test(int[] testCase,int solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                internedSolution = (int)o["output"];
+                JArray preTestCase = (JArray)o["input"]["inputArray"];
+                internedTestCase = new int[preTestCase.Count];
+                for (int i = 0; i < internedTestCase.Length; i++) {
+                    internedTestCase[i] = (int)preTestCase[i];
+                }//for (int i = 0; i < internedTestCase.Length; i++) {
+            }//else {
+        }//public void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase, internedSolution);
+        }//private void DoTest() {
     }//public class ArrayChangeTests {
 }//namespace Algorithms.src_UnitTests._0_intro._03_exploring_the_waters {
