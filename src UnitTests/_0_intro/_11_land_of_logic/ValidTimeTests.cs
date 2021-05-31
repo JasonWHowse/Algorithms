@@ -84,6 +84,83 @@ namespace Algorithms.src_UnitTests._0_intro._11_land_of_logic {
             Test(testCase, solution);
         }//public void Test11() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = "20:65";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = "15:48";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = "04:38";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = "25:79";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = "10:04";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = "14:66";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = "23:59";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase = "00:60";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase = "24:01";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test20() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test21() {
+            var testCase = "99:99";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test21() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test22() {
+            var testCase = "00:01";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test22() {
+
         private void Test(string testCase, bool solution) {
             if (solution) {
                 Assert.IsTrue(new ValidTime().validTime(testCase));

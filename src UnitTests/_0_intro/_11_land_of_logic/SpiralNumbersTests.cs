@@ -1,11 +1,16 @@
 ﻿using Algorithms.src._0_intro._11_land_of_logic;
+using Algorithms.src.helper_functions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests._0_intro._11_land_of_logic {
     [TestClass()]
     public class SpiralNumbersTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\_0_intro\\_11_land_of_logic\\SpiralNumbers\\";
+        private int internedTestCase = 0;
+        private int[][] internedSolution = new int[0][];
 
         [TestMethod(), Timeout(timeout)]
         public void Test1() {
@@ -42,11 +47,63 @@ namespace Algorithms.src_UnitTests._0_intro._11_land_of_logic {
             Test(testCase, solution);
         }//public void Test5() {
 
+        [TestMethod]
+        public void Test6() {
+            SetTestCaseInfo("test-6.json");
+            DoTest();
+        }//public void Test6() {
+
+        [TestMethod]
+        public void Test7() {
+            SetTestCaseInfo("test-7.json");
+            DoTest();
+        }//public void Test7() {
+
+        [TestMethod]
+        public void Test8() {
+            SetTestCaseInfo("test-8.json");
+            DoTest();
+        }//public void Test8() {
+
+        [TestMethod]
+        public void Test9() {
+            SetTestCaseInfo("test-9.json");
+            DoTest();
+        }//public void Test9() {
+
+        [TestMethod]
+        public void Test10() {
+            SetTestCaseInfo("test-10.json");
+            DoTest();
+        }//public void Test10() {
+
         private void Test(int testCase, int[][] solution) {
             int[][] expected = new SpiralNumbers().spiralNumbers(testCase);
             for (int i = 0; i < expected.Length; i++) {
                 CollectionAssert.AreEqual(solution[i], expected[i]);
             }//for(int i=0;i<expected.Length;i++){
         }//private void Test(var testCase,var solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                internedTestCase = (int)o["input"]["n"];
+                JArray preSolution = (JArray)o["output"];
+                internedSolution = new int[preSolution.Count][];
+                for (int x = 0; x < internedSolution.Length; x++) {
+                    internedSolution[x] = new int[((JArray)preSolution[x]).Count];
+                    for(int y = 0; y < internedSolution[x].Length; y++) {
+                        internedSolution[x][y] = (int)preSolution[x][y];
+                    }//for(int y = 0; y < internedSolution[x].Length; y++) {
+                }//for (int i = 0; i < internedTestCase.Length; i++) {
+            }//else {
+        }//public void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase, internedSolution);
+        }//private void DoTest() {
     }//public class SpiralNumbersTests {
 }//namespace Algorithms.src_UnitTests._0_intro._11_land_of_logic {

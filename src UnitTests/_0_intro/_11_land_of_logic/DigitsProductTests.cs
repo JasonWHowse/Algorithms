@@ -70,6 +70,69 @@ namespace Algorithms.src_UnitTests._0_intro._11_land_of_logic {
             Test(testCase, solution);
         }//public void Test9() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase = 7;
+            var solution = 7;
+            Test(testCase, solution);
+        }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = 112;
+            var solution = 278;
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = 20;
+            var solution = 45;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = 10;
+            var solution = 25;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = 600;
+            var solution = 3558;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = 33;
+            var solution = -1;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = 512;
+            var solution = 888;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = 486;
+            var solution = 699;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = 484;
+            var solution = -1;
+            Test(testCase, solution);
+        }//public void Test18() {
+
         private void Test(int testCase, int solution) {
             Assert.AreEqual(solution, new DigitsProduct().digitsProduct(testCase));
         }//private void Test(int testCase,int solution) {
