@@ -77,6 +77,69 @@ namespace Algorithms.src_UnitTests._0_intro._10_rainbow_of_clarity {
             Test(testCase, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = "aaaaa";
+            var solution = "5a";
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = "fifteenletters";
+            var solution = "fift2enle2ters";
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = "abaddddddddddaa";
+            var solution = "aba10d2a";
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = "qqqqqqqqqqpqqqq";
+            var solution = "10qp4q";
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = "fifteenletterrs";
+            var solution = "fift2enle2te2rs";
+            Test(testCase, solution);
+        }//public void Test15() {
+        
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = "fourteen";
+            var solution = "fourt2en";
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = "thebesttest";
+            var solution = "thebes2test";
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = "sassasssasssa";
+            var solution = "sa2sa3sa3sa";
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase = "aaaaabbaaaabhhh";
+            var solution = "5a2b4ab3h";
+            Test(testCase, solution);
+        }//public void Test19() {
+
         private void Test(string testCase, string solution) {
             Assert.AreEqual(solution, new LineEncoding().lineEncoding(testCase));
         }//private void Test(string testCase,string solution) {

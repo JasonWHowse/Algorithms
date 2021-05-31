@@ -84,6 +84,76 @@ namespace Algorithms.src_UnitTests._0_intro._10_rainbow_of_clarity {
             Test(testCase, solution);
         }//public void Test11() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = 'g';
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = '8';
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = '*';
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = '3';
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = '4';
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = '5';
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = '/';
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase = ':';
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase = '7';
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test20() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test21() {
+            var testCase = '9';
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test21() {
+
         private void Test(char testCase, bool solution) {
             if (solution) {
                 Assert.IsTrue(new IsDigit().isDigit(testCase));
