@@ -1,11 +1,16 @@
 ﻿using Algorithms.src._0_intro._04_island_of_knowledge;
+using Algorithms.src.helper_functions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests._0_intro._04_island_of_knowledge {
     [TestClass()]
     public class MinesweeperTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\_0_intro\\_04_island_of_knowledge\\Minesweeper\\";
+        private bool[][] internedTestCase = new bool[0][];
+        private int[][] internedSolution = new int[0][];
 
         [TestMethod(), Timeout(timeout)]
         public void Test1() {
@@ -49,11 +54,70 @@ namespace Algorithms.src_UnitTests._0_intro._04_island_of_knowledge {
             Test(testCase, solution);
         }//public void Test6() {
 
+        [TestMethod]
+        public void Test7() {
+            SetTestCaseInfo("test-7.json");
+            DoTest();
+        }//public void Test7() {
+
+        [TestMethod]
+        public void Test8() {
+            SetTestCaseInfo("test-8.json");
+            DoTest();
+        }//public void Test8() {
+
+        [TestMethod]
+        public void Test9() {
+            SetTestCaseInfo("test-9.json");
+            DoTest();
+        }//public void Test9() {
+
+        [TestMethod]
+        public void Test10() {
+            SetTestCaseInfo("test-10.json");
+            DoTest();
+        }//public void Test10() {
+
+        [TestMethod]
+        public void Test11() {
+            SetTestCaseInfo("test-11.json");
+            DoTest();
+        }//public void Test11() {
+
         private void Test(bool[][] testCase, int[][] solution) {
             int[][] actual = new Minesweeper().minesweeper(testCase);
             for (int i = 0; i < actual.Length; i++) {
                 CollectionAssert.AreEqual(solution[i], actual[i]);
-            }
+            }//for (int i = 0; i < actual.Length; i++) {
         }//private void Test(bool[][] testCase,int[][] solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                JArray preSolution = (JArray)o["output"];
+                internedSolution = new int[preSolution.Count][];
+                for(int x = 0; x < internedSolution.Length; x++) {
+                    internedSolution[x] = new int[((JArray)preSolution[x]).Count];
+                    for(int y = 0; y < internedSolution[x].Length; y++) {
+                        internedSolution[x][y] = (int)((JArray)preSolution[x])[y];
+                    }//for(int y = 0; y < internedSolution[x].Length; y++) {
+                }//for(int i = 0; i < internedSolution.Length; i++) {
+                JArray preTestCase = (JArray)o["input"]["matrix"];
+                internedTestCase = new bool[preTestCase.Count][];
+                for (int x = 0; x < internedTestCase.Length; x++) {
+                    internedTestCase[x] = new bool[((JArray)preTestCase[x]).Count];
+                    for(int y = 0; y < internedTestCase[x].Length; y++) {
+                        internedTestCase[x][y] = (bool)((JArray)preTestCase[x])[y];
+                    }//for(int y = 0; y < internedTestCase[x].Length; y++) {
+                }//for (int i = 0; i < internedTestCase.Length; i++) {
+            }//else {
+        }//public void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase, internedSolution);
+        }//private void DoTest() {
     }//public class MinesweeperTests {
 }//namespace Algorithms.src_UnitTests._0_intro._04_island_of_knowledge {

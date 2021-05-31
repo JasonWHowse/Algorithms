@@ -56,6 +56,48 @@ namespace Algorithms.src_UnitTests._0_intro._04_island_of_knowledge {
             Test(testCase, solution);
         }//public void Test7() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            int[] testCase = { 1, 5, 9, -3, 7, 1, 10 };
+            var solution = 12;
+            Test(testCase, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            int[] testCase = { 10, 7, -2, -5, -15 };
+            var solution = 10;
+            Test(testCase, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            int[] testCase = { 0, 15, -10 };
+            var solution = 25;
+            Test(testCase, solution);
+        }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            int[] testCase = { -1, 1, -1, 1, -4, 4, 3, -3, 3, -3 };
+            var solution = 8;
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            int[] testCase = { 0, 10, 2, -1 };
+            var solution = 10;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            int[] testCase = { 2, 2, 2, 2 };
+            var solution = 0;
+            Test(testCase, solution);
+        }//public void Test13() {
+
         private void Test(int[] testCase, int solution) {
             Assert.AreEqual(solution, new ArrayMaximalAdjacentDifference().arrayMaximalAdjacentDifference(testCase));
         }//private void Test(int[] testCase,var solution) {

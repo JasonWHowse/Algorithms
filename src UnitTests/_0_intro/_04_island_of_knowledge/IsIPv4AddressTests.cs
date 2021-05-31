@@ -154,6 +154,146 @@ namespace Algorithms.src_UnitTests._0_intro._04_island_of_knowledge {
             Test(testCase, solution);
         }//public void Test21() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test22() {
+            var testCase = "256.255.255.0";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test22() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test23() {
+            var testCase = "255.255.255.255";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test23() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test24() {
+            var testCase = "255.255.256.255";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test24() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test25() {
+            var testCase = "255..255.255";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test25() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test26() {
+            var testCase = "0.0.0.0";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test26() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test27() {
+            var testCase = ".0.0.0";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test27() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test28() {
+            var testCase = "0.0.0z.0";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test28() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test29() {
+            var testCase = "0.0.0.0.0";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test29() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test30() {
+            var testCase = "12345";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test30() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test31() {
+            var testCase = "12.14.24";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test31() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test32() {
+            var testCase = "1.23.256.1.";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test32() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test33() {
+            var testCase = "255255255255";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test33() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test34() {
+            var testCase = "250";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test34() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test35() {
+            var testCase = "255255.255.255";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test35() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test36() {
+            var testCase = "9";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test36() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test37() {
+            var testCase = "0.0.0.249";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test37() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test38() {
+            var testCase = "25..26.8.8.1";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test38() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test39() {
+            var testCase = "64.233.161.01";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test39() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test40() {
+            var testCase = "64.01.161.131";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test40() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test41() {
+            var testCase = "00.233.161.131";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test41() {
+
         private void Test(string testCase, bool solution) {
             if (solution) {
                 Assert.IsTrue(new IsIPv4Address().isIPv4Address(testCase));
