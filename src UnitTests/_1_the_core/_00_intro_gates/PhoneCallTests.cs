@@ -67,6 +67,66 @@ namespace Algorithms.src_UnitTests._1_the_core._00_intro_gates {
             Test(testCase1, testCase2, testCase3, testCase4, solution);
         }//public void Test6() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            var testCase1 = 5;
+            var testCase2 = 3;
+            var testCase3 = 2;
+            var testCase4 = 60;
+            var solution = 24;
+            Test(testCase1, testCase2, testCase3, testCase4, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            var testCase1 = 3;
+            var testCase2 = 3;
+            var testCase3 = 2;
+            var testCase4 = 3;
+            var solution = 1;
+            Test(testCase1, testCase2, testCase3, testCase4, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            var testCase1 = 2;
+            var testCase2 = 4;
+            var testCase3 = 2;
+            var testCase4 = 8;
+            var solution = 2;
+            Test(testCase1, testCase2, testCase3, testCase4, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase1 = 3;
+            var testCase2 = 8;
+            var testCase3 = 8;
+            var testCase4 = 289;
+            var solution = 36;
+            Test(testCase1, testCase2, testCase3, testCase4, solution);
+        }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase1 = 5;
+            var testCase2 = 5;
+            var testCase3 = 9;
+            var testCase4 = 329;
+            var solution = 41;
+            Test(testCase1, testCase2, testCase3, testCase4, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase1 = 1;
+            var testCase2 = 4;
+            var testCase3 = 9;
+            var testCase4 = 500;
+            var solution = 61;
+            Test(testCase1, testCase2, testCase3, testCase4, solution);
+        }//public void Test12() {
+
         private void Test(int testCase1, int testCase2, int testCase3, int testCase4, int solution) {
             Assert.AreEqual(solution, new PhoneCall().phoneCall(testCase1, testCase2, testCase3, testCase4));
         }//private void Test(int testCase1, int testCase2, int testCase3, int testCase4, int solution) {

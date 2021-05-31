@@ -42,6 +42,34 @@ namespace Algorithms.src_UnitTests._1_the_core._00_intro_gates {
             Test(testCase, solution);
         }//public void Test5() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test6() {
+            var testCase = 5;
+            var solution = 99999;
+            Test(testCase, solution);
+        }//public void Test6() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            var testCase = 6;
+            var solution = 999999;
+            Test(testCase, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            var testCase = 8;
+            var solution = 99999999;
+            Test(testCase, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            var testCase = 9;
+            var solution = 999999999;
+            Test(testCase, solution);
+        }//public void Test9() {
+
         private void Test(int testCase, int solution) {
             Assert.AreEqual(solution, new LargestNumber().largestNumber(testCase));
         }//private void Test(int testCase,int solution) {
