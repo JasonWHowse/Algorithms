@@ -87,6 +87,78 @@ namespace Algorithms.src_UnitTests._1_the_core._03_loop_tunnel {
             Test(testCase1, testCase2, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase1 = 100000;
+            var testCase2 = 1;
+            var solution = 100000;
+            Test(testCase1, testCase2, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase1 = 239;
+            var testCase2 = 1;
+            var solution = 239;
+            Test(testCase1, testCase2, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase1 = 1;
+            var testCase2 = 100000;
+            var solution = 100000;
+            Test(testCase1, testCase2, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase1 = 2;
+            var testCase2 = 100;
+            var solution = 102;
+            Test(testCase1, testCase2, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase1 = 239;
+            var testCase2 = 749;
+            var solution = 987;
+            Test(testCase1, testCase2, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase1 = 100;
+            var testCase2 = 2;
+            var solution = 102;
+            Test(testCase1, testCase2, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase1 = 2;
+            var testCase2 = 1;
+            var solution = 2;
+            Test(testCase1, testCase2, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase1 = 100000;
+            var testCase2 = 100000;
+            var solution = 299998;
+            Test(testCase1, testCase2, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase1 = 14;
+            var testCase2 = 234;
+            var solution = 248;
+            Test(testCase1, testCase2, solution);
+        }//public void Test19() {
+
         private void Test(int testCase1, int testCase2, int solution) {
             Assert.AreEqual(solution, new CountBlackCells().countBlackCells(testCase1, testCase2));
         }//private void Test(int testCase1,int testCase2,int solution) {

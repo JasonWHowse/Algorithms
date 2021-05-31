@@ -70,6 +70,69 @@ namespace Algorithms.src_UnitTests._1_the_core._03_loop_tunnel {
             Test(testCase, solution);
         }//public void Test9() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase = 2;
+            var solution = 3;
+            Test(testCase, solution);
+        }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = 19;
+            var solution = -190;
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = 25;
+            var solution = -325;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = 11;
+            var solution = -66;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = 32;
+            var solution = 528;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = 22;
+            var solution = 253;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = 28;
+            var solution = 406;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = 27;
+            var solution = -378;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = 39;
+            var solution = -780;
+            Test(testCase, solution);
+        }//public void Test18() {
+
         private void Test(int testCase, int solution) {
             Assert.AreEqual(solution, new AppleBoxes().appleBoxes(testCase));
         }//private void Test(int testCase, int solution) {

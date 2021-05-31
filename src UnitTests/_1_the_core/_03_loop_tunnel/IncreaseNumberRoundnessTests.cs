@@ -77,6 +77,76 @@ namespace Algorithms.src_UnitTests._1_the_core._03_loop_tunnel {
             Test(testCase, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = 1230;
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = 1010;
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = 987654321;
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = 21210;
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = 1000000;
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = 250357;
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = 101;
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = 3847;
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase = 7370;
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase = 384090;
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test20() {
+
         private void Test(int testCase, bool solution) {
             if (solution) {
                 Assert.IsTrue(new IncreaseNumberRoundness().increaseNumberRoundness(testCase));

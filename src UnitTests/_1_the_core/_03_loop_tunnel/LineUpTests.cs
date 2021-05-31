@@ -63,6 +63,62 @@ namespace Algorithms.src_UnitTests._1_the_core._03_loop_tunnel {
             Test(testCase1, solution);
         }//public void Test8() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            var testCase1 = "LRALARRAALARLALRAALLLRAALRALAALR";
+            var solution = 17;
+            Test(testCase1, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase1 = "LRLRLRRL";
+            var solution = 4;
+            Test(testCase1, solution);
+        }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase1 = "LLRR";
+            var solution = 2;
+            Test(testCase1, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase1 = "R";
+            var solution = 0;
+            Test(testCase1, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase1 = "RLARA";
+            var solution = 2;
+            Test(testCase1, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase1 = "LALRRLRLRA";
+            var solution = 5;
+            Test(testCase1, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase1 = "LALRLLRRRRRAALAAARLRAAALL";
+            var solution = 13;
+            Test(testCase1, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase1 = "LAAARAAALARAAALAAALRAA";
+            var solution = 9;
+            Test(testCase1, solution);
+        }//public void Test16() {
+
         private void Test(string testCase, int solution) {
             Assert.AreEqual(solution, new LineUp().lineUp(testCase));
         }//private void Test(string testCase,int solution) {

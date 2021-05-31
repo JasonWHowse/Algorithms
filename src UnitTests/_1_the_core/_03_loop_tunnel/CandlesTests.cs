@@ -87,6 +87,86 @@ namespace Algorithms.src_UnitTests._1_the_core._03_loop_tunnel {
             Test(testCase1, testCase2, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase1 = 0000;
+            var testCase2 = 0000;
+            var solution = 0000;
+            Test(testCase1, testCase2, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase1 = 1;
+            var testCase2 = 3;
+            var solution = 1;
+            Test(testCase1, testCase2, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase1 = 10;
+            var testCase2 = 4;
+            var solution = 13;
+            Test(testCase1, testCase2, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase1 = 10;
+            var testCase2 = 5;
+            var solution = 12;
+            Test(testCase1, testCase2, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase1 = 4;
+            var testCase2 = 4;
+            var solution = 5;
+            Test(testCase1, testCase2, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase1 = 13;
+            var testCase2 = 4;
+            var solution = 17;
+            Test(testCase1, testCase2, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase1 = 15;
+            var testCase2 = 3;
+            var solution = 22;
+            Test(testCase1, testCase2, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase1 = 15;
+            var testCase2 = 2;
+            var solution = 29;
+            Test(testCase1, testCase2, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase1 = 8;
+            var testCase2 = 5;
+            var solution = 9;
+            Test(testCase1, testCase2, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase1 = 1;
+            var testCase2 = 4;
+            var solution = 1;
+            Test(testCase1, testCase2, solution);
+        }//public void Test20() {
+
         private void Test(int testCase1, int testCase2, int solution) {
             Assert.AreEqual(solution, new Candles().candles(testCase1, testCase2));
         }//private void Test(int testCase1,int testCase2,int solution) {
