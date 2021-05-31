@@ -77,6 +77,76 @@ namespace Algorithms.src_UnitTests._0_intro._09_eruption_of_light {
             Test(testCase, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = "x@oneletter.am";
+            var solution = "oneletter.am";
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = "appugyl__un91n-3062@yopmail.com";
+            var solution = "yopmail.com";
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = "hr06122x@a4zerwak0d.gq";
+            var solution = "a4zerwak0d.gq";
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = "ralamosm@aol.com";
+            var solution = "aol.com";
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = "really@thuglife.de";
+            var solution = "thuglife.de";
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = "vyoucef.koko@axuwv6wnveqhwilbzer.gq";
+            var solution = "axuwv6wnveqhwilbzer.gq";
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = "m@qazwsxedcrfvtgbyhnujmiklopolksuiwnshdyuijlpo.com";
+            var solution = "qazwsxedcrfvtgbyhnujmiklopolksuiwnshdyuijlpo.com";
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = "boom@bo.co";
+            var solution = "bo.co";
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase = "Hamojan@thebest.am";
+            var solution = "thebest.am";
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase = "LemurTheWorst@ysu.am";
+            var solution = "ysu.am";
+            Test(testCase, solution);
+        }//public void Test20() {
+
         private void Test(string testCase, string solution) {
             Assert.AreEqual(solution, new FindEmailDomain().findEmailDomain(testCase));
         }//private void Test(string testCase,string solution) {

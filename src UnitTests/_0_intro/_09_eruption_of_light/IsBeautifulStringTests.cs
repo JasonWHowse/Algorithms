@@ -77,6 +77,76 @@ namespace Algorithms.src_UnitTests._0_intro._09_eruption_of_light {
             Test(testCase, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = "zzy";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = "aaa";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = "abcdefghijklmnopqrstuvwxy";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = "zzz";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = "aaaaaaaaaabbbbbbbbbccccc";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = "bxcdefghijklmnopqrstuvwyzaaaaaaaaaaaaaaaaaaaaaaaaa";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = "bxcdefghijklmnopqrstuvwyza";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = "abcdefghijklmabcdefghijklmnpnopqrstuvwxyzz";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase = "bba";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase = "aabb";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test20() {
+
         private void Test(string testCase, bool solution) {
             if (solution) {
                 Assert.IsTrue(new IsBeautifulString().isBeautifulString(testCase));

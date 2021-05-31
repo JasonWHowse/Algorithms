@@ -84,6 +84,83 @@ namespace Algorithms.src_UnitTests._0_intro._09_eruption_of_light {
             Test(testCase, solution);
         }//public void Test11() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = "jfd";
+            var solution = "jfdfj";
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = "cdfjkbe";
+            var solution = "cdfjkbebkjfdc";
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = "jqrdb";
+            var solution = "jqrdbdrqj";
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = "fej";
+            var solution = "fejef";
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = "edcahble";
+            var solution = "edcahblelbhacde";
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = "cfhbkabkjh";
+            var solution = "cfhbkabkjhjkbakbhfc";
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = "kewlncbzhe";
+            var solution = "kewlncbzhehzbcnlwek";
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase = "jeahf";
+            var solution = "jeahfhaej";
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase = "lmsrlimdrh";
+            var solution = "lmsrlimdrhrdmilrsml";
+            Test(testCase, solution);
+        }//public void Test20() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test21() {
+            var testCase = "aaaaaaaaa";
+            var solution = "aaaaaaaaa";
+            Test(testCase, solution);
+        }//public void Test21() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test22() {
+            var testCase = "aaaaaaba";
+            var solution = "aaaaaabaaaaaa";
+            Test(testCase, solution);
+        }//public void Test22() {
+
         private void Test(string testCase, string solution) {
             Assert.AreEqual(solution, new BuildPalindrome().buildPalindrome(testCase));
         }//private void Test(string testCase,string solution) {
