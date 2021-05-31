@@ -10,8 +10,9 @@ using nuget packages for the c# testing<br>
 coverlet.collector (3.0.3)<br>
 Microsoft.NET.Test.Sdk (16.9.1)<br>
 MSTest.TestAdapter (2.2.3)<br>
-MSTest.TestFramework (2.2.3)
+MSTest.TestFramework (2.2.3)<br>
+Newtonsoft.Json (13.0.1)<br>
 
-<br><br>
+<br>
 using maven library for java testing<br>
-com.googlecode.json-simple (1.1.1)
+com.googlecode.json-simple (1.1.1)<br>
