@@ -21,6 +21,13 @@ namespace Algorithms.src_UnitTests._1_the_core._01_at_the_crossroads {
             Test(testCase, solution);
         }//public void Test2() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test3() {
+            var testCase = 28;
+            int[] solution = { 31 };
+            Test(testCase, solution);
+        }//public void Test3() {
+
         private void Test(int testCase, int[] solution) {
             CollectionAssert.AreEqual(solution, new MetroCard().metroCard(testCase));
         }//private void Test(int testCase,int[] solution) {

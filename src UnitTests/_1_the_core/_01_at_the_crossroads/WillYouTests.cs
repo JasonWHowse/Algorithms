@@ -43,6 +43,42 @@ namespace Algorithms.src_UnitTests._1_the_core._01_at_the_crossroads {
             Test(testCase1, testCase2, testCase3, solution);
         }//public void Test4() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test5() {
+            var testCase1 = false;
+            var testCase2 = true;
+            var testCase3 = false;
+            var solution = false;
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test5() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test6() {
+            var testCase1 = false;
+            var testCase2 = true;
+            var testCase3 = true;
+            var solution = true;
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test6() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            var testCase1 = true;
+            var testCase2 = false;
+            var testCase3 = false;
+            var solution = false;
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            var testCase1 = true;
+            var testCase2 = true;
+            var testCase3 = false;
+            var solution = true;
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test8() {
+
         private void Test(bool testCase1, bool testCase2, bool testCase3, bool solution) {
             if (solution) {
                 Assert.IsTrue(new WillYou().willYou(testCase1, testCase2, testCase3));
