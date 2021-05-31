@@ -84,6 +84,76 @@ namespace Algorithms.src_UnitTests._0_intro._06_through_the_fog {
             Test(testCase, solution);
         }//public void Test11() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            string[] testCase = { "aa", "bb", "cc" };
+            bool solution = false;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            string[] testCase = { "bbc", "bba", "abc" };
+            bool solution = true;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            string[] testCase = { "oh", "eh", "ah", "po", "op" };
+            bool solution = false;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            string[] testCase = { "zzzabzczaba", "zzzabzczaaa", "zzzabzczabb", "zzzabzczbbb" };
+            bool solution = true;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            string[] testCase = { "zzzabzczaaa", "zzzabzczaaa", "zzzabzczaaa", "zzzabzczaaa" };
+            bool solution = false;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            string[] testCase = { "abc", "xbc", "xxc", "xbc", "aby", "ayy", "aby", "azc" };
+            bool solution = false;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            string[] testCase = { "abc", "bef", "bcc", "bew", "zew", "zyw", "bec", "bbc", "bdc" };
+            bool solution = true;
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            string[] testCase = { "abacabaabczzzzz", "abacababefzzzzz", "abacababcczzzzz", "abacababeczzzzz", "abacababbczzzzz", "abacababdczzzzz" };
+            bool solution = true;
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            string[] testCase = { "abc", "xbc", "xxc", "xbc", "aby", "ayy", "aby" };
+            bool solution = true;
+            Test(testCase, solution);
+        }//public void Test20() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test21() {
+            string[] testCase = { "abc", "xbc", "axc", "abx" };
+            bool solution = false;
+            Test(testCase, solution);
+        }//public void Test21() {
+
         private void Test(string[] testCase, bool solution) {
             if (solution) {
                 Assert.IsTrue(new StringsRearrangement().stringsRearrangement(testCase));
