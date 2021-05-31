@@ -84,8 +84,88 @@ namespace Algorithms.src_UnitTests._0_intro._05_rains_of_reason {
             var testCase1 = "A2";
             var testCase2 = "A5";
             var solution = false;
-            Test(testCase1,testCase2, solution);
+            Test(testCase1, testCase2, solution);
         }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase1 = "G5";
+            var testCase2 = "G6";
+            var solution = false;
+            Test(testCase1, testCase2, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase1 = "A1";
+            var testCase2 = "B1";
+            var solution = false;
+            Test(testCase1, testCase2, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase1 = "A1";
+            var testCase2 = "D4";
+            var solution = true;
+            Test(testCase1, testCase2, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase1 = "B2";
+            var testCase2 = "B4";
+            var solution = true;
+            Test(testCase1, testCase2, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase1 = "G6";
+            var testCase2 = "H6";
+            var solution = false;
+            Test(testCase1, testCase2, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase1 = "H1";
+            var testCase2 = "H1";
+            var solution = true;
+            Test(testCase1, testCase2, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase1 = "B2";
+            var testCase2 = "H8";
+            var solution = true;
+            Test(testCase1, testCase2, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase1 = "B2";
+            var testCase2 = "B5";
+            var solution = false;
+            Test(testCase1, testCase2, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase1 = "G5";
+            var testCase2 = "H6";
+            var solution = true;
+            Test(testCase1, testCase2, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase1 = "C8";
+            var testCase2 = "H1";
+            var solution = true;
+            Test(testCase1, testCase2, solution);
+        }//public void Test20() {
 
         private void Test(string testCase1, string testCase2, bool solution) {
             if (solution) {
