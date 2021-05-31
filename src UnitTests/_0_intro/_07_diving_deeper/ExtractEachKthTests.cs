@@ -47,6 +47,46 @@ namespace Algorithms.src_UnitTests._0_intro._07_diving_deeper {
             Test(testCase1, testCase2, solution);
         }//public void Test5() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test6() {
+            int[] testCase1 = { 5, 7, 11, 4, 10, -9, -1, 5, -2, 1, 11, -3, 4, 4, -3 };
+            var testCase2 = 3;
+            int[] solution = { 5, 7, 4, 10, -1, 5, 1, 11, 4, 4 };
+            Test(testCase1, testCase2, solution);
+        }//public void Test6() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            int[] testCase1 = { 2, 0, 0, -5, -3, 1, 4, -10 };
+            var testCase2 = 4;
+            int[] solution = { 2, 0, 0, -3, 1, 4 };
+            Test(testCase1, testCase2, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            int[] testCase1 = { -20, 20, -19, 19, -18, 18, -17, 17, -16, 16, -15, 15, -14, 14, 0 };
+            var testCase2 = 3;
+            int[] solution = { -20, 20, 19, -18, -17, 17, 16, -15, -14, 14 };
+            Test(testCase1, testCase2, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            int[] testCase1 = { 10, 11, 12, 13, 14 };
+            var testCase2 = 2;
+            int[] solution = { 10, 12, 14 };
+            Test(testCase1, testCase2, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            int[] testCase1 = { 10, 11, 12, 13, 14 };
+            var testCase2 = 3;
+            int[] solution = { 10, 11, 13, 14 };
+            Test(testCase1, testCase2, solution);
+        }//public void Test10() {
+
         private void Test(int[] testCase1, int testCase2, int[] solution) {
             CollectionAssert.AreEqual(solution, new ExtractEachKth().extractEachKth(testCase1,testCase2));
         }//private void Test(int[] testCase1, int testCase2,int[] solution) {

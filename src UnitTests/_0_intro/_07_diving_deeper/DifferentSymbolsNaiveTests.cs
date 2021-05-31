@@ -42,6 +42,41 @@ namespace Algorithms.src_UnitTests._0_intro._07_diving_deeper {
             Test(testCase, solution);
         }//public void Test5() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test6() {
+            var testCase = "rrbxzqza";
+            var solution = 6;
+            Test(testCase, solution);
+        }//public void Test6() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            var testCase = "lqqhpughgfkkfgihptucfldgfpdjtesngnehnthltrfqtjfrcdpumqpupiakfuheocrttjlolgotjcetnojmiepnbenpclogtujschplkjaimlniqikkgugspfmhhtordiranioklsqmejnrpjfifihulkgdfmgtnanomkmrmmuqsoibkbjgpktbcoqgtqschrstprqdibfcatjqjumpqaqahcutcihdfmrntenjkcjrhutlslplqmrsamimacmidsssrjbeoekeapceqqfpnkqucouibsdgdrorcqdfopqmmtluftpjueobasmmegqrskgphtnpdlnbcpfnmbmccoudfcijbiarpodscgmoqcrhuellgmcrldgiogrmcdednauggtcmbqtgtkbfmcnenmidghlrtplcuriuromjgiecppeugadgqhepbekqogueqpcqcsfqqpuhtjcpncbdrtiacrtibnhsjihlhojgbrbamoiglotctleerjcjgintppefmnomlgejidkgslitepblcmqekelpopgsppbhmpomgtqqsdcftjfsmnlratfrgcmqpjfioqhuscbplbmdrieerfrcstqlpeatrlejornldpntuojklgikrtqrdtoehkthqoghjjcuecclarqdarnqceqclcadehceaqeokngdgnaclmmfsgdhoareqdablftrhanttmnithkdohmhphqnaencfkuckqdkcgriighrqbitkqhtggiqmktnafqherpcenrtgigsfkhqpttjukqhurlddhqullnrjdkriuttcojcfpuaftbabkpbtlodgbccisjglbmeeahmomkpeuebmpeuiqrtncqgfrkhfrtgcjipudgesnnogqcdargkuelfejamcorfjjubeqpsllaskhpoenbabpfqqcprjlffnadcipbshcdopbjrpsosrgsomaphplkitoesmjqkbubmmobglgnhdgtknkcb";
+            var solution = 21;
+            Test(testCase, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            var testCase = "qwertyuiopasdfghjklzxcvbnm";
+            var solution = 26;
+            Test(testCase, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            var testCase = "wlfeaixgzjscnghhvmittkkywfsoiyqgrzdoeytgrwivbefchkzyeybzbckyieinxwiuyruumpdaqkaeilgirxokbloymckskkjefrzbjlilcbayzgxkylgncufdiyjgiudanoqchzigsytlhurhoekkjmzddllhhkreugtmmmtmmeiiosuirhlzbepygalgynbgjingrngpohcynoyufrjqiaoaebqggizfiuapmlobyswupipdmzmbekxclngplowxjgqkuatkvehtxdkomcefudbogydvqgpmwsibsdatmqgmrhvamchwxsngzcohvvmbxvrrebunvjzobvvkcahkusbtotchfrmobspziquyjznpwinxmmfmwlkoiyastfeayfaqkthohxwxivzmxjhjefywfpjtezsdvtmgjuurbhjpdznbmmbyohnirzqljnaeatqmeoctndqsujkcitpkrdsgkamlxouxmwsugigvlmbganxbckwqodsduhwdzshnhjziztogvbogmweeoltmseisyasxitpiiupyjfomwjbhobkozehewaaxekosoxpcbxikhbdvqflcrocfcpcdgmsnilfeveyhtygtvwyfvqgszkpoxbpdtjhiyreqcahpbbrxzclrtibwzgheytijkeevanwsynpxiimtlynyhhwmphawvjffrxcdtbfeajhwvmxzjbjliichnefzuiffmkixqogbspuugeidjihstfvvbckwuryiurqoyzwqtvaknsqgrwxvcdqspfdamoxreqbxmajinkcieangtyybpmuydemdrwysmnzltdgfcexbincgzuvhgjpefjxdudfmcoabskvpedffpjowcwfzupwwffbiubpcjqqbzrmamsoemxdmqralnmnjpgobfvgsbmdhmyovkglmynvsnezcksqdlyzaqspnpeaomdilkhifmbpokseuslyrvzljvmyzpbdteghiqocyrzit";
+            var solution = 26;
+            Test(testCase, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase = "aaaaaaaaaaaaaaa";
+            var solution = 1;
+            Test(testCase, solution);
+        }//public void Test10() {
+
         private void Test(string testCase, int solution) {
             Assert.AreEqual(solution, new DifferentSymbolsNaive().differentSymbolsNaive(testCase));
         }//private void Test(string testCase, int solution) {

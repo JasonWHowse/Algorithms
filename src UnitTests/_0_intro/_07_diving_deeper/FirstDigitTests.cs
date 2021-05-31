@@ -49,6 +49,41 @@ namespace Algorithms.src_UnitTests._0_intro._07_diving_deeper {
             Test(testCase, solution);
         }//public void Test6() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            var testCase = "-15";
+            var solution = '1';
+            Test(testCase, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            var testCase = "a b c 4 e ";
+            var solution = '4';
+            Test(testCase, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            var testCase = "abcd efg8";
+            var solution = '8';
+            Test(testCase, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase = "ab cd 00";
+            var solution = '0';
+            Test(testCase, solution);
+        }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = "d91e073";
+            var solution = '9';
+            Test(testCase, solution);
+        }//public void Test11() {
+
         private void Test(string testCase, char solution) {
             Assert.AreEqual(solution, new FirstDigit().firstDigit(testCase));
         }//private void Test(var testCase,var solution) {
