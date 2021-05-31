@@ -1,11 +1,16 @@
 ﻿using Algorithms.src._0_intro._00_the_journey_begins;
+using Algorithms.src.helper_functions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
     [TestClass()]
     public class CheckPalindromeTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\_0_intro\\_00_the_journey_begins\\CheckPalindrome\\";
+        private string internedTestCase = "";
+        private bool internedSolution = false;
 
         [TestMethod(), Timeout(timeout)]
         public void Test1() {
@@ -77,6 +82,74 @@ namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
             Test(testCase, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = "tnfodxxzqtivgnostongvitqzxxdofnt";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = "tnfodxxzqtivgnottongvitqzxxdofnt";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = "zdsptawefecbickktjoeeojtkkcibcefewatpsdz";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = "dshdyghryuwbdiqiuwjhdisayueyhdasdwhgdhhshaduw";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = "gvtygiiyztilqbukcrropxafkskfaxporrckubqlitzyiigytvg";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = "sxwghmtxvzpzmxejczaqufqmibscltvbzouuordogclpqywzgyfulfpzuzwvkhhfitozydwjjoacdxfspbakpnltunrrgzffzcjx";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = "sxwghmtxvzpzmxejczaqufqmibscltvbzouuordogclpqywzgyfulfpzuzwvkhhfitozydwjjoacdxfspbakpnltunrrgzffzcjxsxwghmtxvzpzmxejczaqufqmibscltvbzouuordogclpqywzgyfulfpzuzwvkhhfitozydwjjoacdxfspbakpnltunrrgzffzcjx";
+            var solution = false;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = "ksswieohzzonjqosouzbnthoqfktlhokcblmleilmrbxvldvodyhuzknirkdlexrprgqbznnwypsjowrjyteosbhqflkvyfshhgzchhchyeeasbopifwhsusjvxsvlxtchrxzywptdljywcqykstepgzufvcxphtjsnxeveuqybmifdbpnwwruqgyzbltubkjzvxhpsuusphxvzjkbutlbzygqurwwnpbdfimbyquevexnsjthpxcvfuzgpetskyqcwyjldtpwyzxrhctxlvsxvjsushwfipobsaeeyhchhczghhsfyvklfqhbsoetyjrwojspywnnzbqgrprxeldkrinkzuhydovdlvxbrmlielmlbckohltkfqohtnbzuosoqjnozzhoeiwssk";
+            var solution = true;
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod]
+        public void Test19() {
+            SetTestCaseInfo("test-19.json");
+            DoTest();
+        }//public void Test19() {
+
+        [TestMethod]
+        public void Test20() {
+            SetTestCaseInfo("test-20.json");
+            DoTest();
+        }//public void Test20() {
+
         private void Test(string testCase,bool solution) {
             if (solution) {
                 Assert.IsTrue(new CheckPalindrome().checkPalindrome(testCase));
@@ -84,5 +157,20 @@ namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
                 Assert.IsFalse(new CheckPalindrome().checkPalindrome(testCase));
             }//else {
         }//private void Test(String testCase,bool solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                internedSolution = (bool)o["output"];
+                internedTestCase = (string)o["input"]["inputString"];
+            }//else {
+        }//private void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase, internedSolution);
+        }//private void DoTest() {
     }//public class CheckPalindromeTests {
 }//namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {

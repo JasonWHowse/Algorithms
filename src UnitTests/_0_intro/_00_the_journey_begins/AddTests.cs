@@ -60,6 +60,60 @@ namespace Algorithms.src_UnitTests._0_intro._00_the_journey_begins {
             Test(testCase1, testCase2, solution);
         }//public void Test6() {
 
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            int testCase1 = -1000;
+            int testCase2 = 999;
+            int solution = -1;
+            Test(testCase1, testCase2, solution);
+        }//public void Test7() {
+
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            int testCase1 = 100;
+            int testCase2 = 100;
+            int solution = 200;
+            Test(testCase1, testCase2, solution);
+        }//public void Test8() {
+
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            int testCase1 = -100;
+            int testCase2 = -100;
+            int solution = -200;
+            Test(testCase1, testCase2, solution);
+        }//public void Test9() {
+
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            int testCase1 = -98;
+            int testCase2 = 1;
+            int solution = -97;
+            Test(testCase1, testCase2, solution);
+        }//public void Test10() {
+
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            int testCase1 = 1000;
+            int testCase2 = 1000;
+            int solution = 2000;
+            Test(testCase1, testCase2, solution);
+        }//public void Test11() {
+
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            int testCase1 = -1000;
+            int testCase2 = 1000;
+            int solution = 0;
+            Test(testCase1, testCase2, solution);
+        }//public void Test12() {
+
         private void Test(int testCase1, int testCase2, int solution) {
             Assert.AreEqual(solution, new Add().add(testCase1, testCase2));
         }//private void Test(int testCase1,int testCase2,int solution) {
