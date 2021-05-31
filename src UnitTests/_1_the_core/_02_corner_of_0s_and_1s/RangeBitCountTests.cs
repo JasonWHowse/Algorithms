@@ -47,6 +47,46 @@ namespace Algorithms.src_UnitTests._1_the_core._02_corner_of_0s_and_1s {
             Test(testCase1, testCase2, solution);
         }//public void Test5() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test6() {
+            var testCase1 = 5;
+            var testCase2 = 5;
+            var solution = 2;
+            Test(testCase1, testCase2, solution);
+        }//public void Test6() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            var testCase1 = 7;
+            var testCase2 = 7;
+            var solution = 3;
+            Test(testCase1, testCase2, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            var testCase1 = 6;
+            var testCase2 = 7;
+            var solution = 5;
+            Test(testCase1, testCase2, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            var testCase1 = 10;
+            var testCase2 = 10;
+            var solution = 2;
+            Test(testCase1, testCase2, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase1 = 6;
+            var testCase2 = 9;
+            var solution = 8;
+            Test(testCase1, testCase2, solution);
+        }//public void Test10() {
+
         private void Test(int testCase1, int testCase2, int solution) {
             Assert.AreEqual(solution, new RangeBitCount().rangeBitCount(testCase1, testCase2));
         }//private void Test(int testCase1,int testCase2,int solution) {

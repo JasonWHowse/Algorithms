@@ -42,6 +42,41 @@ namespace Algorithms.src_UnitTests._1_the_core._02_corner_of_0s_and_1s {
             Test(testCase, solution);
         }//public void Test5() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test6() {
+            var testCase = 100000;
+            var solution = 2755;
+            Test(testCase, solution);
+        }//public void Test6() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            var testCase = 59940;
+            var solution = 9303;
+            Test(testCase, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            var testCase = 65535;
+            var solution = 65535;
+            Test(testCase, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            var testCase = 53629;
+            var solution = 48779;
+            Test(testCase, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase = 48779;
+            var solution = 53629;
+            Test(testCase, solution);
+        }//public void Test10() {
+
         private void Test(int testCase, int solution) {
             Assert.AreEqual(solution, new MirrorBits().mirrorBits(testCase));
         }//private void Test(int testCase,int solution) {
