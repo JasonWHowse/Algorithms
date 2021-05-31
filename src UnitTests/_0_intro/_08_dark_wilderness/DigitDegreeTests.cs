@@ -77,6 +77,76 @@ namespace Algorithms.src_UnitTests._0_intro._08_dark_wilderness {
             Test(testCase, solution);
         }//public void Test10() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase = 11;
+            var solution = 1;
+            Test(testCase, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase = 7;
+            var solution = 0;
+            Test(testCase, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase = 816;
+            var solution = 2;
+            Test(testCase, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase = 523;
+            var solution = 2;
+            Test(testCase, solution);
+        }//public void Test14() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test15() {
+            var testCase = 463;
+            var solution = 2;
+            Test(testCase, solution);
+        }//public void Test15() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test16() {
+            var testCase = 20421;
+            var solution = 1;
+            Test(testCase, solution);
+        }//public void Test16() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test17() {
+            var testCase = 22546;
+            var solution = 3;
+            Test(testCase, solution);
+        }//public void Test17() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test18() {
+            var testCase = 263;
+            var solution = 2;
+            Test(testCase, solution);
+        }//public void Test18() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test19() {
+            var testCase = 999999999;
+            var solution = 2;
+            Test(testCase, solution);
+        }//public void Test19() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test20() {
+            var testCase = 535649;
+            var solution = 2;
+            Test(testCase, solution);
+        }//public void Test20() {
+
         private void Test(int testCase, int solution) {
             Assert.AreEqual(solution, new DigitDegree().digitDegree(testCase));
         }//private void Test(var testCase,var solution) {
