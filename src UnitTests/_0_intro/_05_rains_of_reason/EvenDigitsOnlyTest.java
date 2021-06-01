@@ -5,90 +5,137 @@
 package _0_intro._05_rains_of_reason;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class EvenDigitsOnlyTest {
 
     @Test
-    void test1() {
-        int testCase=248622;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertTrue(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test1() {
+    public void test1() {
+        var testCase = 248622;
+        test(testCase, true);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        int testCase=642386;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertFalse(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test2() {
+    public void test2() {
+        var testCase = 642386;
+        test(testCase, false);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        int testCase=248842;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertTrue(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test3() {
+    public void test3() {
+        var testCase = 248842;
+        test(testCase, true);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        int testCase=1;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertFalse(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test4() {
+    public void test4() {
+        var testCase = 1;
+        test(testCase, false);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        int testCase=8;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertTrue(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test5() {
+    public void test5() {
+        var testCase = 8;
+        test(testCase, true);
+    }//public void test5() {
 
     @Test
-    void test6() {
-        int testCase=2462487;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertFalse(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test6() {
+    public void test6() {
+        var testCase = 2462487;
+        test(testCase, false);
+    }//public void test6() {
 
     @Test
-    void test7() {
-        int testCase=468402800;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertTrue(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test7() {
+    public void test7() {
+        var testCase = 468402800;
+        test(testCase, true);
+    }//public void test7() {
 
     @Test
-    void test8() {
-        int testCase=2468428;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertTrue(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test8() {
+    public void test8() {
+        var testCase = 2468428;
+        test(testCase, true);
+    }//public void test8() {
 
     @Test
-    void test9() {
-        int testCase=5468428;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertFalse(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test9() {
+    public void test9() {
+        var testCase = 5468428;
+        test(testCase, false);
+    }//public void test9() {
 
     @Test
-    void test10() {
-        int testCase=7468428;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new EvenDigitsOnly().evenDigitsOnly(testCase));
-        assertFalse(new EvenDigitsOnly().evenDigitsOnly(testCase));
-    }//void test10() {
+    public void test10() {
+        var testCase = 7468428;
+        test(testCase, false);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase = 137777;
+        test(testCase, false);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase = 2408440;
+        test(testCase, true);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase = 84209044;
+        test(testCase, false);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase = 1000000000;
+        test(testCase, false);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase = 800000000;
+        test(testCase, true);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase = 3468428;
+        test(testCase, false);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase = 2468429;
+        test(testCase, false);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase = 2468425;
+        test(testCase, false);
+    }//public void test18() {
+
+    @Test
+    public void test19() {
+        var testCase = 444444444;
+        test(testCase, true);
+    }//public void test19() {
+
+    @Test
+    public void test20() {
+        var testCase = 888888888;
+        test(testCase, true);
+    }//public void test20() {
+
+    private void test(int testCase, boolean solution){
+        assertTimeout(Duration.ofSeconds(3),()->new EvenDigitsOnly().evenDigitsOnly(testCase));
+        if(solution) {
+            assertTrue(new EvenDigitsOnly().evenDigitsOnly(testCase));
+        }else {//if(solution){
+            assertFalse(new EvenDigitsOnly().evenDigitsOnly(testCase));
+        }//else{
+    }//private void test(int testCase, boolean solution){
 }//class EvenDigitsOnlyTest {
