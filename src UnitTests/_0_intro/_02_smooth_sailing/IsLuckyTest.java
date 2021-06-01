@@ -3,82 +3,138 @@
  */
 
 package _0_intro._02_smooth_sailing;
-
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class IsLuckyTest {
 
     @Test
-    void Test1() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(1230)));
-        assertTrue(new IsLucky().isLucky(1230));
-    }//void Test1()
+    public void test1() {
+        var testCase = 1230;
+        test(testCase, true);
+    }//public void test1() {
 
     @Test
-    void Test2() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(239017)));
-        assertFalse(new IsLucky().isLucky(239017));
-    }//void Test2()
+    public void test2() {
+        var testCase = 239017;
+        test(testCase, false);
+    }//public void test2() {
 
     @Test
-    void Test3() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(134008)));
-        assertTrue(new IsLucky().isLucky(134008));
-    }//void Test3()
+    public void test3() {
+        var testCase = 134008;
+        test(testCase, true);
+    }//public void test3() {
 
     @Test
-    void Test4() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(10)));
-        assertFalse(new IsLucky().isLucky(10));
-    }//void Test4()
+    public void test4() {
+        var testCase = 10;
+        test(testCase, false);
+    }//public void test4() {
 
     @Test
-    void Test5() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(11)));
-        assertTrue(new IsLucky().isLucky(11));
-    }//void Test5()
+    public void test5() {
+        var testCase = 11;
+        test(testCase, true);
+    }//public void test5() {
 
     @Test
-    void Test6() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(1010)));
-        assertTrue(new IsLucky().isLucky(1010));
-    }//void Test6()
+    public void test6() {
+        var testCase = 1010;
+        test(testCase, true);
+    }//public void test6() {
 
     @Test
-    void Test7() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(261534)));
-        assertFalse(new IsLucky().isLucky(261534));
-    }//void Test7()
+    public void test7() {
+        var testCase = 261534;
+        test(testCase, false);
+    }//public void test7() {
 
     @Test
-    void Test8() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(100000)));
-        assertFalse(new IsLucky().isLucky(100000));
-    }//void Test8()
+    public void test8() {
+        var testCase = 100000;
+        test(testCase, false);
+    }//public void test8() {
 
     @Test
-    void Test9() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(999999)));
-        assertTrue(new IsLucky().isLucky(999999));
-    }//void Test9()
+    public void test9() {
+        var testCase = 999999;
+        test(testCase, true);
+    }//public void test9() {
 
     @Test
-    void Test10() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new IsLucky().isLucky(123321)));
-        assertTrue(new IsLucky().isLucky(123321));
-    }//void Test10()
+    public void test10() {
+        var testCase = 123321;
+        test(testCase, true);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase = 700340;
+        test(testCase, true);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase = 312412;
+        test(testCase, false);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase = 718321;
+        test(testCase, false);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase = 132222;
+        test(testCase, true);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase = 42;
+        test(testCase, false);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase = 6758;
+        test(testCase, true);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase = 66;
+        test(testCase, true);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase = 134007;
+        test(testCase, false);
+    }//public void test18() {
+
+    @Test
+    public void test19() {
+        var testCase = 12;
+        test(testCase, false);
+    }//public void test19() {
+
+    @Test
+    public void test20() {
+        var testCase = 111300;
+        test(testCase, true);
+    }//public void test20() {
+
+    private void test(int testCase, boolean solution){
+        assertTimeout(Duration.ofSeconds(3),()->new IsLucky().isLucky(testCase));
+        if(solution) {
+            assertTrue(new IsLucky().isLucky(testCase));
+        }else {//if(solution){
+            assertFalse(new IsLucky().isLucky(testCase));
+        }//else{
+    }//private void test(int testCase, boolean solution){
 }//class IsLuckyTest {
