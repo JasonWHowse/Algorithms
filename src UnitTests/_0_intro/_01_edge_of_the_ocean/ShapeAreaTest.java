@@ -5,92 +5,154 @@
 package _0_intro._01_edge_of_the_ocean;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 class ShapeAreaTest {
-    @Test
-    void test1() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(2));
-        assertEquals((new ShapeArea()).
-                shapeArea(2),5);
-    }//void test1() {
 
     @Test
-    void test2() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(3));
-        assertEquals((new ShapeArea()).
-                shapeArea(3),13);
-    }//void test2() {
+    public void test1() {
+        var testCase = 2;
+        var solution = 5;
+        test(testCase, solution);
+    }//public void test1() {
 
     @Test
-    void test3() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(1));
-        assertEquals((new ShapeArea()).
-                shapeArea(1),1);
-    }//void test3() {
+    public void test2() {
+        var testCase = 3;
+        var solution = 13;
+        test(testCase, solution);
+    }//public void test2() {
 
     @Test
-    void test4() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(5));
-        assertEquals((new ShapeArea()).
-                shapeArea(5),41);
-    }//void test4() {
+    public void test3() {
+        var testCase = 1;
+        var solution = 1;
+        test(testCase, solution);
+    }//public void test3() {
 
     @Test
-    void test5() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(7000));
-        assertEquals((new ShapeArea()).
-                shapeArea(7000),97986001);
-    }//void test5() {
+    public void test4() {
+        var testCase = 5;
+        var solution = 41;
+        test(testCase, solution);
+    }//public void test4() {
 
     @Test
-    void test6() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(8000));
-        assertEquals((new ShapeArea()).
-                shapeArea(8000),127984001);
-    }//void test6() {
+    public void test5() {
+        var testCase = 7000;
+        var solution = 97986001;
+        test(testCase, solution);
+    }//public void test5() {
 
     @Test
-    void test7() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(9999));
-        assertEquals((new ShapeArea()).
-                shapeArea(9999),199940005);
-    }//void test7() {
+    public void test6() {
+        var testCase = 8000;
+        var solution = 127984001;
+        test(testCase, solution);
+    }//public void test6() {
 
     @Test
-    void test8() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(9999));
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(9998));
-        assertEquals((new ShapeArea()).
-                shapeArea(9998),199900013);
-    }//void test8() {
+    public void test7() {
+        var testCase = 9999;
+        var solution = 199940005;
+        test(testCase, solution);
+    }//public void test7() {
 
     @Test
-    void test9() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(8999));
-        assertEquals((new ShapeArea()).
-                shapeArea(8999),161946005);
-    }//void test9() {
+    public void test8() {
+        var testCase = 9998;
+        var solution = 199900013;
+        test(testCase, solution);
+    }//public void test8() {
 
     @Test
-    void test10() {
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new ShapeArea()).shapeArea(100));
-        assertEquals((new ShapeArea()).
-                shapeArea(100),19801);
-    }//void test10() {
+    public void test9() {
+        var testCase = 8999;
+        var solution = 161946005;
+        test(testCase, solution);
+    }//public void test9() {
+
+    @Test
+    public void test10() {
+        var testCase = 100;
+        var solution = 19801;
+        test(testCase, solution);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase = 10;
+        var solution = 181;
+        test(testCase, solution);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase = 1111;
+        var solution = 2466421;
+        test(testCase, solution);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase = 1212;
+        var solution = 2935465;
+        test(testCase, solution);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase = 11;
+        var solution = 221;
+        test(testCase, solution);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase = 489;
+        var solution = 477265;
+        test(testCase, solution);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase = 999;
+        var solution = 1994005;
+        test(testCase, solution);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase = 91;
+        var solution = 16381;
+        test(testCase, solution);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase = 93;
+        var solution = 17113;
+        test(testCase, solution);
+    }//public void test18() {
+
+    @Test
+    public void test19() {
+        var testCase = 43;
+        var solution = 3613;
+        test(testCase, solution);
+    }//public void test19() {
+
+    @Test
+    public void test20() {
+        var testCase = 6334;
+        var solution = 80226445;
+        test(testCase, solution);
+    }//public void test20() {
+
+    private void test(int testCase, int solution){
+        assertTimeout(Duration.ofSeconds(3),()-> new ShapeArea().shapeArea(testCase));
+        assertEquals(solution, new ShapeArea().shapeArea(testCase));
+    }//private void test(int testCase, int solution){
 }//class ShapeAreaTest {
