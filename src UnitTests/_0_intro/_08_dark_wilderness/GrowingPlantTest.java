@@ -5,66 +5,104 @@
 package _0_intro._08_dark_wilderness;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 class GrowingPlantTest {
 
     @Test
-    void test1() {
-        int testCase1=100;
-        int testCase2=10;
-        int testCase3=910;
-        int solution=10;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new GrowingPlant().growingPlant(testCase1,testCase2,testCase3));
-        assertEquals(new GrowingPlant().growingPlant(testCase1,testCase2,testCase3),solution);
-    }//void test1() {
+    public void test1() {
+        var testCase1 = 100;
+        var testCase2 = 10;
+        var testCase3 = 910;
+        var solution = 10;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        int testCase1=10;
-        int testCase2=9;
-        int testCase3=4;
-        int solution=1;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new GrowingPlant().growingPlant(testCase1,testCase2,testCase3));
-        assertEquals(new GrowingPlant().growingPlant(testCase1,testCase2,testCase3),solution);
-    }//void test2() {
+    public void test2() {
+        var testCase1 = 10;
+        var testCase2 = 9;
+        var testCase3 = 4;
+        var solution = 1;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        int testCase1=5;
-        int testCase2=2;
-        int testCase3=7;
-        int solution=2;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new GrowingPlant().growingPlant(testCase1,testCase2,testCase3));
-        assertEquals(new GrowingPlant().growingPlant(testCase1,testCase2,testCase3),solution);
-    }//void test3() {
+    public void test3() {
+        var testCase1 = 5;
+        var testCase2 = 2;
+        var testCase3 = 7;
+        var solution = 2;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        int testCase1=7;
-        int testCase2=3;
-        int testCase3=443;
-        int solution=110;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new GrowingPlant().growingPlant(testCase1,testCase2,testCase3));
-        assertEquals(new GrowingPlant().growingPlant(testCase1,testCase2,testCase3),solution);
-    }//void test4() {
+    public void test4() {
+        var testCase1 = 7;
+        var testCase2 = 3;
+        var testCase3 = 443;
+        var solution = 110;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        int testCase1=6;
-        int testCase2=5;
-        int testCase3=10;
-        int solution=5;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new GrowingPlant().growingPlant(testCase1,testCase2,testCase3));
-        assertEquals(new GrowingPlant().growingPlant(testCase1,testCase2,testCase3),solution);
-    }//void test5() {
+    public void test5() {
+        var testCase1 = 6;
+        var testCase2 = 5;
+        var testCase3 = 10;
+        var solution = 5;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test5() {
+
+    @Test
+    public void test6() {
+        var testCase1 = 100;
+        var testCase2 = 99;
+        var testCase3 = 1000;
+        var solution = 901;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test6() {
+
+    @Test
+    public void test7() {
+        var testCase1 = 3;
+        var testCase2 = 2;
+        var testCase3 = 1000;
+        var solution = 998;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test7() {
+
+    @Test
+    public void test8() {
+        var testCase1 = 3;
+        var testCase2 = 2;
+        var testCase3 = 4;
+        var solution = 2;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test8() {
+
+    @Test
+    public void test9() {
+        var testCase1 = 99;
+        var testCase2 = 53;
+        var testCase3 = 973;
+        var solution = 20;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test9() {
+
+    @Test
+    public void test10() {
+        var testCase1 = 100;
+        var testCase2 = 2;
+        var testCase3 = 99;
+        var solution = 1;
+        test(testCase1, testCase2, testCase3, solution);
+    }//public void test10() {
+
+    private void test(int testCase1, int testCase2, int testCase3, int solution){
+        assertTimeout(Duration.ofSeconds(3),()-> new GrowingPlant().growingPlant(testCase1,testCase2,testCase3));
+        assertEquals(solution,new GrowingPlant().growingPlant(testCase1,testCase2,testCase3));
+    }//private void test(int testCase1, int testCase2, int testCase3, int solution){
 }//class GrowingPlantTest {
