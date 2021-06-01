@@ -5,56 +5,85 @@
 package _0_intro._07_diving_deeper;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 class DifferentSymbolsNaiveTest {
 
     @Test
-    void test1() {
-        String testCase="cabca";
-        int solution=3;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSymbolsNaive().differentSymbolsNaive(testCase));
-        assertEquals(new DifferentSymbolsNaive().differentSymbolsNaive(testCase),solution);
-    }//void test1() {
+    public void test1() {
+        var testCase = "cabca";
+        var solution = 3;
+        test(testCase, solution);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        String testCase="aba";
-        int solution=2;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSymbolsNaive().differentSymbolsNaive(testCase));
-        assertEquals(new DifferentSymbolsNaive().differentSymbolsNaive(testCase),solution);
-    }//void test2() {
+    public void test2() {
+        var testCase = "aba";
+        var solution = 2;
+        test(testCase, solution);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        String testCase="ccccccccccc";
-        int solution=1;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSymbolsNaive().differentSymbolsNaive(testCase));
-        assertEquals(new DifferentSymbolsNaive().differentSymbolsNaive(testCase),solution);
-    }//void test3() {
+    public void test3() {
+        var testCase = "ccccccccccc";
+        var solution = 1;
+        test(testCase, solution);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        String testCase="bcaba";
-        int solution=3;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DifferentSymbolsNaive().differentSymbolsNaive(testCase));
-        assertEquals(new DifferentSymbolsNaive().differentSymbolsNaive(testCase),solution);
-    }//void test4() {
+    public void test4() {
+        var testCase = "bcaba";
+        var solution = 3;
+        test(testCase, solution);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        String testCase="codesignal";
-        int solution=10;
+    public void test5() {
+        var testCase = "codesignal";
+        var solution = 10;
+        test(testCase, solution);
+    }//public void test5() {
+
+    @Test
+    public void test6() {
+        var testCase = "rrbxzqza";
+        var solution = 6;
+        test(testCase, solution);
+    }//public void test6() {
+
+    @Test
+    public void test7() {
+        var testCase = "lqqhpughgfkkfgihptucfldgfpdjtesngnehnthltrfqtjfrcdpumqpupiakfuheocrttjlolgotjcetnojmiepnbenpclogtujschplkjaimlniqikkgugspfmhhtordiranioklsqmejnrpjfifihulkgdfmgtnanomkmrmmuqsoibkbjgpktbcoqgtqschrstprqdibfcatjqjumpqaqahcutcihdfmrntenjkcjrhutlslplqmrsamimacmidsssrjbeoekeapceqqfpnkqucouibsdgdrorcqdfopqmmtluftpjueobasmmegqrskgphtnpdlnbcpfnmbmccoudfcijbiarpodscgmoqcrhuellgmcrldgiogrmcdednauggtcmbqtgtkbfmcnenmidghlrtplcuriuromjgiecppeugadgqhepbekqogueqpcqcsfqqpuhtjcpncbdrtiacrtibnhsjihlhojgbrbamoiglotctleerjcjgintppefmnomlgejidkgslitepblcmqekelpopgsppbhmpomgtqqsdcftjfsmnlratfrgcmqpjfioqhuscbplbmdrieerfrcstqlpeatrlejornldpntuojklgikrtqrdtoehkthqoghjjcuecclarqdarnqceqclcadehceaqeokngdgnaclmmfsgdhoareqdablftrhanttmnithkdohmhphqnaencfkuckqdkcgriighrqbitkqhtggiqmktnafqherpcenrtgigsfkhqpttjukqhurlddhqullnrjdkriuttcojcfpuaftbabkpbtlodgbccisjglbmeeahmomkpeuebmpeuiqrtncqgfrkhfrtgcjipudgesnnogqcdargkuelfejamcorfjjubeqpsllaskhpoenbabpfqqcprjlffnadcipbshcdopbjrpsosrgsomaphplkitoesmjqkbubmmobglgnhdgtknkcb";
+        var solution = 21;
+        test(testCase, solution);
+    }//public void test7() {
+
+    @Test
+    public void test8() {
+        var testCase = "qwertyuiopasdfghjklzxcvbnm";
+        var solution = 26;
+        test(testCase, solution);
+    }//public void test8() {
+
+    @Test
+    public void test9() {
+        var testCase = "wlfeaixgzjscnghhvmittkkywfsoiyqgrzdoeytgrwivbefchkzyeybzbckyieinxwiuyruumpdaqkaeilgirxokbloymckskkjefrzbjlilcbayzgxkylgncufdiyjgiudanoqchzigsytlhurhoekkjmzddllhhkreugtmmmtmmeiiosuirhlzbepygalgynbgjingrngpohcynoyufrjqiaoaebqggizfiuapmlobyswupipdmzmbekxclngplowxjgqkuatkvehtxdkomcefudbogydvqgpmwsibsdatmqgmrhvamchwxsngzcohvvmbxvrrebunvjzobvvkcahkusbtotchfrmobspziquyjznpwinxmmfmwlkoiyastfeayfaqkthohxwxivzmxjhjefywfpjtezsdvtmgjuurbhjpdznbmmbyohnirzqljnaeatqmeoctndqsujkcitpkrdsgkamlxouxmwsugigvlmbganxbckwqodsduhwdzshnhjziztogvbogmweeoltmseisyasxitpiiupyjfomwjbhobkozehewaaxekosoxpcbxikhbdvqflcrocfcpcdgmsnilfeveyhtygtvwyfvqgszkpoxbpdtjhiyreqcahpbbrxzclrtibwzgheytijkeevanwsynpxiimtlynyhhwmphawvjffrxcdtbfeajhwvmxzjbjliichnefzuiffmkixqogbspuugeidjihstfvvbckwuryiurqoyzwqtvaknsqgrwxvcdqspfdamoxreqbxmajinkcieangtyybpmuydemdrwysmnzltdgfcexbincgzuvhgjpefjxdudfmcoabskvpedffpjowcwfzupwwffbiubpcjqqbzrmamsoemxdmqralnmnjpgobfvgsbmdhmyovkglmynvsnezcksqdlyzaqspnpeaomdilkhifmbpokseuslyrvzljvmyzpbdteghiqocyrzit";
+        var solution = 26;
+        test(testCase, solution);
+    }//public void test9() {
+
+    @Test
+    public void test10() {
+        var testCase = "aaaaaaaaaaaaaaa";
+        var solution = 1;
+        test(testCase, solution);
+    }//public void test10() {
+
+    private void test(String testCase, int solution){
         assertTimeout(Duration.ofSeconds(3),()->
                 new DifferentSymbolsNaive().differentSymbolsNaive(testCase));
-        assertEquals(new DifferentSymbolsNaive().differentSymbolsNaive(testCase),solution);
-    }//void test5() {
+        assertEquals(solution,new DifferentSymbolsNaive().differentSymbolsNaive(testCase));
+    }//private void test(String testCase, int solution){
 }//class DifferentSymbolsNaiveTest {
