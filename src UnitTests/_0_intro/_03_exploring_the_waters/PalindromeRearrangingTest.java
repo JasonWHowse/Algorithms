@@ -5,90 +5,77 @@
 package _0_intro._03_exploring_the_waters;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class PalindromeRearrangingTest {
 
     @Test
-    void test1() {
-        String testCase="aabb";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertTrue(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test1() {
+    public void test1() {
+        var testCase = "aabb";
+        test(testCase, true);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        String testCase="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertFalse(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test2() {
+    public void test2() {
+        var testCase = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc";
+        test(testCase, false);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        String testCase="abbcabb";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertTrue(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test3() {
+    public void test3() {
+        var testCase = "abbcabb";
+        test(testCase, true);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        String testCase="zyyzzzzz";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertTrue(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test4() {
+    public void test4() {
+        var testCase = "zyyzzzzz";
+        test(testCase, true);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        String testCase="z";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertTrue(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test5() {
+    public void test5() {
+        var testCase = "z";
+        test(testCase, true);
+    }//public void test5() {
 
     @Test
-    void test6() {
-        String testCase="zaa";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertTrue(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test6() {
+    public void test6() {
+        var testCase = "zaa";
+        test(testCase, true);
+    }//public void test6() {
 
     @Test
-    void test7() {
-        String testCase="abca";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertFalse(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test7() {
+    public void test7() {
+        var testCase = "abca";
+        test(testCase, false);
+    }//public void test7() {
 
     @Test
-    void test8() {
-        String testCase="abcad";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertFalse(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test8() {
+    public void test8() {
+        var testCase = "abcad";
+        test(testCase, false);
+    }//public void test8() {
 
     @Test
-    void test9() {
-        String testCase="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbccccaaaaaaaaaaaaa";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertFalse(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test9() {
+    public void test9() {
+        var testCase = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbccccaaaaaaaaaaaaa";
+        test(testCase, false);
+    }//public void test9() {
 
     @Test
-    void test10() {
-        String testCase="abdhuierf";
-        assertTimeout(Duration.ofSeconds(3),()->
-                (new PalindromeRearranging().palindromeRearranging(testCase)));
-        assertFalse(new PalindromeRearranging().palindromeRearranging(testCase));
-    }//void test10() {
+    public void test10() {
+        var testCase = "abdhuierf";
+        test(testCase, false);
+    }//public void test10() {
+
+    private void test(String testCase, boolean solution){
+        assertTimeout(Duration.ofSeconds(3),()->new PalindromeRearranging().palindromeRearranging(testCase));
+        if(solution) {
+            assertTrue(new PalindromeRearranging().palindromeRearranging(testCase));
+        }else {//if(solution){
+            assertFalse(new PalindromeRearranging().palindromeRearranging(testCase));
+        }//else {
+    }//private void test(String testCase, boolean solution){
 }//class PalindromeRearrangingTest {
