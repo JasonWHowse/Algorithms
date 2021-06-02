@@ -5,92 +5,140 @@
 package _0_intro._11_land_of_logic;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 class DigitsProductTest {
 
     @Test
-    void test1() {
-        int testCase=12;
-        int solution=26;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
-        assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test1() {
+    public void test1() {
+        var testCase = 12;
+        var solution = 26;
+        test(testCase, solution);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        int testCase=19;
-        int solution=-1;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
-        assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test2() {
+    public void test2() {
+        var testCase = 19;
+        var solution = -1;
+        test(testCase, solution);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        int testCase=450;
-        int solution=2559;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
-        assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test3() {
+    public void test3() {
+        var testCase = 450;
+        var solution = 2559;
+        test(testCase, solution);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        int testCase=0;
-        int solution=10;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
-        assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test4() {
+    public void test4() {
+        var testCase = 0;
+        var solution = 10;
+        test(testCase, solution);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        int testCase=13;
-        int solution=-1;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
-        assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test5() {
+    public void test5() {
+        var testCase = 13;
+        var solution = -1;
+        test(testCase, solution);
+    }//public void test5() {
 
     @Test
-    void test6() {
-        int testCase=1;
-        int solution=1;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
-        assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test6() {
+    public void test6() {
+        var testCase = 1;
+        var solution = 1;
+        test(testCase, solution);
+    }//public void test6() {
 
     @Test
-    void test7() {
-        int testCase=243;
-        int solution=399;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
-        assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test7() {
+    public void test7() {
+        var testCase = 243;
+        var solution = 399;
+        test(testCase, solution);
+    }//public void test7() {
 
     @Test
-    void test8() {
-        int testCase=576;
-        int solution=889;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
-        assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test8() {
+    public void test8() {
+        var testCase = 576;
+        var solution = 889;
+        test(testCase, solution);
+    }//public void test8() {
 
     @Test
-    void test9() {
-        int testCase=360;
-        int solution=589;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DigitsProduct().digitsProduct(testCase));
+    public void test9() {
+        var testCase = 360;
+        var solution = 589;
+        test(testCase, solution);
+    }//public void test9() {
+
+    @Test
+    public void test10() {
+        var testCase = 7;
+        var solution = 7;
+        test(testCase, solution);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase = 112;
+        var solution = 278;
+        test(testCase, solution);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase = 20;
+        var solution = 45;
+        test(testCase, solution);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase = 10;
+        var solution = 25;
+        test(testCase, solution);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase = 600;
+        var solution = 3558;
+        test(testCase, solution);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase = 33;
+        var solution = -1;
+        test(testCase, solution);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase = 512;
+        var solution = 888;
+        test(testCase, solution);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase = 486;
+        var solution = 699;
+        test(testCase, solution);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase = 484;
+        var solution = -1;
+        test(testCase, solution);
+    }//public void test18() {
+
+    private void test(int testCase, int solution){
+        assertTimeout(Duration.ofSeconds(3),()->  new DigitsProduct().digitsProduct(testCase));
         assertEquals(new DigitsProduct().digitsProduct(testCase),solution);
-    }//void test9() {
-}
+    }//private void test(int testCase, int solution){
+}//class DigitsProductTest {
