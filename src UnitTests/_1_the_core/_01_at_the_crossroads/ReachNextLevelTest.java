@@ -5,110 +5,177 @@
 package _1_the_core._01_at_the_crossroads;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class ReachNextLevelTest {
 
     @Test
-    void test1() {
-        int testCase1=10;
-        int testCase2=15;
-        int testCase3=5;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertTrue(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test1() {
+    public void test1() {
+        var testCase1 = 10;
+        var testCase2 = 15;
+        var testCase3 = 5;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        int testCase1=10;
-        int testCase2=15;
-        int testCase3=4;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertFalse(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test2() {
+    public void test2() {
+        var testCase1 = 10;
+        var testCase2 = 15;
+        var testCase3 = 4;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        int testCase1=3;
-        int testCase2=6;
-        int testCase3=4;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertTrue(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test3() {
+    public void test3() {
+        var testCase1 = 3;
+        var testCase2 = 6;
+        var testCase3 = 4;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        int testCase1=84;
-        int testCase2=135;
-        int testCase3=36;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertFalse(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test4() {
+    public void test4() {
+        var testCase1 = 84;
+        var testCase2 = 135;
+        var testCase3 = 36;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        int testCase1=74;
-        int testCase2=170;
-        int testCase3=58;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertFalse(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test5() {
+    public void test5() {
+        var testCase1 = 74;
+        var testCase2 = 170;
+        var testCase3 = 58;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test5() {
 
     @Test
-    void test6() {
-        int testCase1=80;
-        int testCase2=199;
-        int testCase3=15;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertFalse(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test6() {
+    public void test6() {
+        var testCase1 = 80;
+        var testCase2 = 199;
+        var testCase3 = 15;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test6() {
 
     @Test
-    void test7() {
-        int testCase1=97;
-        int testCase2=57;
-        int testCase3=7;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertTrue(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test7() {
+    public void test7() {
+        var testCase1 = 97;
+        var testCase2 = 57;
+        var testCase3 = 7;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test7() {
 
     @Test
-    void test8() {
-        int testCase1=235;
-        int testCase2=293;
-        int testCase3=4;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertFalse(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test8() {
+    public void test8() {
+        var testCase1 = 235;
+        var testCase2 = 293;
+        var testCase3 = 4;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test8() {
 
     @Test
-    void test9() {
-        int testCase1=222;
-        int testCase2=137;
-        int testCase3=58;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertTrue(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test9() {
+    public void test9() {
+        var testCase1 = 222;
+        var testCase2 = 137;
+        var testCase3 = 58;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test9() {
 
     @Test
-    void test10() {
-        int testCase1=16;
-        int testCase2=23;
-        int testCase3=16;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-        assertTrue(new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
-    }//void test10() {
+    public void test10() {
+        var testCase1 = 16;
+        var testCase2 = 23;
+        var testCase3 = 16;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase1 = 249;
+        var testCase2 = 117;
+        var testCase3 = 44;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase1 = 250;
+        var testCase2 = 300;
+        var testCase3 = 46;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase1 = 154;
+        var testCase2 = 188;
+        var testCase3 = 31;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase1 = 170;
+        var testCase2 = 199;
+        var testCase3 = 51;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase1 = 22;
+        var testCase2 = 43;
+        var testCase3 = 63;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase1 = 234;
+        var testCase2 = 300;
+        var testCase3 = 65;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase1 = 230;
+        var testCase2 = 285;
+        var testCase3 = 56;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase1 = 3;
+        var testCase2 = 5;
+        var testCase3 = 2;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test18() {
+
+    @Test
+    public void test19() {
+        var testCase1 = 10;
+        var testCase2 = 15;
+        var testCase3 = 2;
+        test(testCase1, testCase2, testCase3, false);
+    }//public void test19() {
+
+    @Test
+    public void test20() {
+        var testCase1 = 239;
+        var testCase2 = 300;
+        var testCase3 = 63;
+        test(testCase1, testCase2, testCase3, true);
+    }//public void test20() {
+
+    private void test(int testCase1, int testCase2, int testCase3, boolean solution){
+        assertTimeout(Duration.ofSeconds(3),()-> new ReachNextLevel().reachNextLevel(testCase1,testCase2,testCase3));
+        if(solution) {
+            assertTrue(new ReachNextLevel().reachNextLevel(testCase1, testCase2, testCase3));
+        }else {//if(solution) {
+            assertFalse(new ReachNextLevel().reachNextLevel(testCase1, testCase2, testCase3));
+        }//else{
+    }//private void test(int testCase1, int testCase2, int testCase3, boolean solution){
 }//class ReachNextLevelTest {
