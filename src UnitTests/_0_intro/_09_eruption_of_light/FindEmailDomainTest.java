@@ -5,101 +5,154 @@
 package _0_intro._09_eruption_of_light;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 class FindEmailDomainTest {
 
     @Test
-    void test1() {
-        String testCase="prettyandsimple@example.com";
-        String solution="example.com";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test1() {
+    public void test1() {
+        var testCase = "prettyandsimple@example.com";
+        var solution = "example.com";
+        test(testCase, solution);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        String testCase="fully-qualified-domain@codesignal.com";
-        String solution="codesignal.com";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test2() {
+    public void test2() {
+        var testCase = "fully-qualified-domain@codesignal.com";
+        var solution = "codesignal.com";
+        test(testCase, solution);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        String testCase="\\\" \\\"@space.com";
-        String solution="space.com";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test3() {
+    public void test3() {
+        var testCase = "\" \"@space.com";
+        var solution = "space.com";
+        test(testCase, solution);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        String testCase="someaddress@yandex.ru";
-        String solution="yandex.ru";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test4() {
+    public void test4() {
+        var testCase = "someaddress@yandex.ru";
+        var solution = "yandex.ru";
+        test(testCase, solution);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        String testCase="\\\" \\\"@xample.org";
-        String solution="xample.org";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test5() {
+    public void test5() {
+        var testCase = "\" \"@xample.org";
+        var solution = "xample.org";
+        test(testCase, solution);
+    }//public void test5() {
 
     @Test
-    void test6() {
-        String testCase="\\\"much.more unusual\\\"@yahoo.com";
-        String solution="yahoo.com";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test6() {
+    public void test6() {
+        var testCase = "\"much.more unusual\"@yahoo.com";
+        var solution = "yahoo.com";
+        test(testCase, solution);
+    }//public void test6() {
 
     @Test
-    void test7() {
-        String testCase="\\\"very.unusual.@.unusual.com\\\"@usual.com";
-        String solution="usual.com";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test7() {
+    public void test7() {
+        var testCase = "\"very.unusual.@.unusual.com\"@usual.com";
+        var solution = "usual.com";
+        test(testCase, solution);
+    }//public void test7() {
 
     @Test
-    void test8() {
-        String testCase="admin@mailserver2.ru";
-        String solution="mailserver2.ru";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test8() {
+    public void test8() {
+        var testCase = "admin@mailserver2.ru";
+        var solution = "mailserver2.ru";
+        test(testCase, solution);
+    }//public void test8() {
 
     @Test
-    void test9() {
-        String testCase="example-indeed@strange-example.com";
-        String solution="strange-example.com";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
-        assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test9() {
+    public void test9() {
+        var testCase = "example-indeed@strange-example.com";
+        var solution = "strange-example.com";
+        test(testCase, solution);
+    }//public void test9() {
 
     @Test
-    void test10() {
-        String testCase="very.common@gmail.com";
-        String solution="gmail.com";
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FindEmailDomain().findEmailDomain(testCase));
+    public void test10() {
+        var testCase = "very.common@gmail.com";
+        var solution = "gmail.com";
+        test(testCase, solution);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase = "x@oneletter.am";
+        var solution = "oneletter.am";
+        test(testCase, solution);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase = "appugyl__un91n-3062@yopmail.com";
+        var solution = "yopmail.com";
+        test(testCase, solution);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase = "hr06122x@a4zerwak0d.gq";
+        var solution = "a4zerwak0d.gq";
+        test(testCase, solution);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase = "ralamosm@aol.com";
+        var solution = "aol.com";
+        test(testCase, solution);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase = "really@thuglife.de";
+        var solution = "thuglife.de";
+        test(testCase, solution);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase = "vyoucef.koko@axuwv6wnveqhwilbzer.gq";
+        var solution = "axuwv6wnveqhwilbzer.gq";
+        test(testCase, solution);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase = "m@qazwsxedcrfvtgbyhnujmiklopolksuiwnshdyuijlpo.com";
+        var solution = "qazwsxedcrfvtgbyhnujmiklopolksuiwnshdyuijlpo.com";
+        test(testCase, solution);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase = "boom@bo.co";
+        var solution = "bo.co";
+        test(testCase, solution);
+    }//public void test18() {
+
+    @Test
+    public void test19() {
+        var testCase = "Hamojan@thebest.am";
+        var solution = "thebest.am";
+        test(testCase, solution);
+    }//public void test19() {
+
+    @Test
+    public void test20() {
+        var testCase = "LemurTheWorst@ysu.am";
+        var solution = "ysu.am";
+        test(testCase, solution);
+    }//public void test20() {
+
+    private void test(String testCase, String solution){
+        assertTimeout(Duration.ofSeconds(3),()-> new FindEmailDomain().findEmailDomain(testCase));
         assertEquals(new FindEmailDomain().findEmailDomain(testCase),solution);
-    }//void test10() {
-}
+    }//private void test(String testCase, String solution){
+}//class FindEmailDomainTest {
