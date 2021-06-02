@@ -42,6 +42,41 @@ namespace Algorithms.src_UnitTests._1_the_core._04_list_forest_edge {
             Test(testCase, solution);
         }//public void Test5() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test6() {
+            int[] testCase = { 8, 1, 0, 4, 7 };
+            var solution = 4;
+            Test(testCase, solution);
+        }//public void Test6() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            int[] testCase = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var solution = 0;
+            Test(testCase, solution);
+        }//public void Test7() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            int[] testCase = { 10 };
+            var solution = 0;
+            Test(testCase, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            int[] testCase = { 4, 2, 7, 18 };
+            var solution = 13;
+            Test(testCase, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            int[] testCase = { 4, 2, 9 };
+            var solution = 5;
+            Test(testCase, solution);
+        }//public void Test10() {
+
         private void Test(int[] testCase, int solution) {
             Assert.AreEqual(solution, new MakeArrayConsecutive2().makeArrayConsecutive2(testCase));
         }//private void Test(int[] testCase,int solution) {

@@ -1,11 +1,18 @@
 ﻿using Algorithms.src._1_the_core._04_list_forest_edge;
+using Algorithms.src.helper_functions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests._1_the_core._04_list_forest_edge {
     [TestClass()]
     public class RemoveArrayPartTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\_1_the_core\\_04_list_forest_edge\\RemoveArrayPart\\";
+        private int[] internedTestCase1 = new int[0];
+        private int internedTestCase2 = 0;
+        private int internedTestCase3 = 0;
+        private int[] internedSolution = new int[0];
 
         [TestMethod(), Timeout(timeout)]
         public void Test1() {
@@ -79,8 +86,75 @@ namespace Algorithms.src_UnitTests._1_the_core._04_list_forest_edge {
             Test(testCase1, testCase2, testCase3, solution);
         }//public void Test8() {
 
+        [TestMethod]
+        public void Test9() {
+            SetTestCaseInfo("test-9.json");
+            DoTest();
+        }//public void Test9() {
+
+        [TestMethod]
+        public void Test10() {
+            SetTestCaseInfo("test-10.json");
+            DoTest();
+        }//public void Test10() {
+
+        [TestMethod]
+        public void Test11() {
+            SetTestCaseInfo("test-11.json");
+            DoTest();
+        }//public void Test11() {
+
+        [TestMethod]
+        public void Test12() {
+            SetTestCaseInfo("test-12.json");
+            DoTest();
+        }//public void Test12() {
+
+        [TestMethod]
+        public void Test13() {
+            SetTestCaseInfo("test-13.json");
+            DoTest();
+        }//public void Test13() {
+
+        [TestMethod]
+        public void Test14() {
+            SetTestCaseInfo("test-14.json");
+            DoTest();
+        }//public void Test14() {
+
+        [TestMethod]
+        public void Test15() {
+            SetTestCaseInfo("test-15.json");
+            DoTest();
+        }//public void Test15() {
+
         private void Test(int[] testCase1, int testCase2, int testCase3, int[] solution) {
             CollectionAssert.AreEqual(solution, new RemoveArrayPart().removeArrayPart(testCase1, testCase2, testCase3));
         }//private void Test(int[] testCase1,int testCase2,int testCase3,int[] solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                JArray preSolution = (JArray)o["output"];
+                internedSolution = new int[preSolution.Count];
+                for(int i = 0; i < internedSolution.Length; i++) {
+                    internedSolution[i] = (int)preSolution[i];
+                }//for(int i = 0; i < internedSolution.Length; i++) {
+                JArray preTestCase1 = (JArray)o["input"]["inputArray"];
+                internedTestCase1 = new int[preTestCase1.Count];
+                for (int i = 0; i < internedTestCase1.Length; i++) {
+                    internedTestCase1[i] = (int)preTestCase1[i];
+                }//for (int i = 0; i < internedTestCase.Length; i++) {
+                internedTestCase2 = (int)o["input"]["l"];
+                internedTestCase3 = (int)o["input"]["r"];
+            }//else {
+        }//public void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase1, internedTestCase2, internedTestCase3, internedSolution);
+        }//private void DoTest() {
     }//public class RemoveArrayPartTests {
 }//namespace Algorithms.src_UnitTests._1_the_core._04_list_forest_edge {

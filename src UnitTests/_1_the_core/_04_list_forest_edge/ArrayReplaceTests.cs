@@ -1,11 +1,18 @@
 ﻿using Algorithms.src._1_the_core._04_list_forest_edge;
+using Algorithms.src.helper_functions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests._1_the_core._04_list_forest_edge {
     [TestClass()]
     public class ArrayReplaceTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\_1_the_core\\_04_list_forest_edge\\ArrayReplace\\";
+        private int[] internedTestCase1 = new int[0];
+        private int internedTestCase2 = 0;
+        private int internedTestCase3 = 0;
+        private int[] internedSolution = new int[0];
 
         [TestMethod(), Timeout(timeout)]
         public void Test1() {
@@ -79,8 +86,96 @@ namespace Algorithms.src_UnitTests._1_the_core._04_list_forest_edge {
             Test(testCase1, testCase2, testCase3, solution);
         }//public void Test8() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            int[] testCase1 = { 5, 4, 7, 2, 2, 4, 4, 7, 0, 10 };
+            var testCase2 = 4;
+            var testCase3 = 7;
+            int[] solution = { 5, 7, 7, 2, 2, 7, 7, 7, 0, 10 };
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            int[] testCase1 = { 4, 5, 4 };
+            var testCase2 = 4;
+            var testCase3 = 10;
+            int[] solution = { 10, 5, 10 };
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            int[] testCase1 = { 0, 0 };
+            var testCase2 = 0;
+            var testCase3 = 4;
+            int[] solution = { 4, 4 };
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            int[] testCase1 = { 5, 1, 3, 10, 3 };
+            var testCase2 = 3;
+            var testCase3 = 9;
+            int[] solution = { 5, 1, 9, 10, 9 };
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            int[] testCase1 = {  };
+            var testCase2 = 1000000000;
+            var testCase3 = 1000000000;
+            int[] solution = {  };
+            Test(testCase1, testCase2, testCase3, solution);
+        }//public void Test13() {
+
+        [TestMethod]
+        public void Test14() {
+            SetTestCaseInfo("test-14.json");
+            DoTest();
+        }//public void Test14() {
+
+        [TestMethod]
+        public void Test15() {
+            SetTestCaseInfo("test-15.json");
+            DoTest();
+        }//public void Test15() {
+
+        [TestMethod]
+        public void Test16() {
+            SetTestCaseInfo("test-16.json");
+            DoTest();
+        }//public void Test16() {
+
         private void Test(int[] testCase1, int testCase2, int testCase3, int[] solution) {
             CollectionAssert.AreEqual(solution, new ArrayReplace().arrayReplace(testCase1, testCase2, testCase3));
         }//private void Test(int[] testCase1,int testCase2,int testCase3,int[] solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                JArray preSolution = (JArray)o["output"];
+                internedSolution = new int[preSolution.Count];
+                for (int i = 0; i < internedSolution.Length; i++) {
+                    internedSolution[i] = (int)preSolution[i];
+                }//for (int i = 0; i < internedSolution.Length; i++) {
+                JArray preTestCase1 = (JArray)o["input"]["inputArray"];
+                internedTestCase1 = new int[preTestCase1.Count];
+                for (int i = 0; i < internedTestCase1.Length; i++) {
+                    internedTestCase1[i] = (int)preTestCase1[i];
+                }//for (int i = 0; i < internedTestCase.Length; i++) {
+                internedTestCase2 = (int)o["input"]["elemToReplace"];
+                internedTestCase3 = (int)o["input"]["substitutionElem"];
+            }//else {
+        }//public void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase1, internedTestCase2, internedTestCase3, internedSolution);
+        }//private void DoTest() {
     }//public class ArrayReplaceTests {
 }//namespace Algorithms.src_UnitTests._1_the_core._04_list_forest_edge {
