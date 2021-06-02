@@ -5,101 +5,154 @@
 package _0_intro._10_rainbow_of_clarity;
 
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 class DeleteDigitTest {
 
     @Test
-    void test1() {
-        int testCase=152;
-        int solution=52;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test1() {
+    public void test1() {
+        var testCase = 152;
+        var solution = 52;
+        test(testCase, solution);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        int testCase=1001;
-        int solution=101;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test2() {
+    public void test2() {
+        var testCase = 1001;
+        var solution = 101;
+        test(testCase, solution);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        int testCase=10;
-        int solution=1;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test3() {
+    public void test3() {
+        var testCase = 10;
+        var solution = 1;
+        test(testCase, solution);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        int testCase=222219;
-        int solution=22229;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test4() {
+    public void test4() {
+        var testCase = 222219;
+        var solution = 22229;
+        test(testCase, solution);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        int testCase=109;
-        int solution=19;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test5() {
+    public void test5() {
+        var testCase = 109;
+        var solution = 19;
+        test(testCase, solution);
+    }//public void test5() {
 
     @Test
-    void test6() {
-        int testCase=222250;
-        int solution=22250;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test6() {
+    public void test6() {
+        var testCase = 222250;
+        var solution = 22250;
+        test(testCase, solution);
+    }//public void test6() {
 
     @Test
-    void test7() {
-        int testCase=44435;
-        int solution=4445;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test7() {
+    public void test7() {
+        var testCase = 44435;
+        var solution = 4445;
+        test(testCase, solution);
+    }//public void test7() {
 
     @Test
-    void test8() {
-        int testCase=12;
-        int solution=2;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test8() {
+    public void test8() {
+        var testCase = 12;
+        var solution = 2;
+        test(testCase, solution);
+    }//public void test8() {
 
     @Test
-    void test9() {
-        int testCase=218616;
-        int solution=28616;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test9() {
+    public void test9() {
+        var testCase = 218616;
+        var solution = 28616;
+        test(testCase, solution);
+    }//public void test9() {
 
     @Test
-    void test10() {
-        int testCase=861452;
-        int solution=86452;
-        assertTimeout(Duration.ofSeconds(3),()->
-                new DeleteDigit().deleteDigit(testCase));
-        assertEquals(new DeleteDigit().deleteDigit(testCase),solution);
-    }//void test10() {
-}
+    public void test10() {
+        var testCase = 861452;
+        var solution = 86452;
+        test(testCase, solution);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase = 527964;
+        var solution = 57964;
+        test(testCase, solution);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase = 807418;
+        var solution = 87418;
+        test(testCase, solution);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase = 433757;
+        var solution = 43757;
+        test(testCase, solution);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase = 748541;
+        var solution = 78541;
+        test(testCase, solution);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase = 909912;
+        var solution = 99912;
+        test(testCase, solution);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase = 864200;
+        var solution = 86420;
+        test(testCase, solution);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase = 812520;
+        var solution = 82520;
+        test(testCase, solution);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase = 1000000;
+        var solution = 100000;
+        test(testCase, solution);
+    }//public void test18() {
+
+    @Test
+    public void test19() {
+        var testCase = 987654;
+        var solution = 98765;
+        test(testCase, solution);
+    }//public void test19() {
+
+    @Test
+    public void test20() {
+        var testCase = 872048;
+        var solution = 87248;
+        test(testCase, solution);
+    }//public void test20() {
+
+    private void test(int testCase, int solution){
+        assertTimeout(Duration.ofSeconds(3),()-> new DeleteDigit().deleteDigit(testCase));
+        assertEquals(solution,new DeleteDigit().deleteDigit(testCase));
+    }//private void test(int testCase, int solution){
+}//class DeleteDigitTest {
