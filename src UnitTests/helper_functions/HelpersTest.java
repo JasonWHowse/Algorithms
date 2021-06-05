@@ -14,7 +14,7 @@ import static org.hamcrest.CoreMatchers.*;
 class HelpersTest {
 
     @Test
-    void test1() {//tests the primitive as int
+    public void test1() {//tests the primitive as int
         int[][] testCase=new int[][]{   {0,1,1,2},
                 {0,5,0,0},
                 {2,0,3,3}};
@@ -24,10 +24,10 @@ class HelpersTest {
         mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
-    }//void test1() {
+    }//public void test1() {
 
     @Test
-    void test2() {//tests the generic as Integer
+    public void test2() {//tests the generic as Integer
         Integer[][] testCase=new Integer[][]{   {0,1,1,2},
                 {0,5,0,0},
                 {2,0,3,3}};
@@ -37,10 +37,10 @@ class HelpersTest {
         mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
-    }//void test2() {
+    }//public void test2() {
 
     @Test
-    void test3() {//tests the generic as String
+    public void test3() {//tests the generic as String
         String[][] testCase=new String[][]{   {"asdf","sdf","sde","s"},
                 {"0","5","0","0"},
                 {"2","0","3","3"}};
@@ -50,10 +50,10 @@ class HelpersTest {
         mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
-    }//void test3() {
+    }//public void test3() {
 
     @Test
-    void test4() {//tests 3d the generic as String
+    public void test4() {//tests 3d the generic as String
         String[][][] testCase=new String[][][]{{   {"asdf","sdf","sde","s"},
                 {"0","5","0","0"},
                 {"2","0","3","3"}},{   {"0","1","2","3"},
@@ -67,10 +67,10 @@ class HelpersTest {
         mutator(deepClone(testCase));
 //        mutator((testCase[0]));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
-    }//void test4() {
+    }//public void test4() {
 
     @Test
-    void test5() {//tests the primitive as int
+    public void test5() {//tests the primitive as int
         Integer[][] testCase=new Integer[][]{   {0,1,1,2},
                 {0,5,0,0},
                 {2,0,3,3}};
@@ -80,10 +80,10 @@ class HelpersTest {
         mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
-    }//void test5() {
+    }//public void test5() {
 
     @Test
-    void test6() {//tests the generic as Integer
+    public void test6() {//tests the generic as Integer
         Integer[][] testCase=new Integer[][]{   {0,1,1,2},
                 {0,5,0,0},
                 {2,0,3,3}};
@@ -93,10 +93,10 @@ class HelpersTest {
         mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
-    }//void test6() {
+    }//public void test6() {
 
     @Test
-    void test7() {//tests the generic as String
+    public void test7() {//tests the generic as String
         String[][] testCase=new String[][]{   {"asdf","sdf","sde","s"},
                 {"0","5","0","0"},
                 {"2","0","3","3"}};
@@ -109,7 +109,7 @@ class HelpersTest {
     }//void tes7() {
 
     @Test
-    void test8() {//tests 3d the generic as String
+    public void test8() {//tests 3d the generic as String
         String[][][] testCase=new String[][][]{{   {"asdf","sdf","sde","s"},
                 {"0","5","0","0"},
                 {"2","0","3","3"}},{   {"0","1","2","3"},
@@ -123,10 +123,10 @@ class HelpersTest {
         mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
-    }//void test8() {
+    }//public void test8() {
 
     @Test
-    void test9() {//tests 4d the generic as Integer
+    public void test9() {//tests 4d the generic as Integer
         Integer[][][][] testCase =new Integer[5][5][5][5];
         for(int x=0;x<testCase.length;x++){
             for(int y=0;y<testCase[x].length;y++){
@@ -150,7 +150,7 @@ class HelpersTest {
         mutator(deepClone(testCase));
 //        mutator((testCase));//tests that array is mutated
         MatcherAssert.assertThat(testCase,is(solution));
-    }//void test9() {
+    }//public void test9() {
 
 
 
