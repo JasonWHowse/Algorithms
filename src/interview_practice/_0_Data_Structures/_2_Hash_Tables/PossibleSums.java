@@ -31,7 +31,7 @@ You have a collection of coins, and you know the values of the coins and the qua
     /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] array.integer coins
 

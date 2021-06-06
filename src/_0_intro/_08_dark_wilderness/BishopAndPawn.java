@@ -25,7 +25,7 @@ example below to see how it can move:
 /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] string bishop
 

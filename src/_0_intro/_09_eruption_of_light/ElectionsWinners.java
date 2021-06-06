@@ -48,7 +48,7 @@ assume there is no winner at all.
 /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] array.integer votes
 

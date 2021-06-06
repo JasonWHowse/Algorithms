@@ -2,10 +2,6 @@
  * Authored by: Jason Wesley Howse
  */
 
-/*
- * Authored by: Jason Wesley Howse
- */
-
 package _1_the_core._05_labyrinth_of_nested_loops;
 
 import java.time.Duration;
@@ -15,72 +11,119 @@ import static org.junit.jupiter.api.Assertions.*;
 class IsPowerTest {
 
     @Test
-    void test1() {
-        int testCase = 125;
-        test(testCase,true);
-    }//void test1() {
+    public void test1() {
+        var testCase = 125;
+        test(testCase, true);
+    }//public void test1() {
 
     @Test
-    void test2() {
-        int testCase = 72;
-        test(testCase,false);
-    }//void test2() {
+    public void test2() {
+        var testCase = 72;
+        test(testCase, false);
+    }//public void test2() {
 
     @Test
-    void test3() {
-        int testCase = 100;
-        test(testCase,true);
-    }//void test3() {
+    public void test3() {
+        var testCase = 100;
+        test(testCase, true);
+    }//public void test3() {
 
     @Test
-    void test4() {
-        int testCase = 11;
-        test(testCase,false);
-    }//void test4() {
+    public void test4() {
+        var testCase = 11;
+        test(testCase, false);
+    }//public void test4() {
 
     @Test
-    void test5() {
-        int testCase = 324;
-        test(testCase,true);
-    }//void test5() {
+    public void test5() {
+        var testCase = 324;
+        test(testCase, true);
+    }//public void test5() {
 
     @Test
-    void test6() {
-        int testCase = 256;
-        test(testCase,true);
-    }//void test6() {
+    public void test6() {
+        var testCase = 256;
+        test(testCase, true);
+    }//public void test6() {
 
     @Test
-    void test7() {
-        int testCase = 119;
-        test(testCase,false);
-    }//void test7() {
+    public void test7() {
+        var testCase = 119;
+        test(testCase, false);
+    }//public void test7() {
 
     @Test
-    void test8() {
-        int testCase = 400;
-        test(testCase,true);
-    }//void test8() {
+    public void test8() {
+        var testCase = 400;
+        test(testCase, true);
+    }//public void test8() {
 
     @Test
-    void test9() {
-        int testCase = 350;
-        test(testCase,false);
-    }//void test9() {
+    public void test9() {
+        var testCase = 350;
+        test(testCase, false);
+    }//public void test9() {
 
     @Test
-    void test10() {
-        int testCase = 361;
-        test(testCase,true);
-    }//void test10() {
+    public void test10() {
+        var testCase = 361;
+        test(testCase, true);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase = 122;
+        test(testCase, false);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase = 290;
+        test(testCase, false);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase = 1;
+        test(testCase, true);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase = 2;
+        test(testCase, false);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase = 343;
+        test(testCase, true);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase = 144;
+        test(testCase, true);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase = 289;
+        test(testCase, true);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase = 225;
+        test(testCase, true);
+    }//public void test18() {
 
     private void test(int testCase,boolean solution) {
-        assertTimeout(Duration.ofSeconds(3), () ->
-                new IsPower().isPower(testCase));
+        assertTimeout(Duration.ofSeconds(3), () -> new IsPower().isPower(testCase));
         if(solution) {
             assertTrue(new IsPower().isPower(testCase));
-        }else{
+        }else{//if(solution) {
             assertFalse(new IsPower().isPower(testCase));
-        }
-    }//private void test(){
+        }//else{
+    }//private void test(int testCase,boolean solution) {
 }//class IsPowerTest {

@@ -139,7 +139,7 @@ class PossibleSumsTest {
     }//public void test16() {
 
     private void test(int[] testCase1, int[] testCase2, int solution) {
-        assertTimeout(Duration.ofSeconds(3), ()-> new PossibleSums().possibleSums(testCase1.clone(),testCase2.clone()));
-        assertEquals(solution,new PossibleSums().possibleSums(testCase1,testCase2));
+        assertEquals(solution,new PossibleSums().possibleSums(testCase1.clone(),testCase2.clone()));
+        assertTimeout(Duration.ofSeconds(3), ()-> new PossibleSums().possibleSums(testCase1,testCase2));
     }//private void test(int[] testCase1, int[] testCase2, int solution) {
 }//class PossibleSumsTest {

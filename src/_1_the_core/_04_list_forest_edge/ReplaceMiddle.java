@@ -40,7 +40,7 @@ resulting array as the answer.
     /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] array.integer arr
 

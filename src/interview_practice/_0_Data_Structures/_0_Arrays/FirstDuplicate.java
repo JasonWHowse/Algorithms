@@ -29,7 +29,7 @@ Given an array a that contains only numbers in the range from 1 to a.length, fin
     /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] array.integer a
 

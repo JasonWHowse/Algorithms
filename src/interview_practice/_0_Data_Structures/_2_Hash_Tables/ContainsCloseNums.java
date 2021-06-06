@@ -28,7 +28,7 @@ Given an array of integers nums and an integer k, determine whether there are tw
     /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] array.integer nums
 

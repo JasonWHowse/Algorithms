@@ -63,6 +63,62 @@ namespace Algorithms.src_UnitTests._1_the_core._05_labyrinth_of_nested_loops {
             Test(testCase1, testCase2, solution);
         }//public void Test7() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test8() {
+            var testCase1 = 9;
+            var testCase2 = 4;
+            var solution = 10;
+            Test(testCase1, testCase2, solution);
+        }//public void Test8() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test9() {
+            var testCase1 = 100;
+            var testCase2 = 3;
+            var solution = 100;
+            Test(testCase1, testCase2, solution);
+        }//public void Test9() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test10() {
+            var testCase1 = 325;
+            var testCase2 = 4;
+            var solution = 325;
+            Test(testCase1, testCase2, solution);
+        }//public void Test10() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test11() {
+            var testCase1 = 761;
+            var testCase2 = 5;
+            var solution = 761;
+            Test(testCase1, testCase2, solution);
+        }//public void Test11() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test12() {
+            var testCase1 = 543;
+            var testCase2 = 6;
+            var solution = 544;
+            Test(testCase1, testCase2, solution);
+        }//public void Test12() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test13() {
+            var testCase1 = 987;
+            var testCase2 = 543;
+            var solution = 1125;
+            Test(testCase1, testCase2, solution);
+        }//public void Test13() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test14() {
+            var testCase1 = 987;
+            var testCase2 = 544;
+            var solution = 1125;
+            Test(testCase1, testCase2, solution);
+        }//public void Test14() {
+
         private void Test(int testCase1, int testCase2, int solution) {
             Assert.AreEqual(solution, new PagesNumberingWithInk().pagesNumberingWithInk(testCase1, testCase2));
         }//private void Test(int testCase1,int testCase2,int solution) {

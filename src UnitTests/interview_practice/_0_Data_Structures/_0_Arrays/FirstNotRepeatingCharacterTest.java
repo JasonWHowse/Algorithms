@@ -2,92 +2,133 @@
  * Authored by: Jason Wesley Howse
  */
 
-/*
- * Authored by: Jason Wesley Howse
- */
-
 package interview_practice._0_Data_Structures._0_Arrays;
 
-import interview_practice._0_Data_Structures._0_Arrays.FirstNotRepeatingCharacter;
+import org.json.simple.JSONObject;
 import org.junit.jupiter.api.Test;
 import java.time.Duration;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTimeout;
+import static helper_functions.Helpers.getJsonObject;
+import static org.junit.jupiter.api.Assertions.*;
 
 class FirstNotRepeatingCharacterTest {
-    @Test
-    void test1() {
-        String testCase = "abacabad";
-        char solution = 'c';
-        test(testCase, solution);
-    }//void test1() {
+    private final static String path = "Test_Cases\\interview_practice\\_0_Data_Structures\\_0_Arrays\\FirstNotRepeatingCharacter\\";
+    private String internedTestCase = "";
+    private char internedSolution = 'a';
 
     @Test
-    void test2() {
-        String testCase = "abacabaabacaba";
-        char solution = '_';
+    public void test1() {
+        var testCase = "abacabad";
+        var solution = 'c';
         test(testCase, solution);
-    }//void test2() {
+    }//public void test1() {
 
     @Test
-    void test3() {
-        String testCase = "z";
-        char solution = 'z';
+    public void test2() {
+        var testCase = "abacabaabacaba";
+        var solution = '_';
         test(testCase, solution);
-    }//void test3() {
+    }//public void test2() {
 
     @Test
-    void test4() {
-        String testCase = "bcb";
-        char solution = 'c';
+    public void test3() {
+        var testCase = "z";
+        var solution = 'z';
         test(testCase, solution);
-    }//void test4() {
+    }//public void test3() {
 
     @Test
-    void test5() {
-        String testCase = "bcccccccb";
-        char solution = '_';
+    public void test4() {
+        var testCase = "bcb";
+        var solution = 'c';
         test(testCase, solution);
-    }//void test5() {
+    }//public void test4() {
 
     @Test
-    void test6() {
-        String testCase = "abcdefghijklmnopqrstuvwxyziflskecznslkjfabe";
-        char solution = 'd';
+    public void test5() {
+        var testCase = "bcccccccb";
+        var solution = '_';
         test(testCase, solution);
-    }//void test6() {
+    }//public void test5() {
 
     @Test
-    void test7() {
-        String testCase = "zzz";
-        char solution = '_';
+    public void test6() {
+        var testCase = "abcdefghijklmnopqrstuvwxyziflskecznslkjfabe";
+        var solution = 'd';
         test(testCase, solution);
-    }//void test7() {
+    }//public void test6() {
 
     @Test
-    void test8() {
-        String testCase = "bcccccccccccccyb";
-        char solution = 'y';
+    public void test7() {
+        var testCase = "zzz";
+        var solution = '_';
         test(testCase, solution);
-    }//void test8() {
+    }//public void test7() {
 
     @Test
-    void test9() {
-        String testCase = "xdnxxlvupzuwgigeqjggosgljuhliybkjpibyatofcjbfxwtalc";
-        char solution = 'd';
+    public void test8() {
+        var testCase = "bcccccccccccccyb";
+        var solution = 'y';
         test(testCase, solution);
-    }//void test9() {
+    }//public void test8() {
 
     @Test
-    void test10() {
-        String testCase = "ngrhhqbhnsipkcoqjyviikvxbxyphsnjpdxkhtadltsuxbfbrkof";
-        char solution = 'g';
+    public void test9() {
+        var testCase = "xdnxxlvupzuwgigeqjggosgljuhliybkjpibyatofcjbfxwtalc";
+        var solution = 'd';
         test(testCase, solution);
-    }//void test10() {
+    }//public void test9() {
 
-    void test(String testCase,char solution){
-        assertTimeout(Duration.ofSeconds(3),()->
-                new FirstNotRepeatingCharacter().firstNotRepeatingCharacter(testCase));
+    @Test
+    public void test10() {
+        var testCase = "ngrhhqbhnsipkcoqjyviikvxbxyphsnjpdxkhtadltsuxbfbrkof";
+        var solution = 'g';
+        test(testCase, solution);
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase = "vbijvdpmxfztmlgiewuloeaudyokfjcoriqfwxuwdfxrllddihadvaeohgkjxiepvzmzhmpnuvgchqgabimpekppnewthrrbpvtfc";
+        var solution = 'y';
+        test(testCase, solution);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase = "vbijvdpmxfztmlgieywuloeaudyokfjcoriqfwxuwdfxrllddihadvaeohgkjxiepvzmzhmpnuvgchqgabimpekppnewthrrbpvtfc";
+        var solution = '_';
+        test(testCase, solution);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        setTestCaseInfo("test-13.json");
+        test(internedTestCase, internedSolution);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        setTestCaseInfo("test-14.json");
+        test(internedTestCase, internedSolution);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        setTestCaseInfo("test-15.json");
+        test(internedTestCase, internedSolution);
+    }//public void test15() {
+
+    private void test(String testCase,char solution){
+        assertTimeout(Duration.ofSeconds(3),()-> new FirstNotRepeatingCharacter().firstNotRepeatingCharacter(testCase));
         assertEquals(solution,new FirstNotRepeatingCharacter().firstNotRepeatingCharacter(testCase));
-    }//void test(String testCase,char solution){
+    }//void private test(String testCase,char solution){
+
+    private void setTestCaseInfo(String fileName){
+        JSONObject testInfo = getJsonObject(fileName, path);
+        if(testInfo==null){
+            fail("JObject for " + fileName + " returns null");
+        }else{//if(testInfo==null){
+            internedTestCase = (String) ((JSONObject) testInfo.get("input")).get("s");
+            internedSolution = ((String) testInfo.get("output")).charAt(0);
+        }//else{
+    }//private void setTestCaseInfo(String filename){
 }//class FirstNotRepeatingCharacterTest {
