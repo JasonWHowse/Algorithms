@@ -266,6 +266,7 @@
       <file url="file://$PROJECT_DIR$/src/interview_practice/_3_Special_Topics/_0_Common_Techniques_Basic/ArrayMaxConsecutiveSum2.cs" />
       <file url="file://$PROJECT_DIR$/src UnitTests/interview_practice/_3_Special_Topics/_0_Common_Techniques_Basic/ArrayMaxConsecutiveSum2Tests.cs" />
       <file url="file://$PROJECT_DIR$/src UnitTests/interview_practice/_3_Special_Topics/_0_Common_Techniques_Basic/SumInRangeTests.cs" />
+      <directory url="file://$PROJECT_DIR$/out" includeSubdirectories="true" />
     </excludeFromCompile>
   </component>
 </project>
