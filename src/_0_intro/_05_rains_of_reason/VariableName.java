@@ -32,7 +32,7 @@ Check if the given string is a correct variable name.
 /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] string name
 

@@ -1,11 +1,17 @@
-﻿using Algorithms.src.interview_practice._0_Data_Structures._2_Hash_Tables;
+﻿using Algorithms.src.helper_functions;
+using Algorithms.src.interview_practice._0_Data_Structures._2_Hash_Tables;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._2_Hash_Tables {
     [TestClass()]
     public class ContainsCloseNumsTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\interview_practice\\_0_Data_Structures\\_2_Hash_Tables\\ContainsCloseNums\\";
+        private int[] internedTestCase1 = new int[0];
+        private int internedTestCase2 = 0;
+        private bool internedSolution = false;
 
         [TestMethod(), Timeout(timeout)]
         public void Test1() {
@@ -168,6 +174,12 @@ namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._2_Hash
             Test(testCase1, testCase2, true);
         }//public void Test23() {
 
+        [TestMethod]
+        public void Test24() {
+            SetTestCaseInfo("test-24.json");
+            DoTest();
+        }//public void Test24() {
+
         private void Test(int[] testCase1, int testCase2, bool solution) {
             if (solution) {
                 Assert.IsTrue(new ContainsCloseNums().containsCloseNums(testCase1, testCase2));
@@ -175,5 +187,25 @@ namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._2_Hash
                 Assert.IsFalse(new ContainsCloseNums().containsCloseNums(testCase1, testCase2));
             }//else {
         }//private void Test(int[] testCase1, int testCase2, bool solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                internedSolution = (bool)o["output"];
+                JArray preTestCase1 = (JArray)o["input"]["nums"];
+                internedTestCase1 = new int[preTestCase1.Count];
+                for (int i = 0; i < internedTestCase1.Length; i++) {
+                    internedTestCase1[i] = (int)preTestCase1[i];
+                }//for (int i = 0; i < internedTestCase1.Length; i++) {
+                internedTestCase2 = (int)o["input"]["k"];
+            }//else {
+        }//public void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase1, internedTestCase2, internedSolution);
+        }//private void DoTest() {
     }//public class ContainsCloseNumsTests {
 }//namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._2_Hash_Tables {

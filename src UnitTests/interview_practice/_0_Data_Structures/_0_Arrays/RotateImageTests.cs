@@ -1,11 +1,16 @@
-﻿using Algorithms.src.interview_practice._0_Data_Structures._0_Arrays;
+﻿using Algorithms.src.helper_functions;
+using Algorithms.src.interview_practice._0_Data_Structures._0_Arrays;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arrays {
     [TestClass()]
     public class RotateImageTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\interview_practice\\_0_Data_Structures\\_0_Arrays\\RotateImage\\";
+        private int[][] internedTestCase = new int[0][];
+        private int[][] internedSolution = new int[0][];
 
         [TestMethod(), Timeout(timeout)]
         public void Test1() {
@@ -42,6 +47,38 @@ namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arra
             Test(testCase, solution);
         }//public void Test5() {
 
+        [TestMethod(), Timeout(timeout)]
+        public void Test6() {
+            int[][] testCase = { new int[] { 8 } };
+            int[][] solution = { new int[] { 8 } };
+            Test(testCase, solution);
+        }//public void Test6() {
+
+        [TestMethod(), Timeout(timeout)]
+        public void Test7() {
+            int[][] testCase = { new int[] { 6, 8, 6, 9, 3 }, new int[] { 6, 8, 7, 6, 1 }, new int[] { 2, 5, 8, 4, 1 }, new int[] { 3, 3, 6, 3, 4 }, new int[] { 5, 6, 6, 6, 5 } };
+            int[][] solution = { new int[] { 5, 3, 2, 6, 6 }, new int[] { 6, 3, 5, 8, 8 }, new int[] { 6, 6, 8, 7, 6 }, new int[] { 6, 3, 4, 6, 9 }, new int[] { 5, 4, 1, 1, 3 } };
+            Test(testCase, solution);
+        }//public void Test7() {
+
+        [TestMethod]
+        public void Test8() {
+            SetTestCaseInfo("test-8.json");
+            DoTest();
+        }//public void Test8() {
+
+        [TestMethod]
+        public void Test9() {
+            SetTestCaseInfo("test-9.json");
+            DoTest();
+        }//public void Test9() {
+
+        [TestMethod]
+        public void Test10() {
+            SetTestCaseInfo("test-10.json");
+            DoTest();
+        }//public void Test10() {
+
         private void Test(int[][] testCase, int[][] solution) {
             int[][] actual = new RotateImage().rotateImage(testCase);
             Assert.AreEqual(solution.Length, actual.Length);
@@ -49,5 +86,34 @@ namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arra
                 CollectionAssert.AreEqual(solution[i], actual[i]);
             }//for (int i = 0; i < actual.Length; i++) {
         }//private void Test(int[][] testCase,int[][] solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                JArray preSolution = (JArray)o["output"];
+                internedSolution = new int[preSolution.Count][];
+                for(int x = 0; x < internedSolution.Length; x++) {
+                    internedSolution[x]=new int[((JArray)preSolution[x]).Count];
+                    for(int y = 0; y < internedSolution[x].Length; y++) {
+                        internedSolution[x][y] = (int)preSolution[x][y];
+                    }//for(int y = 0; y < internedSolution[x].Length; y++) {
+                }//for(int x = 0; x < internedSolution.Length; x++) {
+                JArray preTestCase = (JArray)o["input"]["a"];
+                internedTestCase = new int[preTestCase.Count][];
+                for (int x = 0; x < internedTestCase.Length; x++) {
+                    internedTestCase[x] = new int[((JArray)preTestCase[x]).Count];
+                    for(int y = 0; y < internedTestCase[x].Length; y++) {
+                        internedTestCase[x][y] = (int)preTestCase[x][y];
+                    }//for(int y = 0; y < internedTestCase[x].Length; y++) {
+                }//for (int i = 0; i < internedTestCase.Length; i++) {
+            }//else {
+        }//public void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase, internedSolution);
+        }//private void DoTest() {
     }//public class RotateImageTests {
 }//namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._0_Arrays {

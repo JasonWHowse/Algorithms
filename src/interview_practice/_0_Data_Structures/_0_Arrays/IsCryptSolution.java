@@ -44,7 +44,7 @@ Note that number 0 doesn't contain leading zeroes (while for example 00 or 0123 
 
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] array.string crypt
 

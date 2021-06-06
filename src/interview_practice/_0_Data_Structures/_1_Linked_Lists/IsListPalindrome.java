@@ -43,7 +43,7 @@ Note: in examples below and tests preview linked lists are presented as arrays j
     /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] linkedlist.integer l
 

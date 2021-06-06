@@ -22,7 +22,7 @@ difference between any two of its adjacent elements.
     /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] array.integer inputArray
 

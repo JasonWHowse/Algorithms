@@ -34,7 +34,7 @@ reach this height.
 /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] integer upSpeed
 

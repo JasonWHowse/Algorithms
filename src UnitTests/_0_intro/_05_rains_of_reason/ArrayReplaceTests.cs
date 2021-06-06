@@ -132,7 +132,7 @@ namespace Algorithms.src_UnitTests._0_intro._05_rains_of_reason {
         }//public void Test13() {
 
         [TestMethod]
-        public void test14() {//TODO: finish test
+        public void test14() {
             SetTestCaseInfo("test-14.json");
             DoTest();
         }//public void test14() {

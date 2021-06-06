@@ -1,101 +1,108 @@
 ﻿using Algorithms.src.helper_functions;
 using Algorithms.src.interview_practice._0_Data_Structures._1_Linked_Lists;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._1_Linked_Lists {
     [TestClass()]
     public class RearrangeLastNTests {
 
         private const int timeout = 3000;
+        private const string path = "Test_Cases\\interview_practice\\_0_Data_Structures\\_1_Linked_Lists\\RearrangeLastN\\";
+        private ListNode<int> internedTestCase1 = null;
+        int internedTestCase2 = 0;
+        private ListNode<int> internedSolution = null;
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test1() {
             int[] preTestCase1 = { 1, 2, 3, 4, 5 };
             int[] preSolution = { 3, 4, 5, 1, 2 };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 3;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
+            internedTestCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
+            internedTestCase2 = 3;
+            internedSolution = ListNodeBuilder.CollectionToListNode(preSolution);
+            DoTest();
         }//public void Test1() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test2() {
             int[] preTestCase1 = { 1, 2, 3, 4, 5, 6, 7 };
             int[] preSolution = { 7, 1, 2, 3, 4, 5, 6 };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 1;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
-        }//public void Test1() {
+            internedTestCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
+            internedTestCase2 = 1;
+            internedSolution = ListNodeBuilder.CollectionToListNode(preSolution);
+            DoTest();
+        }//public void Test2() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test3() {
             int[] preTestCase1 = { 1000, -1000 };
             int[] preSolution = { 1000, -1000 };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 0;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
+            internedTestCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
+            internedTestCase2 = 0;
+            internedSolution = ListNodeBuilder.CollectionToListNode(preSolution);
+            DoTest();
         }//public void Test3() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test4() {
             int[] preTestCase1 = { };
             int[] preSolution = { };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 0;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
+            internedTestCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
+            internedTestCase2 = 0;
+            internedSolution = ListNodeBuilder.CollectionToListNode(preSolution);
+            DoTest();
         }//public void Test4() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test5() {
             int[] preTestCase1 = { 123, 456, 789, 0 };
             int[] preSolution = { 123, 456, 789, 0 };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 4;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
+            internedTestCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
+            internedTestCase2 = 4;
+            internedSolution = ListNodeBuilder.CollectionToListNode(preSolution);
+            DoTest();
         }//public void Test5() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test6() {
             int[] preTestCase1 = { 1 };
             int[] preSolution = { 1 };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 1;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
+            internedTestCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
+            internedTestCase2 = 1;
+            internedSolution = ListNodeBuilder.CollectionToListNode(preSolution);
+            DoTest();
         }//public void Test6() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test7() {
             int[] preTestCase1 = { -262, -925, -360, 38, -401, -533, -505, 358, -970, -142, -874, 907, -776, 64, 662, 89, -99, -926, 942, -944, 859, -359, -376, -435, -918, -346, 674, -678, 683, -801, 734, -889, 530, 143, 24, -557, -594, 443, -901, -830, 615, -339, 203, -484, 785, 409, -837, 585, -634, -285, 697, -179, -67, -670, 420, 15, 567, 274, 864, -604, 241, -744, -667, 650, 600, -607, -219, -936, -141, 566, -468, -116, -57, 243, 457, -497, 731, 638, -315, -229, -835, -605, 368, -787, 997, 375, 474, -217, 587, -331, -730, -742, -134, -874, 847, 813, 588, 624, -624, -338 };
             int[] preSolution = { -901, -830, 615, -339, 203, -484, 785, 409, -837, 585, -634, -285, 697, -179, -67, -670, 420, 15, 567, 274, 864, -604, 241, -744, -667, 650, 600, -607, -219, -936, -141, 566, -468, -116, -57, 243, 457, -497, 731, 638, -315, -229, -835, -605, 368, -787, 997, 375, 474, -217, 587, -331, -730, -742, -134, -874, 847, 813, 588, 624, -624, -338, -262, -925, -360, 38, -401, -533, -505, 358, -970, -142, -874, 907, -776, 64, 662, 89, -99, -926, 942, -944, 859, -359, -376, -435, -918, -346, 674, -678, 683, -801, 734, -889, 530, 143, 24, -557, -594, 443 };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 62;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
+            internedTestCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
+            internedTestCase2 = 62;
+            internedSolution = ListNodeBuilder.CollectionToListNode(preSolution);
+            DoTest();
         }//public void Test7() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
         public void Test8() {
-            int[] preTestCase1 = { 89, -2, -19, 18, 19, 14, 39, 49, -46, 97, -32, 91, 3, -80, 78, 0, -77, 39, -85, -48, -68, -17, 65, -14, 73, 13, 1, -85, -53, 95, 6, 39, 49, 76, 49, -9, 35, 58, -33, -52, 21, -5, 23, -56, -39, -20, -62, 11, -6, 96, 20, -9, -42, -81, -66, 6, 58, -71, -64, -61, -63, 52, -96, -61, 49, 24, 87, 11, -70, -52, -32, 98, -28, -61, -23, -5, -81, 48, 83, 51, -3, 79, -99, -98, -55, -18, 13, 61, 66, -92, 68, -91, 29, -95, 11, -47, 71, 22, -51, 4, -14, -51, -66, 6, 19, 49, -45, 70, 32, 32, 9, -15, -1, 69, -94, -57, 8, 58, 50, -55, 79, -9, 50, 50, 14, -77, -87, 86, 0, 91, 84, -100, -93, 35, 24, -92, -37, 70, 17, -1, -12, 67, -6, -34, 4, 54, 55, 74, -40, -87, -100, 22, -44, 33, -84, -3, 55, -97, 74, -64, 63, 13, -13, 59, -58, -79, 93, 45, 81, -13, 82, 23, -11, 37, 82, 85, -100, 45, 12, 18, 92, -33, 33, 49, -22, 52, -21, 33, 64, -72, -46, -39, -91, -27, 13, 32, -25, 68, -11, -70, -16, -79, 61, -42, -33, 5, 68, -28, -42, -3, -71, -84, -87, 77, -86, 47, 65, -75, -79, 36, 31, 44, 52, -39, 67, -27, 68, -3, 41, -20, -68, -82, -54, 30, 35, 90, 3, 75, -63, -43, 78, -75, 96, -44, -14, 6, -82, 12, 92, 54, -11, -32, 80, -39, -9, -60, 32, -91, -51, 1, 47, -33, 45, 91, -11, 17, 28, 10, 59, -75, 88, 71, 64, -9, -15, 3, 80, -50, 83, -16, -63, -7, 8, 17, 93, -15, -29, 11, -68, -90, -12, -84, 28, -18, -28, -75, 78, -96, -26, -1, 8, 99, 68, 6, 0, -96, -20, -39, -74, -90, 82, -73, -90, -49, -14, -85, 10, 77, 29, 93, -35, 51, -18, 58, 29, 20, -72, 73, 55, -98, -92, 32, -81, -22, -81, -24, -87, -49, 97, 11, 35, -32, 95, -64, 100, 31, -41, -50, -1, 15, 93, -30, -98, -9, -13, 52, -75, -15, -85, 49, -98, -51, 96, 46, 31, -100, 82, -65, -85, -10, 40, 45, 65, 16, -98, -85, 96, -66, 85, 29, 5, 26, -50, 95, -49, -50, 19, 9, 74, 16, 7, -10, -90, 34, 37, 13, 94, 35, -10, 36, -74, -22, -38, 100, 91, 9, 44, -17, -19, -56, -12, -19, 10, 53, 75, -86, -63, -69, 78, -32, 97, -42, -28, 97, -93, -73, -26, -58, -50, 92, 41, -71, -99, 8, -95, 25, -31, -32, 2, -97, -71, -9, 23, 13, -65, 47, 31, -100, 24, 91, 84, 68, -64, -93, 60, 87, 84, 46, 62, 92, -51, 52, 99, -52, 54, -36, -70, -98, 64, -47, -65, 4, 80, -20, 94, -89, 1, 12, -37, 34, 70, -75, -27, 99, -32, 73, 42, 33, -82, -58, 21, 63, 48, -8, 23, 16, 17, 31, -93, 97, -50, 88, 29, 78, 25, -6, 76, 15, 43, 98, -26, 25, -52, -39, -96, 26, 92, 79, 91, -17, 100, -3, 34, 51, -16, 96, 53, -60, 3, 37, 79, -70, 50, 36, 98, 83, -79, 48, 96, -48, -82, -89, 76, -78, 61, -48, 74, -43, -83, -16, 81, 22, 0, -84, -54, 19, 13, 47, 17, -99, 50, 10, 18, 83, -57, -1, -82, -95, -88, 46, -91, -68, -32, 82, -37, -74, -57, 67, 3, -6, 67, 99, 34, 3, -4, -91, -8, -28, -100, -83, -5, 100, -53, -67, 45, 54, 63, 73, 29, 32, 44, -18, 5, -80, 1, -16, 48, 60, 51, -100, -85, 47, -56, 51, -91, -37, 51, -38, 80, -85, 50, 59, 29, -51, -64, 4, -93, 53, 67, -85, 53, -66, -13, -10, 4, -64, -36, 70, 58, -87, 45, 88, -11, -54, 86, -55, -59, -23, -37, 82, -78, 79, 52, 91, 53, 55, -74, -86, 71, 43, 100, 3, -1, -53, 19, -67, -100, 32, 78, -89, 99, -48, -77, 83, 96, -36, -52, -98, 48, -10, -9, -57, 95, -84, 48, 1, 26, -95, -53, -87, -20, -78, -59, 39, -25, 85, -9, 78, -24, 65, 9, -13, -87, -12, -21, 26, -31, -45, 74, -47, 94, -85, -93, -28, -79, 28, -17, 84, -10, -53, -8, -63, 48, 96, -72, 20, 86, 55, -31, 35, -7, -84, -42, -71, -1, 87, 11, 2, -64, -83, -62, -39, -65, 63, -98, -37, -36, 42, 60, 13, 1, 44, -66, 69, -45, -82, -89, 5, -2, 94, 21, 94, -83, 11, 59, -33, -89, -10, 31, -22, 78, -21, 50, -47, -34, -11, 86, 74, -91, -94, 88, -99, 22, 52, -54, 19, 83, -19, 43, 56, -41, 18, 17, 2, -85, -82, 32, -18, 83, 44, -48, -40, 91, 48, -28, 94, 3, 7, -6, 39, 6, -62, 90, 52, -100, -52, 15, 3, 59, -86, 74, -10, 75, -83, 16, 49, 75, -85, -25, 21, 11, 6, -1, 37, -12, 26, 83, 62, -94, 66, -55, -77, 29, -9, 94, -56, 82, -48, 68, 47, -100, 94, 51, 8, -31, -80, 56, 81, 56, 37, -54, 23, -85, -54, 96, 71, 37, 66, 20, 36, 57, -30, 33, 96, -42, -72, -64, -48, 60, 45, -95, -58, 5, 57, -19, 63, -81, 55, 62, -51, 48, -45, -14, -96, -44, -49, 38, -88, -14, 60, -93, 67, 69, 0, -36, 88, 82, -36, -74, 11, -62, -44, -75, 39, -37, -80, -31, -34, -30, 63, 53, -54, 18, 85, 8, -22, -16, -41, 21, 51, -5, -97, -26, 23, -79, 68, 19, -59, -25, 65, -87, -5, -31, 69, -11, 40, -2, 7, 34, 28, 44, 74, -1, 3, 13, -77, -76, 48, 44, -74, -77, -81, 1, 51, -69, -94, -67, 25, -23, 10, -74, 77, 55, -97, 91, 52, 98, 100, -98, -93, 74, -61, 5, 50, 27, -23, 43, 38, -59, 47, -35, 18, -77, 94, -14, -44, -42, -89, 27, -26 };
-            int[] preSolution = { 62, -51, 48, -45, -14, -96, -44, -49, 38, -88, -14, 60, -93, 67, 69, 0, -36, 88, 82, -36, -74, 11, -62, -44, -75, 39, -37, -80, -31, -34, -30, 63, 53, -54, 18, 85, 8, -22, -16, -41, 21, 51, -5, -97, -26, 23, -79, 68, 19, -59, -25, 65, -87, -5, -31, 69, -11, 40, -2, 7, 34, 28, 44, 74, -1, 3, 13, -77, -76, 48, 44, -74, -77, -81, 1, 51, -69, -94, -67, 25, -23, 10, -74, 77, 55, -97, 91, 52, 98, 100, -98, -93, 74, -61, 5, 50, 27, -23, 43, 38, -59, 47, -35, 18, -77, 94, -14, -44, -42, -89, 27, -26, 89, -2, -19, 18, 19, 14, 39, 49, -46, 97, -32, 91, 3, -80, 78, 0, -77, 39, -85, -48, -68, -17, 65, -14, 73, 13, 1, -85, -53, 95, 6, 39, 49, 76, 49, -9, 35, 58, -33, -52, 21, -5, 23, -56, -39, -20, -62, 11, -6, 96, 20, -9, -42, -81, -66, 6, 58, -71, -64, -61, -63, 52, -96, -61, 49, 24, 87, 11, -70, -52, -32, 98, -28, -61, -23, -5, -81, 48, 83, 51, -3, 79, -99, -98, -55, -18, 13, 61, 66, -92, 68, -91, 29, -95, 11, -47, 71, 22, -51, 4, -14, -51, -66, 6, 19, 49, -45, 70, 32, 32, 9, -15, -1, 69, -94, -57, 8, 58, 50, -55, 79, -9, 50, 50, 14, -77, -87, 86, 0, 91, 84, -100, -93, 35, 24, -92, -37, 70, 17, -1, -12, 67, -6, -34, 4, 54, 55, 74, -40, -87, -100, 22, -44, 33, -84, -3, 55, -97, 74, -64, 63, 13, -13, 59, -58, -79, 93, 45, 81, -13, 82, 23, -11, 37, 82, 85, -100, 45, 12, 18, 92, -33, 33, 49, -22, 52, -21, 33, 64, -72, -46, -39, -91, -27, 13, 32, -25, 68, -11, -70, -16, -79, 61, -42, -33, 5, 68, -28, -42, -3, -71, -84, -87, 77, -86, 47, 65, -75, -79, 36, 31, 44, 52, -39, 67, -27, 68, -3, 41, -20, -68, -82, -54, 30, 35, 90, 3, 75, -63, -43, 78, -75, 96, -44, -14, 6, -82, 12, 92, 54, -11, -32, 80, -39, -9, -60, 32, -91, -51, 1, 47, -33, 45, 91, -11, 17, 28, 10, 59, -75, 88, 71, 64, -9, -15, 3, 80, -50, 83, -16, -63, -7, 8, 17, 93, -15, -29, 11, -68, -90, -12, -84, 28, -18, -28, -75, 78, -96, -26, -1, 8, 99, 68, 6, 0, -96, -20, -39, -74, -90, 82, -73, -90, -49, -14, -85, 10, 77, 29, 93, -35, 51, -18, 58, 29, 20, -72, 73, 55, -98, -92, 32, -81, -22, -81, -24, -87, -49, 97, 11, 35, -32, 95, -64, 100, 31, -41, -50, -1, 15, 93, -30, -98, -9, -13, 52, -75, -15, -85, 49, -98, -51, 96, 46, 31, -100, 82, -65, -85, -10, 40, 45, 65, 16, -98, -85, 96, -66, 85, 29, 5, 26, -50, 95, -49, -50, 19, 9, 74, 16, 7, -10, -90, 34, 37, 13, 94, 35, -10, 36, -74, -22, -38, 100, 91, 9, 44, -17, -19, -56, -12, -19, 10, 53, 75, -86, -63, -69, 78, -32, 97, -42, -28, 97, -93, -73, -26, -58, -50, 92, 41, -71, -99, 8, -95, 25, -31, -32, 2, -97, -71, -9, 23, 13, -65, 47, 31, -100, 24, 91, 84, 68, -64, -93, 60, 87, 84, 46, 62, 92, -51, 52, 99, -52, 54, -36, -70, -98, 64, -47, -65, 4, 80, -20, 94, -89, 1, 12, -37, 34, 70, -75, -27, 99, -32, 73, 42, 33, -82, -58, 21, 63, 48, -8, 23, 16, 17, 31, -93, 97, -50, 88, 29, 78, 25, -6, 76, 15, 43, 98, -26, 25, -52, -39, -96, 26, 92, 79, 91, -17, 100, -3, 34, 51, -16, 96, 53, -60, 3, 37, 79, -70, 50, 36, 98, 83, -79, 48, 96, -48, -82, -89, 76, -78, 61, -48, 74, -43, -83, -16, 81, 22, 0, -84, -54, 19, 13, 47, 17, -99, 50, 10, 18, 83, -57, -1, -82, -95, -88, 46, -91, -68, -32, 82, -37, -74, -57, 67, 3, -6, 67, 99, 34, 3, -4, -91, -8, -28, -100, -83, -5, 100, -53, -67, 45, 54, 63, 73, 29, 32, 44, -18, 5, -80, 1, -16, 48, 60, 51, -100, -85, 47, -56, 51, -91, -37, 51, -38, 80, -85, 50, 59, 29, -51, -64, 4, -93, 53, 67, -85, 53, -66, -13, -10, 4, -64, -36, 70, 58, -87, 45, 88, -11, -54, 86, -55, -59, -23, -37, 82, -78, 79, 52, 91, 53, 55, -74, -86, 71, 43, 100, 3, -1, -53, 19, -67, -100, 32, 78, -89, 99, -48, -77, 83, 96, -36, -52, -98, 48, -10, -9, -57, 95, -84, 48, 1, 26, -95, -53, -87, -20, -78, -59, 39, -25, 85, -9, 78, -24, 65, 9, -13, -87, -12, -21, 26, -31, -45, 74, -47, 94, -85, -93, -28, -79, 28, -17, 84, -10, -53, -8, -63, 48, 96, -72, 20, 86, 55, -31, 35, -7, -84, -42, -71, -1, 87, 11, 2, -64, -83, -62, -39, -65, 63, -98, -37, -36, 42, 60, 13, 1, 44, -66, 69, -45, -82, -89, 5, -2, 94, 21, 94, -83, 11, 59, -33, -89, -10, 31, -22, 78, -21, 50, -47, -34, -11, 86, 74, -91, -94, 88, -99, 22, 52, -54, 19, 83, -19, 43, 56, -41, 18, 17, 2, -85, -82, 32, -18, 83, 44, -48, -40, 91, 48, -28, 94, 3, 7, -6, 39, 6, -62, 90, 52, -100, -52, 15, 3, 59, -86, 74, -10, 75, -83, 16, 49, 75, -85, -25, 21, 11, 6, -1, 37, -12, 26, 83, 62, -94, 66, -55, -77, 29, -9, 94, -56, 82, -48, 68, 47, -100, 94, 51, 8, -31, -80, 56, 81, 56, 37, -54, 23, -85, -54, 96, 71, 37, 66, 20, 36, 57, -30, 33, 96, -42, -72, -64, -48, 60, 45, -95, -58, 5, 57, -19, 63, -81, 55 };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 112;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
+            SetTestCaseInfo("test-8.json");
+            DoTest();
         }//public void Test8() {
 
-        [TestMethod(), Timeout(timeout)]
+        [TestMethod]
+        public void Test9() {
+            SetTestCaseInfo("test-9.json");
+            DoTest();
+        }//public void Test9() {
+
+        [TestMethod]
         public void Test10() {
             int[] preTestCase1 = { 2, 1 };
             int[] preSolution = { 1, 2 };
-            var testCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
-            var testCase2 = 1;
-            var solution = ListNodeBuilder.CollectionToListNode(preSolution);
-            Test(testCase1, testCase2, solution);
+            internedTestCase1 = ListNodeBuilder.CollectionToListNode(preTestCase1);
+            internedTestCase2 = 1;
+            internedSolution = ListNodeBuilder.CollectionToListNode(preSolution);
+            DoTest();
         }//public void Test10() {
 
         private void Test(ListNode<int> testCase1, int testCase2, ListNode<int> solution) {
@@ -107,5 +114,31 @@ namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._1_Link
             }//while (solution != null && Actual != null) {
             Assert.IsTrue(solution == null && Actual == null);
         }//private void Test(ListNode<int> testCase1, int testCase2, ListNode<int> solution) {
+
+        private void SetTestCaseInfo(string fileName) {
+            JObject o = Helpers.GetJsonObject(fileName, path);
+            if (o == null) {
+                Assert.Fail("JObject for " + fileName + " returns null");
+            } else {//if (o == null) {
+                JArray preSolution = (JArray)o["output"];
+                int[] preInternedSolution = new int[preSolution.Count];
+                for (int i = 0; i < preInternedSolution.Length; i++) {
+                    preInternedSolution[i] = (int)preSolution[i];
+                }//for(int i = 0; i < preInternedSolution.Length; i++) {
+                JArray preTestCase1 = (JArray)o["input"]["l"];
+                int[] preInternedTestCase1 = new int[preTestCase1.Count];
+                for (int i = 0; i < preInternedTestCase1.Length; i++) {
+                    preInternedTestCase1[i] = (int)preTestCase1[i];
+                }//for (int i = 0; i < internedTestCase.Length; i++) {
+                internedTestCase1 = ListNodeBuilder.CollectionToListNode(preInternedTestCase1);
+                internedTestCase2 = (int)o["input"]["n"];
+                internedSolution = ListNodeBuilder.CollectionToListNode(preInternedSolution);
+            }//else {
+        }//public void SetTestCaseInfo(string fileName) {
+
+        [Timeout(timeout)]
+        private void DoTest() {
+            Test(internedTestCase1, internedTestCase2, internedSolution);
+        }//private void DoTest() {
     }//public class RearrangeLastNTests {
 }//namespace Algorithms.src_UnitTests.interview_practice._0_Data_Structures._1_Linked_Lists {

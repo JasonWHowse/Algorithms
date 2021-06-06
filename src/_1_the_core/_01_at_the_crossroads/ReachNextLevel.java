@@ -24,7 +24,7 @@ if you reach the next level after killing the monster.
     /*
 Input/Output
 
-[execution time limit] 3 seconds (cs)
+[execution time limit] 3 seconds (java)
 
 [input] integer experience
 

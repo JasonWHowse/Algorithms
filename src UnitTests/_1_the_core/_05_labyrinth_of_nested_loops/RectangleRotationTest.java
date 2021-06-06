@@ -2,10 +2,6 @@
  * Authored by: Jason Wesley Howse
  */
 
-/*
- * Authored by: Jason Wesley Howse
- */
-
 package _1_the_core._05_labyrinth_of_nested_loops;
 
 import java.time.Duration;
@@ -15,88 +11,167 @@ import static org.junit.jupiter.api.Assertions.*;
 class RectangleRotationTest {
 
     @Test
-    void test1() {
-        int testCase1 = 6;
-        int testCase2 = 4;
-        int solution = 23;
+    public void test1() {
+        var testCase1 = 6;
+        var testCase2 = 4;
+        var solution = 23;
         test(testCase1, testCase2, solution);
-    }//void test1() {
+    }//public void test1() {
 
     @Test
-    void test2() {
-        int testCase1 = 30;
-        int testCase2 = 2;
-        int solution = 65;
+    public void test2() {
+        var testCase1 = 30;
+        var testCase2 = 2;
+        var solution = 65;
         test(testCase1, testCase2, solution);
-    }//void test2() {
+    }//public void test2() {
 
     @Test
-    void test3() {
-        int testCase1 = 8;
-        int testCase2 = 6;
-        int solution = 49;
+    public void test3() {
+        var testCase1 = 8;
+        var testCase2 = 6;
+        var solution = 49;
         test(testCase1, testCase2, solution);
-    }//void test3() {
+    }//public void test3() {
 
     @Test
-    void test4() {
-        int testCase1 = 16;
-        int testCase2 = 20;
-        int solution = 333;
+    public void test4() {
+        var testCase1 = 16;
+        var testCase2 = 20;
+        var solution = 333;
         test(testCase1, testCase2, solution);
-    }//void test4() {
+    }//public void test4() {
 
     @Test
-    void test5() {
-        int testCase1 = 20;
-        int testCase2 = 32;
-        int solution = 653;
+    public void test5() {
+        var testCase1 = 20;
+        var testCase2 = 32;
+        var solution = 653;
         test(testCase1, testCase2, solution);
-    }//void test5() {
+    }//public void test5() {
 
     @Test
-    void test6() {
-        int testCase1 = 30;
-        int testCase2 = 26;
-        int solution = 795;
+    public void test6() {
+        var testCase1 = 30;
+        var testCase2 = 26;
+        var solution = 795;
         test(testCase1, testCase2, solution);
-    }//void test6() {
+    }//public void test6() {
 
     @Test
-    void test7() {
-        int testCase1 = 50;
-        int testCase2 = 4;
-        int solution = 177;
+    public void test7() {
+        var testCase1 = 50;
+        var testCase2 = 4;
+        var solution = 177;
         test(testCase1, testCase2, solution);
-    }//void test7() {
+    }//public void test7() {
 
     @Test
-    void test8() {
-        int testCase1 = 2;
-        int testCase2 = 2;
-        int solution = 5;
+    public void test8() {
+        var testCase1 = 2;
+        var testCase2 = 2;
+        var solution = 5;
         test(testCase1, testCase2, solution);
-    }//void test8() {
+    }//public void test8() {
 
     @Test
-    void test9() {
-        int testCase1 = 50;
-        int testCase2 = 50;
-        int solution = 2521;
+    public void test9() {
+        var testCase1 = 50;
+        var testCase2 = 50;
+        var solution = 2521;
         test(testCase1, testCase2, solution);
-    }//void test9() {
+    }//public void test9() {
 
     @Test
-    void test10() {
-        int testCase1 = 38;
-        int testCase2 = 42;
-        int solution = 1563;
+    public void test10() {
+        var testCase1 = 38;
+        var testCase2 = 42;
+        var solution = 1563;
         test(testCase1, testCase2, solution);
-    }//void test10() {
+    }//public void test10() {
+
+    @Test
+    public void test11() {
+        var testCase1 = 18;
+        var testCase2 = 42;
+        var solution = 737;
+        test(testCase1, testCase2, solution);
+    }//public void test11() {
+
+    @Test
+    public void test12() {
+        var testCase1 = 2;
+        var testCase2 = 46;
+        var solution = 97;
+        test(testCase1, testCase2, solution);
+    }//public void test12() {
+
+    @Test
+    public void test13() {
+        var testCase1 = 16;
+        var testCase2 = 38;
+        var solution = 609;
+        test(testCase1, testCase2, solution);
+    }//public void test13() {
+
+    @Test
+    public void test14() {
+        var testCase1 = 40;
+        var testCase2 = 18;
+        var solution = 713;
+        test(testCase1, testCase2, solution);
+    }//public void test14() {
+
+    @Test
+    public void test15() {
+        var testCase1 = 50;
+        var testCase2 = 2;
+        var solution = 107;
+        test(testCase1, testCase2, solution);
+    }//public void test15() {
+
+    @Test
+    public void test16() {
+        var testCase1 = 2;
+        var testCase2 = 4;
+        var solution = 7;
+        test(testCase1, testCase2, solution);
+    }//public void test16() {
+
+    @Test
+    public void test17() {
+        var testCase1 = 26;
+        var testCase2 = 26;
+        var solution = 685;
+        test(testCase1, testCase2, solution);
+    }//public void test17() {
+
+    @Test
+    public void test18() {
+        var testCase1 = 48;
+        var testCase2 = 8;
+        var solution = 369;
+        test(testCase1, testCase2, solution);
+    }//public void test18() {
+
+    @Test
+    public void test19() {
+        var testCase1 = 12;
+        var testCase2 = 36;
+        var solution = 433;
+        test(testCase1, testCase2, solution);
+    }//public void test19() {
+
+    @Test
+    public void test20() {
+        var testCase1 = 30;
+        var testCase2 = 46;
+        var solution = 1397;
+        test(testCase1, testCase2, solution);
+    }//public void test20() {
 
     private void test(int testCase1,int testCase2,int solution) {
-        assertTimeout(Duration.ofSeconds(3), () ->
-                new RectangleRotation().rectangleRotation(testCase1,testCase2));
+        assertTimeout(Duration.ofSeconds(3), () -> new RectangleRotation().rectangleRotation(testCase1,testCase2));
         assertEquals(solution, new RectangleRotation().rectangleRotation(testCase1,testCase2));
-    }//private void test(){
+    }//private void test(int testCase1,int testCase2,int solution) {
 }//class RectangleRotationTest {
