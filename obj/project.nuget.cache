@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OCwFr4654rTwdMhEKO7ad1LclVtTUpeZq1oK+E7eNZnFIIIprNAdzibN910yOhWLboYDQ50jerCSznhIrksDnQ==",
+  "dgSpecHash": "E21TjLus8VBVpLMPaWBQetMkANVQ0LIBf2c/gZILOC32ydcEGt1rNCr5URIUX9Cmfp0ovh3WBjqP80N7nrKw/Q==",
   "success": true,
-  "projectFilePath": "D:\\Jason Howse\\Documents\\Programs\\C# Programs\\Algorithms-master\\Algorithms.csproj",
+  "projectFilePath": "D:\\Jason Howse\\Documents\\Programs\\C# Programs\\Algorithms\\Algorithms.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Derxe\\.nuget\\packages\\coverlet.collector\\3.0.3\\coverlet.collector.3.0.3.nupkg.sha512",
     "C:\\Users\\Derxe\\.nuget\\packages\\microsoft.codecoverage\\16.9.1\\microsoft.codecoverage.16.9.1.nupkg.sha512",
