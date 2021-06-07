@@ -132,22 +132,22 @@ namespace Algorithms.src_UnitTests._0_intro._05_rains_of_reason {
         }//public void Test13() {
 
         [TestMethod]
-        public void test14() {
+        public void Test14() {
             SetTestCaseInfo("test-14.json");
             DoTest();
-        }//public void test14() {
+        }//public void Test14() {
 
         [TestMethod]
-        public void test15() {
+        public void Test15() {
             SetTestCaseInfo("test-15.json");
             DoTest();
-        }//public void test5() {
+        }//public void Test5() {
 
         [TestMethod]
-        public void test16() {
+        public void Test16() {
             SetTestCaseInfo("test-16.json");
             DoTest();
-        }//public void test16() {
+        }//public void Test16() {
 
         private void Test(int[] testCase1, int testCase2, int testCase3, int[] solution) {
             CollectionAssert.AreEqual(solution, new ArrayReplace().arrayReplace(testCase1, testCase2, testCase3));
