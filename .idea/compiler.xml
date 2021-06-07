@@ -267,6 +267,8 @@
       <file url="file://$PROJECT_DIR$/src UnitTests/interview_practice/_3_Special_Topics/_0_Common_Techniques_Basic/ArrayMaxConsecutiveSum2Tests.cs" />
       <file url="file://$PROJECT_DIR$/src UnitTests/interview_practice/_3_Special_Topics/_0_Common_Techniques_Basic/SumInRangeTests.cs" />
       <directory url="file://$PROJECT_DIR$/out" includeSubdirectories="true" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_06_boom_market/EncloseInBracketsTests.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_boom_market/EncloseInBrackets.cs" />
     </excludeFromCompile>
   </component>
 </project>
