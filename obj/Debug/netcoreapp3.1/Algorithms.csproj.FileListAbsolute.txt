@@ -86,7 +86,6 @@ D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\bin\Debug\netcoreapp3.1
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.csprojAssemblyReference.cache
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.AssemblyInfoInputs.cache
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.AssemblyInfo.cs
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.csproj.CoreCompileInputs.cache
@@ -94,3 +93,4 @@ D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.dll
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.pdb
 D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.genruntimeconfig.cache
+D:\Jason Howse\Documents\Programs\C# Programs\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.csproj.AssemblyReference.cache
