@@ -1,7 +1,7 @@
-﻿using Algorithms.src._1_the_core._06_boom_market;
+﻿using Algorithms.src._1_the_core._06_book_market;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Algorithms.src_UnitTests._1_the_core._06_boom_market {
+namespace Algorithms.src_UnitTests._1_the_core._06_book_market {
     [TestClass()]
     public class IsTandemRepeatTests {
 
@@ -81,4 +81,4 @@ namespace Algorithms.src_UnitTests._1_the_core._06_boom_market {
             Assert.AreEqual(solution, new IsTandemRepeat().isTandemRepeat(testCase));
         }//private void Test(string testCase,string solution) {
     }//public class IsTandemRepeatTests {
-}//namespace Algorithms.src_UnitTests._1_the_core._06_boom_market {
+}//namespace Algorithms.src_UnitTests._1_the_core._06_book_market {

@@ -1,4 +1,4 @@
-﻿namespace Algorithms.src._1_the_core._06_boom_market {
+﻿namespace Algorithms.src._1_the_core._06_book_market {
     public class EncloseInBrackets {
 
         /*
@@ -28,4 +28,4 @@ Guaranteed constraints:
             return "(" + inputString + ")";
         }//string encloseInBrackets(string inputString) {
     }//public class EncloseInBrackets {
-}//namespace Algorithms.src._1_the_core._06_boom_market {
+}//namespace Algorithms.src._1_the_core._06_book_market {

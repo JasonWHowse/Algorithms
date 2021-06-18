@@ -2,7 +2,7 @@
  * Authored by: Jason Wesley Howse
  */
 
-package _1_the_core._06_boom_market;
+package _1_the_core._06_book_market;
 
 public class IsTandemRepeat {
 

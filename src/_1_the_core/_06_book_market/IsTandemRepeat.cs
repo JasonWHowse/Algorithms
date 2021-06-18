@@ -1,4 +1,4 @@
-﻿namespace Algorithms.src._1_the_core._06_boom_market {
+﻿namespace Algorithms.src._1_the_core._06_book_market {
     public class IsTandemRepeat {
 
         /*
@@ -33,4 +33,4 @@ true if inputString represents a string concatenated to itself, false otherwise.
             return inputString.Equals(inputString[(inputString.Length / 2)..] + inputString[(inputString.Length / 2)..]);
         }//bool isTandemRepeat(string inputString) {
     }//public class IsTandemRepeat {
-}//namespace Algorithms.src._1_the_core._06_boom_market {
+}//namespace Algorithms.src._1_the_core._06_book_market {
