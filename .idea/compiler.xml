@@ -273,6 +273,8 @@
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_book_market/ProperNounCorrection.cs" />
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_book_market/IsTandemRepeat.cs" />
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_book_market/EncloseInBrackets.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_book_market/IsCaseInsensitivePalindrome.cs" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_06_book_market/IsCaseInsensitivePalindromeTests.cs" />
     </excludeFromCompile>
   </component>
 </project>
