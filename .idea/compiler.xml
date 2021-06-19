@@ -275,6 +275,8 @@
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_book_market/EncloseInBrackets.cs" />
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_book_market/IsCaseInsensitivePalindrome.cs" />
       <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_06_book_market/IsCaseInsensitivePalindromeTests.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_book_market/FindEmailDomain.cs" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_06_book_market/FindEmailDomainTests.cs" />
     </excludeFromCompile>
   </component>
 </project>
