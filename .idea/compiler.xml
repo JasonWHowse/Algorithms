@@ -285,6 +285,8 @@
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_06_book_market/IsUnstablePair.cs" />
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/IsSubstitutionCipher.cs" />
       <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/IsSubstitutionCipherTests.cs" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/CreateAnagramTests.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/CreateAnagram.cs" />
     </excludeFromCompile>
   </component>
 </project>
