@@ -40,7 +40,7 @@ Return true if it is possible to remove one element from the array in order to g
             bool flag = false;
             for (int i = 0; i < sequence.Length - 1; i++) {
                 if (!flag && sequence[i] >= sequence[i + 1]) {
-                    if (i + 2 >= sequence.Length || sequence[i] < (sequence[i + 2])) {
+                    if (i + 2 >= sequence.Length || sequence[i] < sequence[i + 2]) {
                         i++;
                         flag = true;
                     } else if (i - 1 < 0 || sequence[i - 1] < sequence[i + 1]) {//if (i + 2 >= sequence.Length || sequence[i] < (sequence[i + 2])) {
