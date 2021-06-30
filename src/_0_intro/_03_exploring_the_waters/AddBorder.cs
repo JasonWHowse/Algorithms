@@ -39,12 +39,12 @@ The same matrix of characters, framed with a border of asterisks of width 1.
         string[] addBorder(string[] picture) {
             string[] output = new string[picture.Length + 2];
             output[0] = "";
-            for(int i = 0; i < picture[0].Length+2; i++) {
+            for (int i = 0; i < picture[0].Length + 2; i++) {
                 output[0] += "*";
             }//for(int i = 0; i < picture[0].Length; i++) {
             output[^1] = output[0];
             for (int i = 0; i < picture.Length; i++) {
-                output[i+1]="*"+picture[i]+"*";
+                output[i + 1] = "*" + picture[i] + "*";
             }//for (int i = 0; i < picture.Length; i++) {
             return output;
         }//string[] addBorder(string[] picture) {

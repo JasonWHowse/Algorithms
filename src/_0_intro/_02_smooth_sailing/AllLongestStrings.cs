@@ -34,10 +34,10 @@ Array of the longest strings, stored in the same order as in the inputArray.
         string[] allLongestStrings(string[] inputArray) {
             List<string> output = new List<string>();
             int maxLength = 0;
-            foreach(var a in inputArray) {
+            foreach (var a in inputArray) {
                 if (maxLength < a.Length) {
                     maxLength = a.Length;
-                    output = new List<string>();
+                    output.Clear();
                 }//if (maxLength < a.Length) {
                 if (maxLength == a.Length) {
                     output.Add(a);

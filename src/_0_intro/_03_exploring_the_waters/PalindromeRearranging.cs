@@ -33,13 +33,13 @@ true if the characters of the inputString can be rearranged to form a palindrome
         bool palindromeRearranging(string inputString) {
             char oddChar = '0';
             for (int i = 0; i < inputString.Length; i++) {
-                if ((inputString.Length - (inputString.Replace(inputString[i] + "", "").Length)) % 2 == 1) {
-                    if (oddChar=='0') {
+                if ((inputString.Length - inputString.Replace(inputString[i] + "", "").Length) % 2 == 1) {
+                    if (oddChar == '0') {
                         oddChar = inputString[i];
-                    }else if (oddChar!=inputString[i]) {//if (oddChar=='0') {
+                    } else if (oddChar != inputString[i]) {//if (oddChar=='0') {
                         return false;
                     }//else if (oddChar!=inputString[i]) {
-                }//if ((inputString.Length - (inputString.Replace(inputString[i] + "", "").Length)) % 2 == 1) {
+                }//if ((inputString.Length - inputString.Replace(inputString[i] + "", "").Length) % 2 == 1) {
             }//for (int i = 0; i < inputString.Length; i++) {
             return true;
         }//bool palindromeRearranging(string inputString) {

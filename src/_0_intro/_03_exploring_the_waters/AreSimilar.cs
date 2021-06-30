@@ -64,7 +64,7 @@ true if a and b are similar, false otherwise.
                     }//else {
                 }//if (a[i] != b[i]) {
             }//for (int i = 0; i < a.Length && i < b.Length; i++) {
-            return d == -1 || (b[c] == a[d] && b[d] == a[c]);
+            return d == -1 || b[c] == a[d] && b[d] == a[c];
         }//bool areSimilar(int[] a, int[] b) {
     }//public class AreSimilar {
 }//namespace Algorithms.src._0_intro._03_exploring_the_waters {

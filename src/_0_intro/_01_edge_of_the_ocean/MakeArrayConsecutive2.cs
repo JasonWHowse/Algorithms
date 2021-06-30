@@ -33,7 +33,7 @@ The minimal number of statues that need to be added to existing statues such tha
         */
         public
         int makeArrayConsecutive2(int[] statues) {
-            return statues.Max()+1-statues.Min()-statues.Length;
+            return statues.Max() + 1 - statues.Min() - statues.Length;
         }//int makeArrayConsecutive2(int[] statues) {
     }//public class MakeArrayConsecutive2 {
 }//namespace Algorithms.src._0_intro._01_edge_of_the_ocean {

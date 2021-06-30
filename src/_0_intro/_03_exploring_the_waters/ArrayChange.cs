@@ -30,7 +30,7 @@ It's guaranteed that for the given test cases the answer always fits signed 32-b
         public
         int arrayChange(int[] inputArray) {
             int count = 0;
-            for(int i = 0; i < inputArray.Length - 1; i++) {
+            for (int i = 0; i < inputArray.Length - 1; i++) {
                 if (inputArray[i] >= inputArray[i + 1]) {
                     count += inputArray[i] - inputArray[i + 1] + 1;
                     inputArray[i + 1] = inputArray[i] + 1;

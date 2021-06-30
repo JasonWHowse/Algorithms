@@ -35,13 +35,12 @@ true if n is a lucky ticket number, false otherwise.
             int output = 0;
             int len = n.ToString().Length;
             for (int i = 0; i < len; i++) {
-                if (i<len/ 2) {
+                if (i < len / 2) {
                     output += n % 10;
-                    n /= 10;
                 } else {//if (i<len/ 2) {
                     output -= n % 10;
-                    n /= 10;
                 }//else {
+                n /= 10;
             }//for (int i = 0; i < len; i++) {
             return output == 0;
         }//bool isLucky(int n) {

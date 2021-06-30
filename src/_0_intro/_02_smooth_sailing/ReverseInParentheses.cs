@@ -42,7 +42,7 @@ Return inputString, with all the characters that were in parentheses reversed.
         public
         string reverseInParentheses(string inputString) {
             Stack<int> stack = new Stack<int>();
-            for (int i = 0; i <inputString.Length; i++) {
+            for (int i = 0; i < inputString.Length; i++) {
                 if (inputString[i] == '(') {
                     stack.Push(i);
                 }//if (inputString[i] == '(') {

@@ -43,7 +43,7 @@ Guaranteed constraints:
             for (int i = 0; i < s1.Length; i++) {
                 int index = s2.IndexOf(s1[i]);
                 if (index != -1) {
-                    s2 = new Regex(s2[index]+"").Replace(s2, "", 1);
+                    s2 = new Regex(s2[index] + "").Replace(s2, "", 1);
                     count++;
                 }//if(index!=-1){
             }//for(int i=0; i<s1.length();i++){

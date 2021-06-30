@@ -32,13 +32,13 @@ Sorted array a with all the trees untouched.
         public
         int[] sortByHeight(int[] a) {
             List<int> b = new List<int>();
-            foreach(int c in a) {
+            foreach (int c in a) {
                 if (c != -1) {
                     b.Add(c);
                 }//if (c != -1) {
             }//foreach(int c in a) {
             b.Sort();
-            for(int i = 0; i < a.Length; i++) {
+            for (int i = 0; i < a.Length; i++) {
                 if (a[i] != -1) {
                     a[i] = b[0];
                     b.RemoveAt(0);
