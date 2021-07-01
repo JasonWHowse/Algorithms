@@ -30,9 +30,7 @@ The maximal absolute difference.
         int arrayMaximalAdjacentDifference(int[] inputArray) {
             int max = 0;
             for (int i = 0; i < inputArray.Length - 1; i++) {
-                if (System.Math.Abs(inputArray[i] - inputArray[i + 1]) > max) {
-                    max = System.Math.Abs(inputArray[i] - inputArray[i + 1]);
-                }//if(System.Math.Abs(inputArray[i]-inputArray[i+1]);>max){
+                max = System.Math.Max(max, System.Math.Abs(inputArray[i] - inputArray[i + 1]));
             }//for(int i=0;i<inputArray.Length-1;i++){
             return max;
         }//int arrayMaximalAdjacentDifference(int[] inputArray) {

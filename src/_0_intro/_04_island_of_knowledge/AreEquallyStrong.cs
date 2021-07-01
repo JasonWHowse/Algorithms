@@ -57,7 +57,7 @@ true if you and your friend are equally strong, false otherwise.
 
         public
         bool areEquallyStrong(int yourLeft, int yourRight, int friendsLeft, int friendsRight) {
-            return System.Math.Max(yourLeft, yourRight) == System.Math.Max(friendsLeft, friendsRight)&& System.Math.Min(yourLeft, yourRight) == System.Math.Min(friendsLeft, friendsRight);
+            return System.Math.Max(yourLeft, yourRight) == System.Math.Max(friendsLeft, friendsRight) && System.Math.Min(yourLeft, yourRight) == System.Math.Min(friendsLeft, friendsRight);
         }//bool areEquallyStrong(int yourLeft, int yourRight, int friendsLeft, int friendsRight) {
     }//public class AreEquallyStrong {
 }//namespace Algorithms.src._0_intro._04_island_of_knowledge {

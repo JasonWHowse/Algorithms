@@ -45,7 +45,7 @@ true if inputString satisfies the IPv4 address naming rules, false otherwise.
         bool isIPv4Address(string inputString) {
             string[] ipList = inputString.Split('.');
             for (int i = 0; i < 4; i++) {
-                if (ipList.Length != 4 || ipList[i].Length == 0 || ipList[i].Length > 3 || (ipList[i].Length > 1 && (ipList[i])[0] == '0') || !Regex.IsMatch(ipList[i], "^[0-9]+$") || int.Parse(ipList[i]) > 255) { 
+                if (ipList.Length != 4 || ipList[i].Length == 0 || ipList[i].Length > 3 || ipList[i].Length > 1 && ipList[i][0] == '0' || !Regex.IsMatch(ipList[i], "^[0-9]+$") || int.Parse(ipList[i]) > 255) {
                     return false;
                 }//if (ipList.Length != 4 || ipList[i].Length == 0 || ipList[i].Length > 3 || (ipList[i].Length > 1 && (ipList[i])[0] == '0') || !Regex.IsMatch(ipList[i], "^[0-9]+$") || int.Parse(ipList[i]) > 255) { 
             }//for (int i = 0; i < 4; i++) {
