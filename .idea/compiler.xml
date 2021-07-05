@@ -287,6 +287,10 @@
       <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/IsSubstitutionCipherTests.cs" />
       <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/CreateAnagramTests.cs" />
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/CreateAnagram.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/ConstructSquare.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/StringsConstruction.cs" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/ConstructSquareTests.cs" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/StringsConstructionTests.cs" />
     </excludeFromCompile>
   </component>
 </project>
