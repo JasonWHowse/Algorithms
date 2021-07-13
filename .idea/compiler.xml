@@ -291,6 +291,12 @@
       <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/StringsConstruction.cs" />
       <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/ConstructSquareTests.cs" />
       <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/StringsConstructionTests.cs" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/NumbersGroupingTests.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/NumbersGrouping.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/DifferentSquares.cs" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/DifferentSquaresTests.cs" />
+      <file url="file://$PROJECT_DIR$/src UnitTests/_1_the_core/_07_mirror_lake/MostFrequentDigitSumTests.cs" />
+      <file url="file://$PROJECT_DIR$/src/_1_the_core/_07_mirror_lake/MostFrequentDigitSum.cs" />
     </excludeFromCompile>
   </component>
 </project>
